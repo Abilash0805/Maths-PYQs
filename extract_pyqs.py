@@ -1,357 +1,552 @@
 #!/usr/bin/env python3
 """
-Improved CBSE Class 12 Maths PYQ extractor.
-Reads PDFs and extracts Q&A with chapter classification.
+Extract questions and answers from CBSE Class 12 Mathematics PDFs.
+Reads pre-extracted text from /tmp/pdf_texts.json and outputs structured JSON.
+
+Handles multiple paper formats:
+  - 2015-2019: Interleaved Q + Sol./Ans. in older section structure (A/B/C or A/B/C/D)
+  - 2020:      Interleaved Ans. with MCQ options in section A
+  - 2022 T1:   All MCQ, interleaved Sol. immediately after each question
+  - 2022 T2:   Interleaved Ans., sections A (2mk) / B (3mk) / C (4mk)
+  - 2023-2025: Separate questions block + ANSWERS block, multi-set papers
 """
 
 import json
 import re
 import os
-import PyPDF2
-from collections import Counter
+import sys
+from collections import defaultdict
+from pathlib import Path
 
-PDF_DIR = "./pdfs/PYQs"
-OUTPUT = "./public/data/pyqs.json"
 
-CHAPTERS = [
-    "Relations and Functions",
-    "Inverse Trigonometric Functions",
-    "Matrices",
-    "Determinants",
-    "Continuity and Differentiability",
-    "Application of Derivatives",
-    "Integrals",
-    "Differential Equations",
-    "Vector Algebra",
-    "Three Dimensional Geometry",
-    "Linear Programming",
-    "Probability",
-]
+# ─── Chapter classification ─────────────────────────────────────────────────────
 
 CHAPTER_KEYWORDS = {
     "Relations and Functions": [
-        "function", "injective", "surjective", "bijective", "relation", "one-one", "onto",
-        "one one", "domain", "range", "codomain", "equivalence relation", "identity function",
-        "f(x)", "f :r", "f:r", "reflexive", "symmetric", "transitive", "partition",
-        "binary operation", "composition"
+        "injective", "surjective", "bijective", "one-one", "onto",
+        "reflexive relation", "symmetric relation", "transitive",
+        "equivalence relation", "domain", "range", "codomain",
+        "composite function", "many-one", "into function",
+        r"\brelation\b", r"\bfunction\b", "f : ", "f:",
     ],
     "Inverse Trigonometric Functions": [
-        "sin-1", "cos-1", "tan-1", "sin–1", "cos–1", "tan–1",
-        "sin^{-1}", "cos^{-1}", "tan^{-1}", "cot-1", "sec-1", "cosec-1",
-        "inverse trigonometric", "principal value", "arcsin", "arccos", "arctan",
-        "sin^-1", "cos^-1", "tan^-1", "cot–1", "sec–1", "cosec–1"
+        "sin-1", "cos-1", "tan-1", "sin-1", "cos-1", "tan-1",
+        "sin-1", "cos-1", "tan-1",
+        "arcsin", "arccos", "arctan",
+        "inverse trigonometric", "principal value",
     ],
     "Matrices": [
-        "matrix", "matrices", "transpose", "symmetric matrix", "skew-symmetric",
-        "skew symmetric", "row matrix", "column matrix", "square matrix", "diagonal matrix",
-        "identity matrix", "null matrix", "scalar matrix", "order of matrix",
-        "matrix equation", "a = [", "b = ["
+        r"\bmatri[cx]\b", r"\bmatrices\b",
+        "transpose", "symmetric matrix", "skew-symmetric", "skew symmetric",
+        r"order \d+\s*[x]\s*\d+",
+        "identity matrix", "null matrix", "zero matrix",
     ],
     "Determinants": [
-        "determinant", "cofactor", "adjoint", "singular", "non-singular",
-        "cramer", "minor", "adj a", "inverse of matrix",
-        "system of equations using matrix", "det", "expand"
+        r"\bdeterminant\b", r"\|A\|", r"\|adj",
+        "cofactor", "adjoint", "singular matrix", "non-singular",
+        "|adj A|", "adj A",
+        r"det\s*[\(\|]",
     ],
     "Continuity and Differentiability": [
-        "continuous", "continuity", "differentiable", "differentiability",
-        "left hand limit", "right hand limit", "rolle", "lagrange",
-        "mean value theorem", "mvt", "chain rule", "implicit differentiation",
-        "lhd", "rhd", "lhl", "rhl"
+        r"\bcontinuous\b", r"\bcontinuity\b",
+        r"\bdifferentiable\b", r"\bdifferentiability\b",
+        "rolle's theorem", "mean value theorem", "lagrange",
+        "dy/dx", "d2y",
+        "implicit differentiation", "logarithmic differentiation",
     ],
     "Application of Derivatives": [
-        "increasing", "decreasing", "maxima", "minima", "maximum value", "minimum value",
-        "tangent", "normal to", "rate of change", "slope of curve", "critical point",
-        "stationary point", "optimiz", "optimis", "rate at which",
-        "local maximum", "local minimum", "absolute maximum", "absolute minimum",
-        "inflection", "approximation", "error", "approximate value"
+        r"\bincreasing\b", r"\bdecreasing\b",
+        r"\bmaxima\b", r"\bminima\b", r"\bmaximum\b", r"\bminimum\b",
+        r"\btangent\b", r"\bnormal to\b",
+        "rate of change", r"\bslope\b",
+        "optimiz", "stationary point", "critical point",
+        "local maximum", "local minimum", "absolute maximum",
+        "point of inflection",
     ],
     "Integrals": [
-        "integral", "integrate", "integration", "evaluate the integral",
-        "area under", "area bounded", "definite integral", "indefinite integral",
-        "partial fraction", "substitution", "by parts", "reduction formula",
-        "find the value of", "sec x", "tan x", "sin x dx", "cos x dx",
-        "e^x", "log x dx"
+        r"\bintegral\b", r"\bintegrate\b", r"\bintegration\b",
+        "antiderivative", "area under",
+        "definite integral", "indefinite integral",
+        "by parts", "partial fractions",
     ],
     "Differential Equations": [
-        "differential equation", "d²y", "d2y", "dy/dx", "dy dx",
-        "order of", "degree of", "general solution", "particular solution",
-        "homogeneous", "linear differential", "variable separable", "integrating factor",
-        "formation of", "orthogonal trajectory", "d.e.", "ode"
+        "differential equation",
+        "d2y", "dy/dx",
+        "general solution", "particular solution",
+        "variable separable", "homogeneous equation",
+        "linear differential", "integrating factor",
     ],
     "Vector Algebra": [
-        "position vector", "unit vector", "collinear vector", "coplanar vector",
-        "scalar product", "dot product", "cross product", "magnitude of",
-        "direction of vector", "resultant vector", "scalar triple product",
-        "vector triple product", "parallelogram", "triangle law",
-        "components of vector"
+        r"\bvector\b", r"\bvectors\b",
+        "scalar product", "cross product", "dot product",
+        r"\bcollinear\b", r"\bcoplanar\b",
+        "unit vector", "position vector", "magnitude of",
+        "scalar triple product", "vector triple product",
     ],
     "Three Dimensional Geometry": [
-        "direction cosines", "direction ratios", "line in 3", "plane",
-        "distance from plane", "distance between lines", "angle between plane",
-        "angle between line", "cartesian equation", "vector equation of line",
-        "vector equation of plane", "skew lines", "three dimensional",
-        "foot of perpendicular", "image of point", "x/a = y/b", "x-x1"
+        "direction cosines", "direction ratios",
+        "distance from", "three dimensional", "3-d geometry",
+        "equation of plane", "equation of line",
+        "skew lines", "shortest distance", "perpendicular distance",
     ],
     "Linear Programming": [
-        "linear programming", "objective function", "constraint", "feasible region",
-        "corner point", "maximize", "minimize", "lpp", "linear programming problem",
-        "bounded", "unbounded", "optimal solution", "iso-profit", "iso-cost",
-        "vertices of feasible", "graphical method"
+        "linear programming", "objective function",
+        r"\bconstraint\b", r"\bfeasible\b",
+        "corner point", "feasible region",
+        r"\bmaximize\b", r"\bminimize\b",
+        "lpp", "optimal solution",
     ],
     "Probability": [
-        "probability", "bayes", "conditional probability", "random variable",
-        "p(a)", "p(b)", "p(e)", "independent event", "mutually exclusive",
-        "binomial distribution", "probability distribution", "expected value",
-        "sample space", "favourable outcome", "bernoulli", "binomial",
-        "at least", "at most", "getting a head", "dice", "card", "ball"
+        r"\bprobability\b", r"\bbayes\b",
+        r"\bconditional\b", "random variable",
+        r"\bP\(", r"\bevent\b", "independent events", "mutually exclusive",
+        "binomial distribution",
+        "sample space",
     ],
 }
 
 
-def extract_pdf_text(pdf_path):
-    texts = []
-    with open(pdf_path, 'rb') as f:
-        reader = PyPDF2.PdfReader(f)
-        for page in reader.pages:
-            text = page.extract_text()
-            if text:
-                texts.append(text)
-    return "\n".join(texts)
-
-
-def get_year_term(filename):
-    name = filename.lower()
-    if "2025" in name:
-        return 2025, None
-    elif "2024" in name:
-        return 2024, None
-    elif "2023" in name:
-        return 2023, None
-    elif "2022 term ii" in name:
-        return 2022, "Term II"
-    elif "2022 term i" in name or "2022 term" in name:
-        return 2022, "Term I"
-    elif "2022" in name:
-        return 2022, None
-    elif "2020" in name:
-        return 2020, None
-    elif "2019" in name:
-        return 2019, None
-    elif "2018" in name:
-        return 2018, None
-    elif "2017" in name:
-        return 2017, None
-    elif "2016" in name:
-        return 2016, None
-    elif "2015" in name:
-        return 2015, None
-    return 0, None
-
-
 def classify_chapter(text):
     text_lower = text.lower()
-    scores = {}
-    for chapter, keywords in CHAPTER_KEYWORDS.items():
-        score = sum(1 for kw in keywords if kw.lower() in text_lower)
-        if score > 0:
-            scores[chapter] = score
+    scores = defaultdict(int)
+    for chapter, patterns in CHAPTER_KEYWORDS.items():
+        for pattern in patterns:
+            try:
+                if re.search(pattern, text_lower, re.IGNORECASE):
+                    scores[chapter] += 1
+            except re.error:
+                if pattern.lower() in text_lower:
+                    scores[chapter] += 1
     if not scores:
         return "General"
-    return max(scores, key=scores.get)
+    return max(scores, key=lambda c: (scores[c], list(CHAPTER_KEYWORDS.keys()).index(c)))
 
 
-def clean_text(t):
-    """Clean extracted text."""
-    if not t:
+# ─── Year extraction ────────────────────────────────────────────────────────────
+
+def extract_year(filename):
+    """Return year label. Check 'Term II' BEFORE 'Term I' to avoid substring match."""
+    if "2022" in filename:
+        name_lower = filename.lower()
+        if "term ii" in name_lower:
+            return "2022-T2"
+        if "term i" in name_lower:
+            return "2022-T1"
+    m = re.search(r"(20\d{2})", filename)
+    if m:
+        return int(m.group(1))
+    return 0
+
+
+def year_to_int(year):
+    if isinstance(year, int):
+        return year
+    return int(str(year)[:4])
+
+
+# ─── Section metadata ──────────────────────────────────────────────────────────
+
+def get_section_meta(section_letter, year):
+    yr = year_to_int(year)
+    year_str = str(year)
+    s = section_letter.upper()
+    if "T2" in year_str:
+        return {"A": (2, "SA"), "B": (3, "SA"), "C": (4, "LA")}.get(s, (2, "SA"))
+    if "T1" in year_str:
+        return (1, "MCQ")
+    if yr >= 2021:
+        return {"A": (1, "MCQ"), "B": (2, "VSA"), "C": (3, "SA"),
+                "D": (5, "LA"), "E": (4, "Case Study")}.get(s, (1, "General"))
+    if yr == 2020:
+        return {"A": (1, "MCQ"), "B": (2, "VSA"), "C": (4, "SA"), "D": (6, "LA")}.get(s, (1, "General"))
+    # 2015-2019
+    return {"A": (1, "VSA"), "B": (4, "LA-I"), "C": (6, "LA-II"), "D": (6, "LA-II")}.get(s, (1, "General"))
+
+
+# ─── Text cleaning ─────────────────────────────────────────────────────────────
+
+def clean_text(text):
+    if not text:
         return ""
-    # Fix common PDF extraction artifacts
-    t = re.sub(r'\s+', ' ', t)
-    t = t.strip()
-    return t
-
-
-def parse_questions_from_text(text, year, term):
-    questions = []
-
-    # Normalize
-    text = re.sub(r'[ \t]+', ' ', text)
+    text = re.sub(r'/[a-z]+nosp', '', text)
+    text = re.sub(r'/arrowleftnosp|/arrowrightnosp|/combarrowextender', '', text)
+    text = re.sub(r'/circumflexnosp', '^', text)
+    text = re.sub(r'/g\d+', '', text)
+    text = re.sub(r'Oswaal CBSE[^\n]*\n?', '', text)
+    text = re.sub(r'OSWAAL CBSE[^\n]*\n?', '', text)
+    text = re.sub(r'[ \t]{2,}', ' ', text)
     text = re.sub(r'\n{3,}', '\n\n', text)
+    return text.strip()
 
-    # Try to find Q&A blocks
-    # Pattern: number followed by text, then Sol.
-    # Works for standard CBSE solved papers format
 
-    # Split into blocks by question numbers
-    # Question numbers appear as: "1.", "2.", etc at start of line or after whitespace
-    # But NOT inside math expressions
+# ─── MCQ option parsing ─────────────────────────────────────────────────────────
 
-    # Strategy: scan line by line, collect blocks
+def parse_options(text):
+    options = {}
+    pattern = re.compile(
+        r'\(([aAbBcCdD])\)\s*([^\n(]+?)(?=\s*\([aAbBcCdD]\)|\s*Sol\.|\s*Ans\.|\n\s*\d+\.|\s*$)',
+        re.DOTALL
+    )
+    matches = pattern.findall(text)
+    if len(matches) >= 2:
+        for letter, val in matches:
+            clean = val.strip().rstrip(',;').strip()
+            if clean:
+                options[letter.lower()] = clean
+        if len(options) >= 2:
+            return options
+    # line-by-line fallback
     lines = text.split('\n')
-    blocks = []  # (q_num, block_text)
-    current_num = None
-    current_block = []
-
+    current, current_val = None, []
     for line in lines:
-        # Check if this line starts a new question
-        m = re.match(r'^\s{0,3}(\d{1,2})\.\s+(.+)', line)
+        stripped = line.strip()
+        m = re.match(r'^\(([aAbBcCdD])\)\s*(.*)', stripped)
         if m:
-            num = int(m.group(1))
-            if 1 <= num <= 38:
-                if current_num is not None:
-                    blocks.append((current_num, '\n'.join(current_block)))
-                current_num = num
-                current_block = [m.group(2)]
-                continue
+            if current is not None:
+                v = ' '.join(current_val).strip()
+                if v:
+                    options[current] = v
+            current = m.group(1).lower()
+            current_val = [m.group(2).strip()]
+        elif current is not None and stripped and not re.match(r'^\d+\.', stripped):
+            current_val.append(stripped)
+    if current is not None:
+        v = ' '.join(current_val).strip()
+        if v:
+            options[current] = v
+    return options
 
-        if current_num is not None:
-            current_block.append(line)
 
-    if current_num is not None:
-        blocks.append((current_num, '\n'.join(current_block)))
-
-    year_str = str(year) + (f"_{term.replace(' ', '')}" if term else "")
-
-    for q_num, block in blocks:
-        # Determine section and marks
-        if q_num <= 20:
-            section, marks, q_type = "A", 1, "MCQ"
-        elif q_num <= 25:
-            section, marks, q_type = "B", 2, "VSA"
-        elif q_num <= 31:
-            section, marks, q_type = "C", 3, "SA"
-        elif q_num <= 35:
-            section, marks, q_type = "D", 5, "LA"
+def remove_option_lines(text):
+    lines = text.split('\n')
+    result = []
+    skip = False
+    for line in lines:
+        stripped = line.strip()
+        if re.match(r'^\([aAbBcCdD]\)', stripped):
+            skip = True
+        elif skip and not re.match(r'^\([aAbBcCdD]\)', stripped):
+            skip = False
+            result.append(line)
         else:
-            section, marks, q_type = "E", 4, "Case Study"
+            result.append(line)
+    return '\n'.join(result).strip()
 
-        # Split question from answer
-        # Sol. appears after the question
-        sol_patterns = [
-            r'\nSol\.\s*',
-            r'\n\s*Sol\.\s*',
-            r'\nSol\s*\.\s*',
-            r'Sol\.\s*Option',
-            r'Sol\.\s*\(',
-        ]
 
-        question_text = block
-        answer_text = ""
+# ─── Q + Sol split ─────────────────────────────────────────────────────────────
 
-        for pat in sol_patterns:
-            parts = re.split(pat, block, maxsplit=1, flags=re.IGNORECASE)
-            if len(parts) == 2:
-                question_text = parts[0]
-                answer_text = parts[1]
-                break
+_SOL_RE = re.compile(r'\n\s*(?:Sol\.|Ans\.|Solution\s*:|Answer\s*:)', re.IGNORECASE)
 
-        question_text = clean_text(question_text)
-        answer_text = clean_text(answer_text)
 
-        if not question_text or len(question_text) < 8:
+def split_q_sol(block):
+    m = _SOL_RE.search(block)
+    if m:
+        return block[:m.start()].strip(), block[m.start():].strip()
+    return block.strip(), ""
+
+
+# ─── Question-number pattern ───────────────────────────────────────────────────
+
+# Match ' 1. ' or '  12. ' at line start followed by word char or '('
+# The lookahead avoids matching standalone digit references in equations
+_Q_NUM_RE = re.compile(r'(?:^|\n)\s{0,4}\*?\s*(\d{1,2})\. +(?=[A-Za-z\(])', re.MULTILINE)
+
+
+def parse_section_block(sec_text, section, marks, qtype):
+    questions = []
+    matches = list(_Q_NUM_RE.finditer(sec_text))
+    if not matches:
+        return questions
+
+    for i, match in enumerate(matches):
+        q_num = int(match.group(1))
+        if q_num > 60:
+            continue
+        start = match.start()
+        end = matches[i + 1].start() if i + 1 < len(matches) else len(sec_text)
+        block = sec_text[start:end].strip()
+        block_body = re.sub(r'^\s*\*?\s*\d{1,2}\.\s*', '', block, count=1).strip()
+
+        q_text, sol_text = split_q_sol(block_body)
+        q_text = clean_text(q_text)
+        sol_text = clean_text(sol_text)
+
+        if len(q_text) < 8:
             continue
 
-        # Extract MCQ options
         options = {}
-        if q_type == "MCQ" or marks == 1:
-            option_matches = list(re.finditer(
-                r'\(([abcdABCD])\)\s*([^(]{2,80}?)(?=\s*\([abcdABCD]\)|\s*Sol\.|\s*$)',
-                question_text + " " + answer_text[:200]
-            ))
-            for om in option_matches:
-                key = om.group(1).lower()
-                val = clean_text(om.group(2))
-                if val:
-                    options[key] = val
-
-            # Remove options from question text
+        if marks == 1 or qtype == "MCQ":
+            options = parse_options(q_text)
             if options:
-                for key in 'abcd':
-                    idx = question_text.find(f'({key})')
-                    if idx == -1:
-                        idx = question_text.find(f'({key.upper()})')
-                    if idx > 10:
-                        question_text = question_text[:idx].strip()
-                        break
-
-        # Classify chapter
-        combined = question_text + " " + answer_text
-        chapter = classify_chapter(combined)
-        if chapter == "General":
-            chapter = "Relations and Functions"
-
-        is_important = marks == 5
-
-        qid = f"{year_str}_{q_num}"
+                q_text = remove_option_lines(q_text)
 
         questions.append({
-            "id": qid,
-            "year": year,
-            "term": term,
             "question_number": q_num,
-            "question": question_text,
+            "question": q_text,
             "options": options,
-            "answer": answer_text,
+            "answer": sol_text,
             "section": section,
             "marks": marks,
-            "chapter": chapter,
-            "type": q_type,
-            "is_important": is_important,
+            "type": qtype,
         })
-
     return questions
 
 
+# ─── Section finding ───────────────────────────────────────────────────────────
+
+def find_sections(text, min_pos=0):
+    pat = re.compile(
+        r'(?:^|\n)\s*(?:SECTION|SeCTIon|Section)\s*[-]*\s*([A-Ea-e])\b',
+        re.MULTILINE
+    )
+    return [(m.start(), m.group(1).upper()) for m in pat.finditer(text, min_pos)]
+
+
+# ─── Answers-block parser ──────────────────────────────────────────────────────
+
+def parse_answers_block(ans_text):
+    answers = {}
+    pat = re.compile(
+        r'(?:^|\n)\s*(\d{1,2})\.\s+(.+?)(?=(?:\n\s*\d{1,2}\.\s)|$)',
+        re.DOTALL
+    )
+    for m in pat.finditer(ans_text):
+        q_num = m.group(1)
+        body = clean_text(m.group(2))
+        if len(body) > 3:
+            if q_num not in answers or len(body) > len(answers[q_num]):
+                answers[q_num] = body
+    return answers
+
+
+# ─── Detect preamble end ──────────────────────────────────────────────────────
+
+def find_preamble_end(text):
+    m = re.search(r'(?:Delhi|Outside\s+Delhi)\s+Set', text)
+    if m:
+        return m.start()
+    m = re.search(r'Code\s+No\s*[:.]?\s*\d', text)
+    if m:
+        return m.start()
+    m = re.search(r'Series\s*:\s*\S+\s+\d+/\d+/\d+', text)
+    if m:
+        return m.start()
+    return min(800, len(text) // 4)
+
+
+# ─── Multi-set paper parser (2023, 2024, 2025) ─────────────────────────────────
+
+def parse_multiset_paper(text, year):
+    """Parse papers with separate Q blocks and ANSWERS blocks (multiple sets)."""
+    ans_m = re.search(r'\n[^\n]*?ANSWERS\n', text)
+    if ans_m:
+        q_portion = text[:ans_m.start()]
+        a_portion = text[ans_m.start():]
+    else:
+        q_portion = text
+        a_portion = ""
+
+    preamble_end = find_preamble_end(q_portion)
+    sections = find_sections(q_portion, preamble_end)
+
+    all_qs = []
+    for i, (sec_pos, sec_letter) in enumerate(sections):
+        sec_end = sections[i + 1][0] if i + 1 < len(sections) else len(q_portion)
+        sec_text = q_portion[sec_pos:sec_end]
+        marks, qtype = get_section_meta(sec_letter, year)
+        if "multiple choice" in sec_text[:300].lower():
+            qtype = "MCQ"
+            marks = 1
+        parsed = parse_section_block(sec_text, sec_letter, marks, qtype)
+        all_qs.extend(parsed)
+
+    answers_by_num = {}
+    if a_portion:
+        a_sections = find_sections(a_portion, 0)
+        for i, (sec_pos, sec_letter) in enumerate(a_sections):
+            sec_end = a_sections[i + 1][0] if i + 1 < len(a_sections) else len(a_portion)
+            sec_ans_text = a_portion[sec_pos:sec_end]
+            sec_answers = parse_answers_block(sec_ans_text)
+            for num, ans in sec_answers.items():
+                if num not in answers_by_num or len(ans) > len(answers_by_num[num]):
+                    answers_by_num[num] = ans
+
+    # Dedup questions (multiple sets may repeat same Q numbers)
+    best_qs = {}
+    for q in all_qs:
+        k = q["question_number"]
+        score = len(q["question"]) + len(q["answer"])
+        if k not in best_qs or score > (len(best_qs[k]["question"]) + len(best_qs[k]["answer"])):
+            best_qs[k] = q
+
+    result = []
+    for q_num, q in sorted(best_qs.items()):
+        key = str(q_num)
+        if key in answers_by_num:
+            if not q["answer"] or len(answers_by_num[key]) > len(q["answer"]):
+                q["answer"] = answers_by_num[key]
+        result.append(q)
+    return result
+
+
+# ─── Interleaved Q+A parser (2015-2022) ───────────────────────────────────────
+
+def parse_interleaved_paper(text, year):
+    """Parse papers where each question is immediately followed by its Sol./Ans."""
+    preamble_end = find_preamble_end(text)
+    sections = find_sections(text, preamble_end)
+    if not sections:
+        return []
+
+    all_qs = []
+    for i, (sec_pos, sec_letter) in enumerate(sections):
+        sec_end = sections[i + 1][0] if i + 1 < len(sections) else len(text)
+        sec_text = text[sec_pos:sec_end]
+        marks, qtype = get_section_meta(sec_letter, year)
+        if "multiple choice" in sec_text[:300].lower():
+            qtype = "MCQ"
+            marks = 1
+        parsed = parse_section_block(sec_text, sec_letter, marks, qtype)
+        all_qs.extend(parsed)
+
+    # Dedup by (section, question_number)
+    best = {}
+    for q in all_qs:
+        k = (q["section"], q["question_number"])
+        score = len(q["question"]) + len(q["answer"])
+        if k not in best or score > (len(best[k]["question"]) + len(best[k]["answer"])):
+            best[k] = q
+    return list(best.values())
+
+
+# ─── Top-level paper dispatcher ────────────────────────────────────────────────
+
+def parse_paper(filename, raw_text):
+    year = extract_year(filename)
+    text = clean_text(raw_text)
+    yr_int = year_to_int(year)
+
+    if yr_int >= 2023:
+        questions = parse_multiset_paper(text, year)
+    else:
+        questions = parse_interleaved_paper(text, year)
+
+    result = []
+    for q in questions:
+        q["year"] = year
+        q["chapter"] = classify_chapter(q["question"] + " " + q["answer"])
+        q["id"] = f"{year}_{q['question_number']}"
+        result.append(q)
+    return result
+
+
+# ─── Global deduplication ──────────────────────────────────────────────────────
+
+def deduplicate_global(questions):
+    seen = {}
+    for q in questions:
+        qid = q["id"]
+        score = len(q["question"]) + len(q["answer"])
+        if qid not in seen or score > (len(seen[qid]["question"]) + len(seen[qid]["answer"])):
+            seen[qid] = q
+    return list(seen.values())
+
+
+# ─── Main ──────────────────────────────────────────────────────────────────────
+
 def main():
-    os.makedirs(os.path.dirname(OUTPUT), exist_ok=True)
+    input_path = "/tmp/pdf_texts.json"
+    output_dir = Path("/home/user/Maths-PYQs/public/data")
+    output_path = output_dir / "pyqs.json"
+    output_dir.mkdir(parents=True, exist_ok=True)
+
+    print(f"Loading {input_path}...")
+    with open(input_path, "r", encoding="utf-8") as f:
+        pdf_texts = json.load(f)
+    print(f"Found {len(pdf_texts)} papers.\n")
+
     all_questions = []
+    stats_by_year = defaultdict(int)
+    parse_errors = []
 
-    for pdf_name in sorted(os.listdir(PDF_DIR)):
-        if not pdf_name.endswith('.pdf'):
-            continue
+    for filename, raw_text in sorted(pdf_texts.items()):
+        year = extract_year(filename)
+        print(f"Processing: {filename}  (year={year}, chars={len(raw_text)})")
+        try:
+            questions = parse_paper(filename, raw_text)
+            print(f"  -> {len(questions)} questions")
+            stats_by_year[year] += len(questions)
+            all_questions.extend(questions)
+        except Exception as exc:
+            import traceback
+            msg = f"{filename}: {exc}"
+            print(f"  ERROR: {exc}", file=sys.stderr)
+            parse_errors.append(msg)
+            traceback.print_exc()
 
-        year, term = get_year_term(pdf_name)
-        if year == 0:
-            print(f"WARNING: Skipping {pdf_name} (unknown year)")
-            continue
+    before = len(all_questions)
+    all_questions = deduplicate_global(all_questions)
+    after = len(all_questions)
+    if before != after:
+        print(f"\nDeduplication: {before} -> {after} questions")
 
-        print(f"\nProcessing {pdf_name} → {year}{' ' + term if term else ''}")
-        text = extract_pdf_text(os.path.join(PDF_DIR, pdf_name))
-        questions = parse_questions_from_text(text, year, term)
-        print(f"  → {len(questions)} questions")
+    all_questions.sort(key=lambda q: (str(q["year"]), q["question_number"]))
 
-        chap_dist = Counter(q['chapter'] for q in questions)
-        for ch, cnt in chap_dist.most_common(5):
-            print(f"    {ch}: {cnt}")
+    output = [
+        {
+            "id": q["id"],
+            "year": q["year"],
+            "question_number": q["question_number"],
+            "question": q["question"],
+            "options": q["options"],
+            "answer": q["answer"],
+            "section": q["section"],
+            "marks": q["marks"],
+            "chapter": q["chapter"],
+            "type": q["type"],
+        }
+        for q in all_questions
+    ]
 
-        all_questions.extend(questions)
-
-    # Deduplicate
-    seen = set()
-    unique = []
-    for q in all_questions:
-        if q['id'] not in seen:
-            seen.add(q['id'])
-            unique.append(q)
+    with open(output_path, "w", encoding="utf-8") as f:
+        json.dump(output, f, ensure_ascii=False, indent=2)
 
     print(f"\n{'='*60}")
-    print(f"Total: {len(unique)} questions")
+    print(f"OUTPUT: {output_path}")
+    print(f"{'='*60}")
+    print(f"\nTOTAL QUESTIONS EXTRACTED: {len(output)}")
 
-    year_dist = Counter(
-        str(q['year']) + (' ' + q['term'] if q.get('term') else '')
-        for q in unique
-    )
-    for yr, cnt in sorted(year_dist.items()):
-        print(f"  {yr}: {cnt}")
+    print("\nQuestions per year:")
+    for yr in sorted(stats_by_year.keys(), key=lambda y: str(y)):
+        print(f"  {yr}: {stats_by_year[yr]}")
 
-    chapter_dist = Counter(q['chapter'] for q in unique)
-    print("\nBy chapter:")
-    for ch, cnt in sorted(chapter_dist.items(), key=lambda x: -x[1]):
+    chapter_stats = defaultdict(int)
+    for q in output:
+        chapter_stats[q["chapter"]] += 1
+    print("\nQuestions per chapter:")
+    for ch, cnt in sorted(chapter_stats.items(), key=lambda x: -x[1]):
         print(f"  {ch}: {cnt}")
 
-    with open(OUTPUT, 'w', encoding='utf-8') as f:
-        json.dump(unique, f, indent=2, ensure_ascii=False)
+    type_stats = defaultdict(int)
+    for q in output:
+        type_stats[q["type"]] += 1
+    print("\nQuestions by type:")
+    for t, cnt in sorted(type_stats.items()):
+        print(f"  {t}: {cnt}")
 
-    print(f"\nSaved to {OUTPUT}")
+    with_answer = sum(1 for q in output if q["answer"])
+    pct = (100 * with_answer // len(output)) if output else 0
+    print(f"\nAnswer coverage: {with_answer}/{len(output)} ({pct}%)")
+
+    if parse_errors:
+        print(f"\nParsing issues ({len(parse_errors)}):")
+        for e in parse_errors:
+            print(f"  - {e}")
+    else:
+        print("\nNo parsing errors.")
+
+    print(f"\nDone. JSON written to {output_path}")
+    return output
 
 
 if __name__ == "__main__":
