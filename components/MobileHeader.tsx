@@ -25,6 +25,9 @@ export function MobileHeader({ stats }: MobileHeaderProps) {
           </div>
           <span className="font-bold text-sm text-slate-900">MathsPYQ</span>
         </div>
+        <span className="ml-auto text-xs font-medium text-white bg-blue-600 rounded-full px-3 py-1">
+          Built by Abilash
+        </span>
       </header>
 
       {/* Overlay */}

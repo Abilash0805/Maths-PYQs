@@ -42,10 +42,13 @@ export default function RootLayout({
             {/* Main content */}
             <div className="flex-1 flex flex-col min-w-0 overflow-hidden">
               {/* Desktop top bar */}
-              <header className="hidden lg:flex items-center px-6 py-3 border-b border-slate-200 bg-white/80 backdrop-blur sticky top-0 z-30">
+              <header className="hidden lg:flex items-center justify-between px-6 py-3 border-b border-slate-200 bg-white/80 backdrop-blur sticky top-0 z-30">
                 <div className="text-sm text-slate-500">
                   CBSE Class 12 Mathematics — Previous Year Questions
                 </div>
+                <span className="text-xs font-medium text-white bg-blue-600 rounded-full px-3 py-1">
+                  Built by Abilash
+                </span>
               </header>
 
               {/* Mobile header */}
