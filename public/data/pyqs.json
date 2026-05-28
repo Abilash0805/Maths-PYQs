@@ -52,18 +52,6 @@
     "type": "LA-II"
   },
   {
-    "id": "2018_2",
-    "year": 2018,
-    "question_number": 2,
-    "question": "Ans. || || ab→→\n== 3 ½+½\n [CBSE Marking Scheme, 2018] * 4. If a * b denotes the large of ‘ a’ and ‘ b’ if a o b = (a \n* b) + 3, then write the value of (5) o (10), where * \nand o are binary operations.",
-    "options": {},
-    "answer": "",
-    "section": "A",
-    "marks": 1,
-    "chapter": "Relations and Functions",
-    "type": "VSA"
-  },
-  {
     "id": "2018_6",
     "year": 2018,
     "question_number": 6,
@@ -363,23 +351,6 @@
     "is_important": false
   },
   {
-    "id": "2023_13",
-    "year": 2023,
-    "question_number": 13,
-    "question": "If ai ai ja ij k→→ →\n++ + .. () .( ),^^ ^^ ^^= = = 1 then a→\n is:",
-    "options": {
-      "a": "k^",
-      "b": "i^",
-      "c": "j^",
-      "d": "ij k^^ ^++"
-    },
-    "answer": "Sol. Option (b) is correct Explanation: Let a→ = xi yj zk^^ ^++\n ai→\n.^\n = ()^^ ^xi yj zkix ++ =\n ^.( )ai j→\n+\n = () ()^^ ^^ ^xi yj zk ij ++ +\n = x + y\n ^.( )ai j k→\n++\n = () ()^^ ^^ ^^xi yj zk ij k ++ ++\n = x + y + z\n Given, x = x + y = x + y + z =\t1\n ∴ x = 1, y = 0 and z = 0\n a→\n = i^",
-    "section": "A",
-    "marks": 1,
-    "chapter": "Relations and Functions",
-    "type": "MCQ"
-  },
-  {
     "id": "2023_36",
     "year": 2023,
     "question_number": 36,
@@ -438,18 +409,6 @@
     "type": "MCQ"
   },
   {
-    "id": "2024_33",
-    "year": 2024,
-    "question_number": 33,
-    "question": "(a) Let A = R – {5} and B = R – {1}. Consider the \nfunction f : A → B, defined by f(x) =\n x\nx−\n−3\n5 Show that \nf is one-one and onto.\n (b) Check whether the relation S in the set of real \nnumbers R defined by S = {(a, b) : where a – b + \n2 is an irrational number} is reflexive, symmetric \nor transitive.",
-    "options": {},
-    "answer": "(a) Given, A = R – {5}, B = R – {1}\n f : A → B f(x) = x\nx−\n−3\n5\n for f is one-one\n Let x1, x2 ∈ R\n f(x1) = f(x2)\n x\nx1\n13\n5−\n− =\n x\nx2\n23\n5−\n−\n (x1 – 3) ( x2 – 5) = (x2 – 3) ( x1 – 5)\n x1x2 – 5x1 – 3x2 + 15 = x1x2 – 5x2 – 3x1 + 15 – 5x1 + 3x1 = – 5x2 + 3x2\n – 2x1 = – 2x2\n \\ x1 = x2\n f is one-one.\n For if is onto\n Let y be any element of R\n y = f(x)\n ⇒ y = x\nx−\n−3\n5\n ⇒ y(x – 5) = x – 3\n ⇒ yx – 5y = x – 3\n ⇒ yx – x = 5y – 3\n ⇒ x = 53\n1y\ny−\n−\n f(x) = x\nx−\n−3\n5\n fy\ny53\n1−\n−\n\n\n =\n 53\n13\n53\n15y\ny\ny\ny−\n−−\n−\n−−\n ⇒ = 53 33\n1\n53 55\n1yy\ny\nyy\ny−− +\n−\n−− +\n−\n fy\ny53\n1−\n−\n\n\n =\n 2\n2y\n = y\n f is onto\nOR\n (b) For a Relation to be Reflexive aRa\n For real a\n aRa ⇒ aa−+ 2 = 2\n 2 is an irrational number \n aRa is Reflexive\n For a Relation to be symmetric\n aRb ⇒ bRa\n For real number a and b\n aRb ⇒ ab−+ 2 ⇒ aRb ≠ bRa\n bRa ⇒ ba−+ 2 It is not symmetric\n For Transitive\n aRb = bRc = aRc\n For real number a, b and c\n Let a = −2\n b = 32\n c = 2\n aRb ⇒ ab−+ 2 = −− + 23 22\n = −32 is an irrational\n bRc ⇒ 32 22−+\n = 42 2− is an irrational\n aRc ⇒ −− + 22 2\n = – 2 is not an irrational\n aRb, bRc then a is not related to b.\n the Relation is not transitive.\nSolved Paper - 2024 34. Given A = 21 3\n32 1\n12 1−\n−\n\n\n\n\n |A| = 2(– 2 – 2) – 1(– 3 – 1) – 3(6 – 2)\n = 2(– 4) – 1(– 4) – 3(4)\n = – 8 + 4 – 12\n |A| = – 16\nMinor of Matrices A Cofactor\nM11 = (– 2 – 2) = – 4 A11 = – 4\nM12 = (– 3 – 1) = – 4 A12 = 4\nM13 = (6 – 2) = 4 A13 = 4\nM21 = (– 1 + 6) = 5 A21 = – 5\nM22 = (– 2 + 3) = 1 A22 = 1\nM23 = (4 – 1) = 3 A23 = – 3\nM31 = (1 + 6) = 7 A31 = 7\nM32 = (2 + 9) = 11 A32 = – 11\nM33 = (4 – 3) = 1 A33 = 1\n adj A = −\n−−\n−\n\n\n\n44 4\n51 3\n71 11T\n adj A = −−\n−\n−\n\n\n\n45 7\n41 11\n43 1\n \\ A–1 = ()\n||adjA\nA\n A–1 = 1\n1645 7\n41 11\n43 1−−−\n−\n−\n\n\n\n\n Given eqn can be written in matrix form as\n AX = B\n X = A–1B ...(i)\n Where, A = 21 3\n32 1\n12 1−\n−\n\n\n\n,\n X =\n x\ny\nz\n\n\n\n\n B =\n 13\n4\n8\n\n\n\n\n from (i)\n x\ny\nz\n\n\n\n\n = 1\n1645 7\n41 11\n43 113\n4\n8−−−\n−\n−\n\n\n\n\n\n\n\n\n = 1\n1652 20 56\n52 48 8\n52 12 8−−− +\n+−\n−+\n\n\n\n\n = 1\n1616\n32\n48−−−\n\n\n\n\n x\ny\nz\n\n\n\n\n =\n 1\n2\n3−\n\n\n\n\n \\ x = 1, y = 2, z = – 3 35. (a) The given line cartesian form\n x\n2 =\n 26\n4y−\n =\n 1\n1−\n−z\n ...(i)\nA (4, 0, –5)2\nN\nA (0, 3, 1)1\n It passing through the point\n A1 with P.V. a1→\n = 3jk^^+\n and it is parallel to the vector\n b→\n = ai jk^^ ^++2\n The equation of the line passing through the point \nA2(4, 0, –5) with P.V.\n a2→\n = 45ik^^− and parallel to the line (i) is\n r→\n = 45 2 ik jk^^ ^^() −+ + µ ...(ii)\n Now aa21→→\n− = 40 50 3 ij ki jk^ ^^^ ^^+− −− −\n = 43 6 ij k^^ ^−−\n ||b→\n = () () () 02 122 2++\n = 5\n and ba a→→ →\n×−()21 =\n ij k^^ ^\n02 1\n43 6 −−\n = ij k^^ ^() () () −− −− +− 12 30 40 8\n = −+ − 15 48ij k^^ ^\n |( )) ba a→→ →\n×−21 = () () () −+ +− 15 4822 2\n = 225 16 64++\n = 305\n \\ The distance the parallel lines\n (i) and (ii) = ba a\nb→→ →\n→×−()\n||21\n =\n 305\n5\nOR\n (b) The equation of the given lines are \n L1: x−\n−1\n3 =\n y\nk−2\n2 =\n z−3\n2\n L2: x\nk−1\n3 =\n y−1\n1 =\n z−\n−6\n7\n Their Direction Ratio are (– 3, 2 k, 2) and (3 k, 1, – 7)\n when L1 ^ L2\n a1a2 + b1b2 + c1c2 = 0\n (– 3)(+3 k) + (2 k)(1) + (2)(–7) = 0\n –9k + 2k – 14 = 0\n k = – 2\n Now\n L1: x−\n−1\n3 = y−\n−2\n4 = z−3\n2\n L2: x−\n−1\n6 =\n y−1\n1 =\n z−\n−6\n7\n We know that equation of any line through a given \npoint (x1, y1, z1) are\n xx\na−1\n =\n yy\nb−1\n =\n zz\nc−1\n \\ Equation of any line through (3, –4, – 7)\n x\na−3\n =\n y\nb+4\n =\n z\nc+7\n If it is perpendicular to the lines\n then – 3a – 4b + 2c = 0\n – 6a + b – 7c = 0\n a\n28 2− =\n b\n−−12 21 =\n c\n−−32 4\n a\n+26 =\n b\n−33 =\n c\n−27\n Equation of line\n x−3\n26 = y+\n−4\n33 =\n z+\n−7\n27",
-    "section": "D",
-    "marks": 5,
-    "chapter": "Relations and Functions",
-    "type": "LA"
-  },
-  {
     "id": "2025_4",
     "year": 2025,
     "question_number": 4,
@@ -503,18 +462,6 @@
     "marks": 4,
     "chapter": "Relations and Functions",
     "type": "Case Study"
-  },
-  {
-    "id": "2015_12",
-    "year": 2015,
-    "question_number": 12,
-    "question": "If r→\n = xiyjzk∧∧ ∧++ , find () .( ) ri r jxy→∧→∧×× +",
-    "options": {},
-    "answer": "Sol. ri→→\n× = ()^^ ^ ^xiyjzk i ++ × = −+ykzj^ ^\n rj→→\n× = ()^^ ^^xiyjzkj ++ = xkzi^ ^−\n () .( )^^r i r j→→\n×× = () .( )^^ ^ ^^ ^oizjyk ziojxk +− −+ +\n = – xy\n () .( )^^r i r j xy→→\n×× + = – xy + xy = 0\n* 13. Find the distance between the point (– 1, – 5, – 10) \nand the point of intersection of the line\n x−2\n3 =\n \ny+1\n4 =\n z−2\n12 and the plane x – y + z = 5.",
-    "section": "B",
-    "marks": 4,
-    "chapter": "Inverse Trigonometric Functions",
-    "type": "LA-I"
   },
   {
     "id": "2015_14",
@@ -1621,21 +1568,6 @@
     "is_important": false
   },
   {
-    "id": "2023_6",
-    "year": 2023,
-    "question_number": 6,
-    "question": "If ||ab→→× = 3 and ab→→. = –3, then angle between \na→\n and b→\n is:\n 2\n3π\n 6π\n 3π\n 5\n6π",
-    "options": {
-      "b": "6π",
-      "c": "3π"
-    },
-    "answer": "Sol. Option (d) is correct.\n Explanation: \n ||ab→→\n× = 3 ab→→\n=−.3\n ||ab→→\n× = sinab n ab\nnnq ´=\n\n |a||b|sin q = 3 ...(i)\n |a||b|cos q = – 3 ...(ii) \nFrom eq. (i) and eq. (ii)\n tan\tq =\n 3\n31\n3 −=−\n q =\n 5\n6π",
-    "section": "A",
-    "marks": 1,
-    "chapter": "Determinants",
-    "type": "MCQ"
-  },
-  {
     "id": "sup_det_8",
     "year": 2023,
     "term": null,
@@ -2431,23 +2363,6 @@
     "is_important": true
   },
   {
-    "id": "2024_9",
-    "year": 2024,
-    "question_number": 9,
-    "question": "The function f(x) = x\nx22+\n has a local minima at x\n \nequal to\nof 2 units per second. The rate at which the slope of \nthe curve is changing, when x = 5 is\n 11.\n −∫1\n2xxdx\n(log ) is equal to\nlogxc\n3+\n 3\n3(log ) xc+",
-    "options": {
-      "a": "– 60 units/s",
-      "b": "60 units/s",
-      "c": "– 70 units/s",
-      "d": "–140 units/s"
-    },
-    "answer": "Option (B) is correct.\n Explanation : Compare this with dy\ndxy\nx+=20\n dy\ndxPy+\n =\n Q \nwe get P =\n 2\nx\n and Q = 0 \n Integrating factor I.F.\n = −∫ePdx.\n = −∫exdx2.\n = e2lnx\n = elnx2\n I.F. = x2 14. Option (B) is correct.\n Explanation : Here,\n a→\n = ij^^−\n and r→\n = ik ij^^ ^^() ++ − µ2\n Let m→\n be a line passing through a→\n and parallel to r→\n ⇒ m→\n be a line passing through a→\n and parallel to \n()^^2ij b −=→\n (say) \n So we know that a line through a point with position \nvector a→\n and parallel to b→\n is given by the equation.\n m→\n = ab→→\n+λ\n ⇒ xi yj zk^^ ^++\n\n\n =\n () ()^^ ^^ij ij −+ − λ2\n = ij^^() () 12 1 ++ −− λλ\n So its Cartesian equation is\n xy−=+\n−1\n21\n1 =\n z−0\n0 (After equating)",
-    "section": "A",
-    "marks": 1,
-    "chapter": "Application of Derivatives",
-    "type": "MCQ"
-  },
-  {
     "id": "2024_18",
     "year": 2024,
     "question_number": 18,
@@ -2873,18 +2788,6 @@
     "type": "LA-I"
   },
   {
-    "id": "2018_10",
-    "year": 2018,
-    "question_number": 10,
-    "question": "Find the differential equation representing the \nfamily of curves y = a ebx+5, where a and b are \narbitrary constants.",
-    "options": {},
-    "answer": "Ans. dy\ndx = baebx+5 ½\n dy\ndx = by ½\n dy\ndx2\n2 =\n bdy\ndx ½\n ∴ The differential equation is :\n ydy\ndx2\n2 =\n dy\ndx\n\n2\n ½\n [CBSE Marking Scheme, 2018] *11. If θ is the angle between two vectors ij k∧∧ ∧\n−+23 \nand 32ij k∧∧ ∧\n−+ , find sin θ.\n Ans. sin θ\t= ||\n||||||\n|| ||ab\nab→→×=96\n14 14\n = 46\n14\n ab→→×\n =\n ij k^^ ^\n12 3\n32 1−\n−\n = 48 4 ij k^^ ^++\n ∴\n sin θ\n =\n 2\n76",
-    "section": "B",
-    "marks": 4,
-    "chapter": "Integrals",
-    "type": "LA-I"
-  },
-  {
     "id": "2018_14",
     "year": 2018,
     "question_number": 14,
@@ -2939,18 +2842,6 @@
     "question": "Using integration, find the area of the region in \nthe first quadrant enclosed by the X-axis, the line \ny = x and the circle x2 + y2 = 32.",
     "options": {},
     "answer": "Ans. \n \nOXx+y=2232y=x\n42 4 1\n* Out of Syllabus\nSolved Pa Per - 2018 (mathematics) \n Point of intersection, x = 4 1\n Area of shaded region\n = xdxx dx +−∫ ∫322\n442\n04 1\n = xxxx2\n04\n21\n442\n2232 16\n42\n\n+− +\n\n−sin 1\n = 81 6284 4 +− −=πππ\n sq. units. 1\n [CBSE Marking Scheme, 2018]",
-    "section": "D",
-    "marks": 6,
-    "chapter": "Integrals",
-    "type": "LA-II"
-  },
-  {
-    "id": "2018_27",
-    "year": 2018,
-    "question_number": 27,
-    "question": "Evaluate:\n /4\n0sin cos\n16 9 sin 2xxdxxπ+∫+\n OR\n * Evaluate: () , xx ed xx 2\n13\n3++ ∫\n as the limit of the \nsum.",
-    "options": {},
-    "answer": "Ans. Put sin x – cos x = t, (cos x + sin x) dx = dt, 1 – sin \n2x = t2 1\n when x \n= 0, t = – 1 \n\n and x = p/4, t = 0 ½\n\\ \n I\n = sinc os\nsin/ xx\nx+\n+ ∫16 9204πdx\n \n = 1\n16 91210\n+−−∫() tdt\n \n = 1\n25 9210\n−−∫tdt 2\n Þ I\n = 1\n3053\n5310\nlog+\n−\n\n\n−t\nt 1½\n \n = 1\n3001\n4−\n\nlog\n \n = −1\n301\n42 logl og or1\n15 1\n[CBSE Marking Scheme, 2018]\n* 28. Find the distance of the point (– 1, – 5, – 10) \nfrom the point of intersection of the line ri jk ij k→∧ ∧∧ ∧∧ ∧\n=− ++ (+ +) 22 34 2 λ λ and the plane \nri jk→∧ ∧∧\n−+ = .( ). 5",
     "section": "D",
     "marks": 6,
     "chapter": "Integrals",
@@ -3216,18 +3107,6 @@
     "marks": 2,
     "chapter": "Integrals",
     "type": "VSA"
-  },
-  {
-    "id": "2020_35",
-    "year": 2020,
-    "question_number": 35,
-    "question": "F ind the area of the region lying in the first \nquadrant and enclosed by the X-axis, the line y = x \nand the circle x2 + y2 = 32.",
-    "options": {},
-    "answer": "Ans. We have y = 0, y = x and the circle x2 + y2 = 32 in the \nfirst quadrant.\n Solving y = x with the circle\n x2 + x2 = 32\n x2 = 16\n x = 4 (In the first quadrant)\n When x = 4, \n y = 4 for the point of intersection of the circle with \nthe X-axis.\n Put y = 0\n x2 + 0 = 32\n x=±42\n So, the circle intersects the X-axis at (4 2, 0) ± . Y7\nY'6\n5\n4\n32\n1yx=\nxy\n22+= 32\nX' X\n–7 –6 –5 –4 –3 –2 –1\n112 34 56 7–1\n–2\n–3\n–4\n–5\n–6\n–7\n From the above figure, area of the shaded region,\n Ax dx xdx =+ − ∫∫\n04\n22\n442\n42()\n =\n\n+− +()\n\n\n\n − xxxx2\n04\n222\n1\n442\n224242\n2 42() sin\n =16\n2+0+16 sin14\n2(42) 16\n16 sin4\n4212 2\n1\n\n−−\n−\n\n\n\n −\n−\n =8+ 16 2 16 ππ21 6\n4−−\n\n\n = 8 + [8 p – 8 – 4 p] \n = 4 p sq. units\n* 36. Show that the lines ra b→→ →\n=+λ and rb a→→ →\n=+ µ are \ncoplanar and the plane containing them is given by \nra b→→ →\n×= .() . 0\nOutside Delhi Set-II 65/4/2\nNote : Except these, all other questions from outside Delhi Set-I",
-    "section": "D",
-    "marks": 6,
-    "chapter": "Integrals",
-    "type": "LA"
   },
   {
     "id": "sup_int_4",
@@ -3697,39 +3576,6 @@
     "is_important": false
   },
   {
-    "id": "2024_12",
-    "year": 2024,
-    "question_number": 12,
-    "question": "8 12. The integral dx\nx 942−∫\n is equal to\n62\n31sin−\n\n+xc\n22\n31sin−\n\n+xc\n\n+12\n3xc\n 3\n22\n31sin−\n\n+xc",
-    "options": {
-      "a": "1 62 31sin−  +xc",
-      "b": "1 22 31sin−  +xc",
-      "c": "sin−  +12 3xc",
-      "d": "3 22 31sin−  +xc"
-    },
-    "answer": "Option (D) is correct.\n Explanation : Given vectors \n a→\n = 2ij k^^ ^, −+\n b→\n = ij k^^ ^, −−35\n c→\n = −+ + 34 4 ij k^^ ^,\n when two vectors are perpendicular to each other\n AB→→\n. = 0\n So, ab→→\n. = () .( )^^ ^^ ^^23 5 ij ki jk −+ −−\n = [2 + 3 – 5]\n ab→→\n. = 0\n So, a Right angled Triangle are formed.",
-    "section": "A",
-    "marks": 1,
-    "chapter": "Integrals",
-    "type": "MCQ"
-  },
-  {
-    "id": "2024_13",
-    "year": 2024,
-    "question_number": 13,
-    "question": "Area of the region bounded by curve y2 = 4x and the \nX-axis between x = 0 and x = 1 is\n 2\n3 (B)\n 8\n3\n 4\n3",
-    "options": {
-      "a": "2 3 (B) 8 3",
-      "c": "3",
-      "d": "4 3"
-    },
-    "answer": "Option (B) is correct.\n Explanation : Let a→\n = ai aj ak12 3^^ ^. ++\n Given ||a→\n = a\n Then ai→\n×^\n = −+ak aj23^^\n \n [\\ ii ji kk^^ ^^ ^^×= ×= ×=0 ]\n aj→\n×^\n = ak aj13^^−\n ak→\n×^\n = −+aj ai12^^\n and \\ || || ||^^ ^ai aj ak→→ →\n×+ ×+ ×22 2\n \n [\\||a aaa→\n=+ +12\n22\n32]\n = aaaaaa22\n32\n12\n32\n12\n22+++++\n = 212\n22\n32[]aaa++\n = 22[| |]a→\n = 2a2",
-    "section": "A",
-    "marks": 1,
-    "chapter": "Integrals",
-    "type": "MCQ"
-  },
-  {
     "id": "2024_23",
     "year": 2024,
     "question_number": 23,
@@ -3914,18 +3760,6 @@
     "question": "Solve the differential equation:\n (tan–1y – x) dy = (1 + y2) dx.\nOR\n Find the particular solution of the differential \nequation\n dy\ndx =\n xy\nxy22+ given that y = 1, when \nx = 0.",
     "options": {},
     "answer": "Sol. Given differential equation can be written as\n dx\ndy yx +\n+1\n12.\n =\n tan−\n+1\n21y\ny\n ... Integrating factor is etan–1 y\n ... Solution is ; x.etan–1 y =\n tan.tan −−\n+∫1\n21\n1ye\nydyy\n ⇒ x.etan–1 y = ∫ t et dt where tan–1 y = t\n = t et – et + c = etan–1 y (tan–1 y – 1) + c\n or x = tan–1 y – 1 + c e–tan –1 y\nOR\n Given differential equation is\n dy\ndx =\n y\nx\ny\nx12\n+\n\n\n Putting\n y\nx = v to get\n vxdv\ndx+\n =\n v\nv12+\n ...\n xdv\ndx =\n v\nvv\n12+−\n =\n −\n+v\nv3\n21\n ⇒\n v\nvdv2\n31+∫ =\n −∫dx\nx\n ⇒\n log||v\nv−1\n22 = – log |x| + c\n ...\n logyx\ny−2\n22 = c\n x = 0, y = 1 ⇒ c = 0 ...\n logyx\ny−2\n22 = 0\n*",
-    "section": "C",
-    "marks": 6,
-    "chapter": "Differential Equations",
-    "type": "LA-II"
-  },
-  {
-    "id": "2017_18",
-    "year": 2017,
-    "question_number": 18,
-    "question": "Prove that x2 – y2 = C(x2 + y2)2 is the \ngeneral solution of the differential equation \n(x3 – 3xy2)dx = ( y3 – 3x2y)dy, where C is a \nparameter. Ans. x2 – y2 = C(x2 + y2)2 Þ 2x – 2yy¢ \n = 2C( x2 + y2)(2x + 2yy¢) 1\n Þ ( x – yy¢) =\n xy\nyxxy y22\n2222−\n++ (' )\n Þ (y2 + x2)(x – yy¢) = ( x2 – y2)(2x + 2yy¢) 1\n Þ [–2y(x2 – y2) – y(y2 + x2)]\n dy\ndx\n = 2 x(x2 – y2) – x (y2 + x2) 1\n Þ (y3 – 3x2y) dy\ndx = (x3 – 3xy2)\n Þ ( y3 – 3x2y)dy = (x3 – 3xy2)dx 1\n Hence x2 – y2 = C (x2 + y2)2 is the solution of given \ndifferential equation.\n [CBSE Marking Scheme 2017]\n* 19. Let ai jk bi→→\n=+ += , and\n cc ic jc k→\n=+ +12 3 , then\n (a) Let c1 = 1 and c2 = 2, find c3 which makes \nab→→\n, and c→\n coplanar.\n (b) If c2 = – 1 and c3 = 1, show that no value of c1 \ncan make ab→→\n, and c→\n coplanar.",
-    "options": {},
-    "answer": "",
     "section": "C",
     "marks": 6,
     "chapter": "Differential Equations",
@@ -4143,18 +3977,6 @@
     "type": "LA"
   },
   {
-    "id": "2015_1",
-    "year": 2015,
-    "question_number": 1,
-    "question": "If a→\n = 74ijk∧∧ ∧+− and b→\n = 26 3 i jk∧∧ ∧++ , then \nfind the projection of a→\n on b→\n. 1",
-    "options": {},
-    "answer": "Sol. p =\n ab\nb→→\n→.\n||\n =\n () ,( )\n| )|^^ ^ ^^ ^\n^^ ^74 263\n26 3ij k ij k\nij k+− ++\n++\n =\n 14 61 2\n43 69+−\n++\n = 8\n7\n* 2. Find l, if the vectors a→\n = i jk∧∧ ∧++3, b→\n = 2ijk∧∧ ∧−− \nand c→\n = λjk∧∧+3 are coplanar. 1",
-    "section": "A",
-    "marks": 1,
-    "chapter": "Vector Algebra",
-    "type": "VSA"
-  },
-  {
     "id": "2016_5",
     "year": 2016,
     "question_number": 5,
@@ -4185,30 +4007,6 @@
     "question": "Show that the point A, B, C with position \nvectors 23 5 ij ki jk−− − +, and 34 4 ij k−− \nrespectively, are the vertices of a right-angled \ntriangle, Hence find the area of the triangle.\nSOLVED PAPER - 2017 (MATHEMATICS)",
     "options": {},
     "answer": "Ans. AB\n = −− − ij k 26 , \n BC\n = 2ij k −+, \n CA\n = −+ij k 35+ 1\n Since ABBCCA\n,, , are not parallel vectors, and \nABBCCA \n++ = 0\n   \n \\ A, B, C form a triangle 1\n Also BCCA\n. = 0 1\n \\ A, B, C form a right triangle \n Area of D =\n 1\n2||ABBC \n×\n =\n 1\n2210\n 1\n [CBSE Marking Scheme 2017]\n* 20. Find the value of l, if four points with position \nvectors 36 92 32 3 ij ki jk ij k ++ ++ ++ ,, and \n46ij k ++ λ are coplanar.\n* 21. There are 4 cards numbered 1, 3, 5 and 7, one \nnumber on one card. T wo cards are drawn at random without replacement. Let X denote the \nsum of the numbers on the two drawn cards. \nFind the mean and variance of X.",
-    "section": "C",
-    "marks": 6,
-    "chapter": "Vector Algebra",
-    "type": "LA-II"
-  },
-  {
-    "id": "2017_20",
-    "year": 2017,
-    "question_number": 20,
-    "question": "If ab c→→→\n,, are mutually perpendicular vectors \nof equal magnitudes, show that the vector \nab c→→→\n++ is equally inclined to ab→→\n, and c→\n. Also, find the angle which ab c→→→\n++ makes \nwith a→\n or b→\n or c→\n.",
-    "options": {},
-    "answer": "Ans. ||a\n = || || bc\n= and ab\n. = 0 = bc ca \n..= ...(i)1\n Let a, b and g be the angles made by ()ab c \n++ \nwith ab\n, and c\n respectively\n ()ab ca→→→ →\n++ = || ||cos ab ca \n++ α\n Þ a =\n cos||\n||−\n++\n\n1 a\nab c\n \n Similarly, b =\n cos||\n||−\n++\n\n1 b\nab c\n \n and g =\n cos||\n||−\n++\n\n1 c\nab c\n \n 1\n Using (i), we get a = b = g ½\n* Out of Syllabus\n Now ||ab c \n++2\n = || || || ab c 2 22++ \n ++ + 2( .. .) ab bc ca \n 1\n Þ ||ab c \n++2\n = 32||a\n (using (i))\n ||ab c \n++ = 3||a\n \\ a = cos–11\n3\n\n==βγ\n ½\n [CBSE Marking Scheme 2017]",
-    "section": "C",
-    "marks": 6,
-    "chapter": "Vector Algebra",
-    "type": "LA-II"
-  },
-  {
-    "id": "2018_20",
-    "year": 2018,
-    "question_number": 20,
-    "question": "Let ai jk bi jk→∧ ∧∧ →∧ ∧∧\n=+ −= −+ 45 45 , and \nci jk→∧ ∧∧\n=+ − 3. Find a vector d→\n which is \nperpendicular to both c→\n and b→\n and d→\n. a→\n =",
-    "options": {},
-    "answer": "",
     "section": "C",
     "marks": 6,
     "chapter": "Vector Algebra",
@@ -4251,30 +4049,6 @@
     "chapter": "Vector Algebra",
     "type": "SA",
     "is_important": true
-  },
-  {
-    "id": "2020_15",
-    "year": 2020,
-    "question_number": 15,
-    "question": "If a→\n is a non-zero vector, then \n(.). (.). (.). ai ia jj ak k→∧ ∧→ ∧∧ →∧ ∧\n++ ........................ .\nOR\n The pr ojection of the vector ij∧∧\n− on the vector \nij∧∧\n+ is ........................ .",
-    "options": {},
-    "answer": "Ans. (. )( .) (. ) aiia jj ak k++\n = ai aj ak ai aa ja ak a12 31 23 ++ == = [. ,. ,. ] = a\nOR\n Let, a\n = ij−, b = ij+\n The projection of the vector a\n on the vector b\n =\n ab\nb\n.\n||\n =\n () .( )\n() () ()ij ij −+\n++\n\n11 022 2\n = 0\n1 = 0\n Q. 16 to 20 ar e very short answer questions.",
-    "section": "A",
-    "marks": 1,
-    "chapter": "Vector Algebra",
-    "type": "MCQ"
-  },
-  {
-    "id": "2020_24",
-    "year": 2020,
-    "question_number": 24,
-    "question": "Find ||a→\n and ||b→\n, if || || ab→→\n=2 and \n() .() . ab ab→→ →→\n+− =12\nOR\n Find \nthe unit vector perpendicular to each of the \nvectors ai jk→\n=+ + 43 ^\n and bi jk→\n=− + 22^\n.",
-    "options": {},
-    "answer": "Ans. ||a\n = ?\n ||b\n = ?\n Given, ||a\n = 2||b\n and () .( ) ab ab \n+− = 12\n Þ aa ab ba bb \n.. .. −+ − = 12\n Þ aa bb \n..− = 12\n Þ || || ab22− = 12\n Þ (| |) (||) 222bb\n− = 12\n Þ 422|| || bb\n− = 12\n Þ 32||b\n = 12\n Þ ||b2 = 4\n Þ ||b\n = 2\n Þ ||a\n = 2||b\n = 2(2) = 4\n Hence, ||a\n = 4 and ||b\n = 2\nOR\n Given, a\n = 43ij k ++\n and b\n = 22ij k −+\n Hence, ab\n× = ij k\n43 1\n21 2−\n = ij k () () () 61 82 46 +− −+ −−\n = 76 10 ij k −−\n Unit vector perpendicular to each at \nthe vector a\n and \nb = ab\nab×\n×||\n =\n 76 10\n76 1022 2ij k −−\n+− +− () () ()\n =\n 7\n1856\n18510\n185ij k −−\n* 25. Find \nthe equation of the plane with intercept 3 on \nthe y-axis and parallel to xz – plane.",
-    "section": "B",
-    "marks": 2,
-    "chapter": "Vector Algebra",
-    "type": "VSA"
   },
   {
     "id": "2020_30",
@@ -4367,23 +4141,6 @@
     "type": "SA"
   },
   {
-    "id": "2023_2",
-    "year": 2023,
-    "question_number": 2,
-    "question": "The position vector of thr ee consecutive \nvertices of a parallelogram ABCD are \nAi jk Bi jk () ()^^ ^^ ^^426 53 +− −+ , and Ci jk () .^^ ^12 45++ \nThe position vector of D is given by",
-    "options": {
-      "a": "−− − 35 10 ij k^^ ^",
-      "b": "21 3 ij^^+",
-      "c": "11 92 ij k^^ ^+−",
-      "d": "−− + 11 92 ij k^^ ^"
-    },
-    "answer": "Sol. Option (c) is correct.\n Explanation: \n Ai jk ()^^ ^42 6 +− Ci jk ()^^ ^12 45++\n Bi jk ()^^ ^53−+ Dx iy jz k ()^^ ^++ Diagonal of | |gm bisect each other\n ∴\tPosition vector of mid point of AC ()^^ ^831\n2ij k +−\n Position vector of midpoint of BD→\n 5\n23\n21\n2++−++ \n\nxiyjzk^^ ^\n 5\n2+x = 8 ∴\tx = 11\n y−3\n2 = y = 9 \n z+1\n2 = −1\n2 z = – 2 ^ ^^11 9 2D i jk∴ +−",
-    "section": "A",
-    "marks": 1,
-    "chapter": "Vector Algebra",
-    "type": "MCQ"
-  },
-  {
     "id": "sup_va_2",
     "year": 2023,
     "term": null,
@@ -4412,63 +4169,6 @@
     "is_important": false
   },
   {
-    "id": "2023_8",
-    "year": 2023,
-    "question_number": 8,
-    "question": "Unit vector along PQ→\n, where coordinates of P and \nQ respectively are (2, 1, –1) and (4, 4, –7) is:\n −−+2\n73\n76\n7ij k \n 2\n73\n76\n7ij k \n+−",
-    "options": {
-      "a": "23 6 ij k +−",
-      "b": "−− + 23 6 ij k"
-    },
-    "answer": "Sol. Option (d) is correct\n Explanation: P(2, 1, –1) and Q(4, 4, –7)\n PQ→\n = () () ()^^ ^42 41 71 −+ −+ −+ ij k\nSOLVED PAPER - 2023 (MATHEMATICS) \n = 23 6 ij k^^ ^+−\n PQ^\n =\n 23 6\n23 622 2ij k^^ ^+−\n++\n = 2\n73\n76\n7ij k^^ ^+−",
-    "section": "A",
-    "marks": 1,
-    "chapter": "Vector Algebra",
-    "type": "MCQ"
-  },
-  {
-    "id": "2023_9",
-    "year": 2023,
-    "question_number": 9,
-    "question": "P osition vector of the mid-point of line segment \nAB is 32 3 ij k+− . If position vector of the point A \nis 23 4 ij k+− , then position vector of the point B \nis:\n 5\n25\n27\n2ij k \n+−\n ij k \n222−+",
-    "options": {
-      "b": "42ij k +−",
-      "c": "55 7 ij k +−"
-    },
-    "answer": "Sol. Option (b) is correct\n Explanation: Position vector of A = 23 4 ij k^^ ^+−\n Position vector of midpoint AB = 32 3 ij k^^ ^+−\n Let P osition vector of B = xi yj zk^^ ^++\n ∴ x+2\n2 = 3,\n y+3\n2 = 2,\n z−4\n2 = – 3\n ∴ x = 4, y = 1 and z = – 2\n Hence position vector of B = 42ij k^^ ^+−",
-    "section": "A",
-    "marks": 1,
-    "chapter": "Vector Algebra",
-    "type": "MCQ"
-  },
-  {
-    "id": "2023_14",
-    "year": 2023,
-    "question_number": 14,
-    "question": "A unit vector a^ makes equal but acute angles on \nthe co-ordinate axes. The projection of the vector \na^ on the vector bi jk→\n=+ − 57^^ ^ is:\n15 (b) 11\n53\n5 (d) 3\n53",
-    "options": {
-      "a": "11 15 (b) 11 53",
-      "c": "4 5 (d) 3 53"
-    },
-    "answer": "Sol. Option (a) is correct\n Explanation: a→\n makes equal acute angles from axis\n ∴ cos a = cos b = cos g\n cos2 a + cos2 b + cos2 g = 1\n 3 cos2 a = 1\n ⇒ cos a = 1\n3\n ∴\n a→\n =\n 1\n31\n31\n3ij k^^ ^++\n a^\n =\n 1\n31\n31\n3ij k\na^^ ^\n||++\n→\nSOLVED PAPER - 2023 (MATHEMATICS) \n = 1\n31\n31\n3\n1\n31313ij k\n^^ ^++\n++\n a^\n =\n 1\n31\n31\n3ij k^^ ^++\n b→\n = 57ij k^^ ^+−\n Projection of vector a→→\non b\n =\n ab\nb→→\n→.\n||\n =\n 1\n31\n31\n357\n57 122 2ij ki jk^^ ^^ ^^.( ) ++\n\n +−\n++\n = 5\n37\n31\n3\n75+−\n =\n 11\n31\n53×\n = 11\n15",
-    "section": "A",
-    "marks": 1,
-    "chapter": "Vector Algebra",
-    "type": "MCQ"
-  },
-  {
-    "id": "2023_24",
-    "year": 2023,
-    "question_number": 24,
-    "question": "(a) If the vectors\n ab→→\nand\n are such that\n \n|| ,|| ab→→\n==32\n3 and\n ab→→\n×\n is a unit vector, then \nfind the angle between a→ and b→\n.\nOR\n (b) F ind the area of a parallelogram whose adjacent \nSOLVED PAPER - 2023 (MATHEMATICS) \nside are determined by the vectors ai jk→\n=− +^^ ^3 \nand bi jk→\n=− + 27^^ ^.",
-    "options": {},
-    "answer": "Sol. (a) Given ||a→\n = 3, ||b→\n = 2\n3\n Since, ||ab→→× = || ||ab→→\n sin q n \n Now, ||ab→→× =\n ab\nn´\n =\n sin ab n\nnq\n\n ||ab→→× = || ||ab→→\n sin q\n 1 = 23 sin3´´ q\n sin q\t=\t1\n2\n q\t=\t30°\n Angle between a→\n and b→\n is 30°\nOR\n (b) a→\n = ij k −+ 3\n b→\n = 27ij k −+\n Required area of ||gm\n = ||ab→→×\n =\n ij k \n11 3\n27 1−\n−\n = ij k () () () −+ −− +− + 12 11 67 2 \n = ||20 55 ij k +−\n = ||400 25 25++\n = 152 unit2",
-    "section": "B",
-    "marks": 2,
-    "chapter": "Vector Algebra",
-    "type": "VSA"
-  },
-  {
     "id": "sup_va_1",
     "year": 2024,
     "term": null,
@@ -4495,65 +4195,6 @@
     "chapter": "Vector Algebra",
     "type": "VSA",
     "is_important": false
-  },
-  {
-    "id": "2024_11",
-    "year": 2024,
-    "question_number": 11,
-    "question": "If a→\n and b→\n are two vectors such that | a→\n | = 1, \n|b→\n| = 2 and ab→→\n. = 3, then the angle between\n 2a→\n and −→\nb is\n p\n6 (B)\n p\n3\n 5\n6p\n 11\n6p",
-    "options": {
-      "a": "p 6 (B) p 3",
-      "c": "5 6p",
-      "d": "11 6p"
-    },
-    "answer": "Option (A) is correct.\n Explanation : Since, cot.co\n//\nθθ θ sec2\n42\nd\npp\n∫\n Let cot θ = t\n – cosec2 θ dθ = dt\n θ =\n p\n4, t = 1 θ = p\n2,\n t = 0\n So, I = td t()−∫\n10\n I = −∫tdt\n01\n = t2\n01\n2\n\n\n\n\n = 1\n2",
-    "section": "A",
-    "marks": 1,
-    "chapter": "Vector Algebra",
-    "type": "MCQ"
-  },
-  {
-    "id": "2024_14",
-    "year": 2024,
-    "question_number": 14,
-    "question": "The cartesian equation of a line passing through the \npoint with position vector ai j→\n=−^^\n and parallel to \nthe line ri ki j→\n=+ +−^^ ^^() , µ2i s\n11\n01 (B) xy z −=+\n−=1\n21\n10\n−=1\n21\n10 (D) xy z −=−=− 1\n211\n0SECTION B",
-    "options": {
-      "a": "xy z −=+=2 11 01 (B) xy z −=+ −=1 21 10",
-      "c": "xy z +=+ −=1 21 10 (D) xy z −=−=− 1 211 0SECTION B"
-    },
-    "answer": "Option (B) is correct.\n Explanation : ri jk xi jk→\n=+ ++ −+^^ ^^ ^^()30\n a1 = 3, b1 = – 1, c1 = 0\n On checking options one by one taking option (B) as \na2 = 1, b2 = 3, c2 = 5\n We know that, vector perpendicular to line, only \nwhen\n a1a2 + b1b2 + c1c2 = 0\n = (3) (1) + (–1)(3) + (0) (5)\n = 3 – 3 + 0\n = 0",
-    "section": "A",
-    "marks": 1,
-    "chapter": "Vector Algebra",
-    "type": "MCQ"
-  },
-  {
-    "id": "2024_15",
-    "year": 2024,
-    "question_number": 15,
-    "question": "The position vectors of points P and Q are p→\n and q→\n \nrespectively. The point R divides line segment PQ in \nthe ratio 3 : 1 and S is the mid-point of line segment PR. The position vector of S is\n+3\n4 (B)\n pq→→\n+3\n8\n 53\n4pq→→\n+\n 53\n8pq→→\n+",
-    "options": {
-      "a": "pq→→ +3 4 (B) pq→→ +3 8",
-      "c": "53 4pq→→ +",
-      "d": "53 8pq→→ +"
-    },
-    "answer": "Option (C) is correct.\n Explanation : \n L1 : 1\n2−x\n =\n yz−=1\n31\n x−\n−1\n2 =\n yz−=1\n31 ...(i)\n2x\np−\n =\n yz\n−=−\n14\n7\n x\nP−3\n2\n =\n yz\n−=−\n14\n7 ...(ii)\n On Comparing with\n xx\na−1\n =\n yy\nbzz\nc−=−11\n Direction ratio of line (i) are \n a1 = – 2, b1 = 3, c1 = 1\n Direction ratio of line (ii) are \n a2 = p, b2 = –1, c2 = 7\n when L1 ^ L2 then a1 a2 + b1 b2 + c1 c2 = 0\n – 2× p + 3 × (– 1) + 1 × 7 = 0\n – 2p – 3 + 7 = 0\n – 2p + 4 = 0\n p = 2",
-    "section": "A",
-    "marks": 1,
-    "chapter": "Vector Algebra",
-    "type": "MCQ"
-  },
-  {
-    "id": "2024_37",
-    "year": 2024,
-    "question_number": 37,
-    "question": "An instructor at the astronomical centre shows three among the brightest stars in a particular constellation. Assume that the telescope is located at O (0, 0, 0) and the three stars have their locations at the points \nD, A and V having position vectors \n234ij k^^ ^, ++\n75 8 ij k^^ ^, ++ and −+ + 37 11 ij k^^ ^\n respectively.\nV\nA D\n Based on the above information, answer the \nfollowing questions:\n (i) How far is the star V from star A ?\n (ii) Find a unit vector in the direction of DA→\n.\n (iii) Find the measure of ∠VDA. \nOR\n (iii) What is the projection of vector DV→\n on vector DA→\n ?",
-    "options": {},
-    "answer": "(i) Distance between VA\n VA→\n = P .V . of A – P .V . of V\n = () ()^^ ^^ ^^75 83 71 1 ij ki jk ++ −− ++\n VA→\n = 10 23 ij k^^ ^−−\n ||VA→\n = 100 49++ = 113\n (ii) Unit vector in direction DA→\n = DA\nDA→\n→\n||\n DA→\n = P .V . of A – P .V . of D\n = () ()^^ ^^ ^^75 8 234 ij ki jk ++ −+ +\n DA→\n = 52 4 ij k^^ ^++\n unit vector = 52 4\n25416ij k^^ ^++\n++\n = 52 4\n45ij k^^ ^++\n (iii) Angle of ∠VDA\n Let DA→\n = a→\n DV→\n = b→\n So a→\n = 52 4 ij k^^ ^++\n b→\n = −+ + 547ij k^^ ^\n Angle cos θ = ab\nab→→\n→→.\n|| ||\n = −+ +\n++ ++25 82 8\n25 41 6251 64 9\n cos θ = 11\n45 90 =\n 11\n452\n θ =\n cos−\n\n111\n452\nOR\n (iii) Projection of vector DV→\n on vector DA→\n = DV DA\nDA→→\n→.\n||\n = 11\n45\nSolved Paper - 2024 38. Let P(R) = 1\n5\n P(J) = 1\n3\n P(A) = 1\n4\n (i) At least one of them is selected\n = 1 – P(R–) P(J–) P(A–)\n = 14\n52\n33\n4−× ×\n = 12\n5−\n =\n 3\n5\n (ii) Given, G is the event of Jaspreet's selection\n P(G) =\n 1\n3\n H–: Rohit is not selected\n P(H–) = 4\n5;\n P(H) = 1\n5\n PG\nH\n\n\n = PG H\nPH()\n()∩\n P(G ∩ H–) = P(G) – P(G ∩ H) = 1\n31\n31\n5−×\n =\n 4\n15\n PG\nH\n\n\n =\n 4\n15\n4\n5\n PG\nH\n\n\n =\n 1\n3\n (iii) Exactly one of them is selected\n = P(R) P(J–) P(A–) + P(R–) P(J) P(A–) + P(R–) P(J–) R(A)\n = 1\n52\n33\n44\n51\n33\n44\n52\n31\n4×× +× ×+ ××\n = 6\n6012\n608\n60++\n = 26\n60\nOR\n Exactly two of them is selected\n = P(R) P(J) P(A–) + P(R) P(J–) P(A) + P (R–) P(J) R(A)\n = 1\n51\n33\n41\n52\n31\n44\n51\n31\n4×× +× ×+ ××\n = 3\n602\n604\n60++\n = 9\n60\nOutside Delhi Set-2 65/4/2",
-    "section": "E",
-    "marks": 4,
-    "chapter": "Vector Algebra",
-    "type": "Case Study"
   },
   {
     "id": "2025_2",
@@ -4664,18 +4305,6 @@
     "options": {},
     "answer": "",
     "section": "D",
-    "marks": 6,
-    "chapter": "Three Dimensional Geometry",
-    "type": "LA-II"
-  },
-  {
-    "id": "2018_21",
-    "year": 2018,
-    "question_number": 21,
-    "question": "Find the shortest distance between the lines\n ri ji jk→∧ ∧∧ ∧∧\n=− ++ − () () 42 3λ λ and \n ri jk ij k→∧ ∧∧ ∧∧ ∧\n=− ++ +− () () . 22 45∝ ∝",
-    "options": {},
-    "answer": "Ans. Here a1\n = 4ij−, a2\n = ij k −+ 2 1\n a2\n – a1\n = −+32ik 1\n bb12 \n×\n =\n ij k\nij \n12 3\n24 52 −\n−=− 1\n Shortest distance = aa bb\nbb \n211 2\n12−() ×()\n×·\n = −=6\n565\n5 1\n [CBSE Marking Scheme, 2018]",
-    "section": "C",
     "marks": 6,
     "chapter": "Three Dimensional Geometry",
     "type": "LA-II"
@@ -4803,18 +4432,6 @@
     "is_important": true
   },
   {
-    "id": "2023_5",
-    "year": 2023,
-    "question_number": 5,
-    "question": "Find the vector equation of \nthe line l. Hence, obtain its distance from origin.",
-    "options": {},
-    "answer": "Sol. (a) \n Equation of the diagonal PR\n xx\nxx−\n−1\n21 =\n yy\nyy−\n−1\n21 =\n zz\nzz−\n−1\n21\n x−4\n8 =\n y−2\n2 =\n z+6\n11\n Equation of the diagonal QS\n x−5\n6 =\n y+\n+3\n12 =\n z−\n−1\n3\n or x−5\n2 = y+3\n4 =\n z−\n−1\n1\n General point on the diagonal PR \n = (8l + 4, 2l + 2, 11l – 6)\n General point on the diagonal QS\n = 2m + 5, 4m – 3, – m + 1\n Intersection point of PR and QS\n 8l + 4 = 2 m + 5, 2l + 2 = 4 m – 3, 11l – 6 = – m + 1\n 8l – 2m = 1 11l + m = 7\n 2l – 4m = – 5 11l + m = 7 is\n 14l = 7 Satisfies these values\n l = 1\n2 and m =\n 3\n2\n So intersection point of diagonals or mid point of \ndiagonals is = 44 1211\n26 ++ −\n\n , , \n =\n 831\n2, , −\n\n\nOR\n (b) Let the direction ratio of the line be ( a, b, c)\n Equation of the line passes through (–1, 3, –2)\n x\na+1\n =\n y\nb−3\n =\n z\nc+2\n Line is perpendicular to the given line\n ∴ a + 2b + 3c = 0\n – 3a + 2b + 5c = 0\n a\n4 =\n b\n−14 =\n c\n8\n or a\n2 =\n b\n−7 = c\n4\n Required line\n x+1\n2 =\n y−\n−3\n7 =\n z+2\n4\n Vector form\n = −+ −+ −+ ij ki jk^^ ^^ ^^() 32 27 4 λ\n General point on the line\n = (2l – 1, –7l + 3, 4l – 2)\n Direction ratio of the line passing through origin \nand (2l – 1, – 7l + 3, 4l – 2)\n ∴ (2l – 1) + (– 7) (– 7 l + 3) + 4(4 l – 2) = 0\n 4l – 2 + 49 l – 21 + 16 l – 8 = 0\n 69l – 31 = 0\n l =\n 31\n69\n Foot of perpendicular from origin on the line is \n−− − 7\n6910\n6914\n69, , \n Distance from origin =\n −\n\n+−\n\n+−\n\n7\n6910\n6914\n6922 2\n =\n 49 100 196\n692++\n = 345\n69 = 5\n69 units",
-    "section": "D",
-    "marks": 5,
-    "chapter": "Three Dimensional Geometry",
-    "type": "LA"
-  },
-  {
     "id": "2023_7",
     "year": 2023,
     "question_number": 7,
@@ -4934,18 +4551,6 @@
     "marks": 2,
     "chapter": "Three Dimensional Geometry",
     "type": "VSA"
-  },
-  {
-    "id": "2024_34",
-    "year": 2024,
-    "question_number": 34,
-    "question": "(a) Find the co-ordinates of the foot of the \nperpendicular drawn from the point (2, 3, – 8) to the \nline\n 4\n261\n3−==− xy z.\nOR\n (b). Find the shortest distance between the lines L1 & L2 \ngiven below:\n L1 : The line passing through (2, –1, 1) and parallel to \nxy z\n11 3= =\n L2 : ri jk→\n=+ +− +^^ ^() () . 21 2 mm",
-    "options": {},
-    "answer": "(a) Given line is 4\n261\n3−==− xy z\n or, x−\n−4\n2 =\n yz\n61\n3=−\n−=λ\n Now, the co-ordinates of any points Q on the line \nare (–2 l + 4, 6 l, –3l + 1).\n Also, the given point is p(2, 3, –8)\n The direction ratios of PQ are –2 l + 4 – 2, 6l –3, – 3l \n+ 1 + 8 i.e., –2l + 2, 6 l –3, –3 l + 9\n Also, the direction cosines of the given line are –2, 6, \n–3.\n If PQ ^ line, then\n – 2(–2 l + 2) + 6(6 l –3) – 3 (–3 l + 9) = 0\n 4l – 4 + 36 l – 18 + 9 l – 27 = 0\n 49l – 49 = 0\n l = 1\n Now, the foot of the perpendicular is\n [–2(1) + 4, 6(1), –3(1) + 1] i.e., (2, 6, –2)\n Hence, the distance PQ is\nSolved Paper - 2024 = () () () 22 36 8222 2−+ −+ −+\n = 093 64 53 5 ++ == units\nOR\n (b) Given, L1: The line passing through (2, –1, 1) and \nparallel to xy z\n11 3= =\n ...(i)\n Direction ratios of line (i) are (1, 1, 3)\n \\ Vector equation of line passing through (2, –1, 1) \nhaving direction ratios is\n r→\n = () ()^^ ^^ ^^23ij ki jk −+ ++ + λ ...(ii)\n Given, L2: r→\n = ij k^^ ^() () ++ −+ 31 2 mm\n or, r→\n = () ()^^ ^^ ^ij kj k +− +−23 m ...(iii)\n Now, shortest distance between lines (ii) & (iii) is \ngiven by\n d = () .( )\n||bb aa\nbb→→ →→\n→→××\n×12 21\n12\n Here, a1→\n = () ()^^ ^^ ^^222 ij ka ij k −+ =+ −→\n b1→\n = () ,( )^^ ^^ ^ij kb jk ++ =−→\n332\n Now, aa21→→\n− = () () ()^^ ^12 11 21 −+ ++ −− ij k \n = −+ − ij k^^ ^23\n bb12→→\n× = ij k^^ ^\n11 3\n03 1−\n =ij k^^ ^() () () −− −− −+ − 19 10 30\n = −+ + 10 3 ij k^^ ^\n and bb→→\n×12\n =\n () () () −+ + 10 1322 2\n = 100 19++\n = 110\n \\ d =\n () ()^^ ^^ ^^−+ −− ++ ij ki jk 23 10 3\n110\n = 10 23\n110 110+−=9unit",
-    "section": "D",
-    "marks": 5,
-    "chapter": "Three Dimensional Geometry",
-    "type": "LA"
   },
   {
     "id": "2024_36",
@@ -5932,20 +5537,6 @@
     "chapter": "Probability",
     "type": "VSA",
     "is_important": false
-  },
-  {
-    "id": "2024_17",
-    "year": 2024,
-    "question_number": 17,
-    "question": "The probability distribution of a random variable X \nis\nX 0 1 2 3 4\nP(X) 0.1 k 2k k 0.1\n Where k is some unknown constant.\n The probability that the random variable X takes the \nvalue 2 is\nSolved Paper - 2024 (A)\n 1\n5 (B)\n 2\n5\n 4\n5 (D) 1",
-    "options": {
-      "c": "4 5 (D) 1"
-    },
-    "answer": "Option (D) is correct.\n Explanation : Given line is\n r→\n = () ()^^ ^22 1 ++ +− λλ λ ij k\n r→\n = () ()^^ ^^ ^22ik ij k −+ ++λ\n which is of the form\n r→\n = ab+→\nλ \n \\ Required line is \n x−1\n1 =\n yz+=− 3\n12\n2\n [As lines passes through (1, –3, 2) and having \nDirection cosines (1, 1, 2)]",
-    "section": "A",
-    "marks": 1,
-    "chapter": "Probability",
-    "type": "MCQ"
   },
   {
     "id": "2024_31",
