@@ -16,12 +16,12 @@ export function ProgressBar({ value, max, className, color = "bg-blue-500", show
   return (
     <div className={cn("w-full", className)}>
       {showLabel && (
-        <div className="flex justify-between text-xs text-slate-500 dark:text-slate-400 mb-1">
+        <div className="flex justify-between text-xs text-slate-500 mb-1">
           <span>{value} solved</span>
           <span>{pct}%</span>
         </div>
       )}
-      <div className="h-2 w-full rounded-full bg-slate-100 dark:bg-slate-800 overflow-hidden">
+      <div className="h-2 w-full rounded-full bg-slate-100 overflow-hidden">
         <div
           className={cn("h-full rounded-full transition-all duration-500", color)}
           style={{ width: `${pct}%` }}

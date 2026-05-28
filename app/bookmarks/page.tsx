@@ -30,8 +30,8 @@ export default function BookmarksPage() {
           <Bookmark className="size-5" />
         </div>
         <div>
-          <h1 className="text-xl font-bold text-slate-900 dark:text-white">Bookmarks</h1>
-          <p className="text-sm text-slate-500 dark:text-slate-400">
+          <h1 className="text-xl font-bold text-slate-900">Bookmarks</h1>
+          <p className="text-sm text-slate-500">
             Your saved questions
           </p>
         </div>
@@ -51,7 +51,7 @@ export default function BookmarksPage() {
       ) : (
         <div className="space-y-4">
           {[...Array(3)].map((_, i) => (
-            <div key={i} className="h-32 rounded-2xl bg-slate-100 dark:bg-slate-800 animate-pulse" />
+            <div key={i} className="h-32 rounded-2xl bg-slate-100 animate-pulse" />
           ))}
         </div>
       )}

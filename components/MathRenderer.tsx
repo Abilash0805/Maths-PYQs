@@ -26,7 +26,7 @@ export function MathRenderer({ text, className }: MathRendererProps) {
         }
         if (part.type === "inline-math") {
           return (
-            <span key={i} className="font-mono text-sm bg-slate-100 dark:bg-slate-800 px-1 rounded">
+            <span key={i} className="font-mono text-sm bg-slate-100 px-1 rounded">
               {renderMathFallback(part.content, false)}
             </span>
           );

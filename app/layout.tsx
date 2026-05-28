@@ -30,10 +30,10 @@ export default function RootLayout({
   const stats = getChapterStats();
 
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         <Providers>
-          <div className="flex h-screen bg-slate-50 dark:bg-slate-950 overflow-hidden">
+          <div className="flex h-screen bg-slate-50 overflow-hidden">
             {/* Desktop Sidebar */}
             <div className="hidden lg:flex">
               <Sidebar stats={stats} />

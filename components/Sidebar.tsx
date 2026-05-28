@@ -35,30 +35,30 @@ export function Sidebar({ stats, isOpen = true, onClose }: SidebarProps) {
   return (
     <aside
       className={cn(
-        "flex flex-col h-full bg-white dark:bg-slate-900 border-r border-slate-200 dark:border-slate-800",
+        "flex flex-col h-full bg-white border-r border-slate-200",
         "w-72 shrink-0"
       )}
     >
       {/* Logo */}
-      <div className="flex items-center justify-between px-5 py-4 border-b border-slate-200 dark:border-slate-800">
+      <div className="flex items-center justify-between px-5 py-4 border-b border-slate-200">
         <Link href="/" className="flex items-center gap-2.5 group">
-          <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-gradient-to-br from-blue-500 to-indigo-600 text-white text-sm font-bold shadow-md group-hover:shadow-blue-200 dark:group-hover:shadow-blue-900 transition-shadow">
+          <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-gradient-to-br from-blue-500 to-indigo-600 text-white text-sm font-bold shadow-md group-hover:shadow-blue-200 transition-shadow">
             M
           </div>
           <div>
-            <p className="text-sm font-bold text-slate-900 dark:text-white leading-none">MathsPYQ</p>
-            <p className="text-xs text-slate-500 dark:text-slate-400 leading-none mt-0.5">CBSE Class 12</p>
+            <p className="text-sm font-bold text-slate-900 leading-none">MathsPYQ</p>
+            <p className="text-xs text-slate-500 leading-none mt-0.5">CBSE Class 12</p>
           </div>
         </Link>
         {onClose && (
-          <button onClick={onClose} className="p-1.5 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800 text-slate-500 lg:hidden">
+          <button onClick={onClose} className="p-1.5 rounded-lg hover:bg-slate-100 text-slate-500 lg:hidden">
             <X className="size-4" />
           </button>
         )}
       </div>
 
       {/* Navigation */}
-      <div className="px-3 py-3 border-b border-slate-200 dark:border-slate-800">
+      <div className="px-3 py-3 border-b border-slate-200">
         {navLinks.map(({ href, label, icon: Icon }) => (
           <Link
             key={href}
@@ -66,8 +66,8 @@ export function Sidebar({ stats, isOpen = true, onClose }: SidebarProps) {
             className={cn(
               "flex items-center gap-3 px-3 py-2 rounded-lg text-sm font-medium transition-colors mb-0.5",
               pathname === href
-                ? "bg-blue-50 dark:bg-blue-950/40 text-blue-700 dark:text-blue-400"
-                : "text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800 hover:text-slate-900 dark:hover:text-slate-100"
+                ? "bg-blue-50 text-blue-700"
+                : "text-slate-600 hover:bg-slate-100 hover:text-slate-900"
             )}
           >
             <Icon className="size-4 shrink-0" />
@@ -78,7 +78,7 @@ export function Sidebar({ stats, isOpen = true, onClose }: SidebarProps) {
 
       {/* Chapters */}
       <div className="flex-1 overflow-y-auto px-3 py-3">
-        <p className="text-xs font-semibold text-slate-400 dark:text-slate-500 uppercase tracking-wider px-3 mb-2">
+        <p className="text-xs font-semibold text-slate-400 uppercase tracking-wider px-3 mb-2">
           Chapters
         </p>
         <div className="space-y-0.5">
@@ -96,8 +96,8 @@ export function Sidebar({ stats, isOpen = true, onClose }: SidebarProps) {
                 className={cn(
                   "flex items-center gap-2.5 px-3 py-2 rounded-lg text-sm transition-colors group",
                   isActive
-                    ? "bg-blue-50 dark:bg-blue-950/40 text-blue-700 dark:text-blue-400"
-                    : "text-slate-600 dark:text-slate-400 hover:bg-slate-50 dark:hover:bg-slate-800 hover:text-slate-900 dark:hover:text-slate-100"
+                    ? "bg-blue-50 text-blue-700"
+                    : "text-slate-600 hover:bg-slate-50 hover:text-slate-900"
                 )}
               >
                 <div
@@ -110,7 +110,7 @@ export function Sidebar({ stats, isOpen = true, onClose }: SidebarProps) {
                 </div>
                 <span className="flex-1 text-xs font-medium leading-tight">{chapter}</span>
                 {stat && (
-                  <span className="text-xs text-slate-400 dark:text-slate-600 font-mono shrink-0">
+                  <span className="text-xs text-slate-400 font-mono shrink-0">
                     {stat.total}
                   </span>
                 )}
@@ -121,8 +121,8 @@ export function Sidebar({ stats, isOpen = true, onClose }: SidebarProps) {
       </div>
 
       {/* Bottom stats */}
-      <div className="px-5 py-3 border-t border-slate-200 dark:border-slate-800">
-        <p className="text-xs text-slate-500 dark:text-slate-400">
+      <div className="px-5 py-3 border-t border-slate-200">
+        <p className="text-xs text-slate-500">
           {stats.reduce((a, b) => a + b.total, 0)} questions · 2015–2025
         </p>
       </div>

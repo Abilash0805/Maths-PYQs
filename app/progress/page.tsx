@@ -40,35 +40,35 @@ export default function ProgressPage() {
           <TrendingUp className="size-5" />
         </div>
         <div>
-          <h1 className="text-xl font-bold text-slate-900 dark:text-white">My Progress</h1>
-          <p className="text-sm text-slate-500 dark:text-slate-400">Track your practice progress</p>
+          <h1 className="text-xl font-bold text-slate-900">My Progress</h1>
+          <p className="text-sm text-slate-500">Track your practice progress</p>
         </div>
       </div>
 
       {/* Overall stats */}
       <div className="grid grid-cols-3 gap-4">
-        <div className="rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-4 text-center">
+        <div className="rounded-xl border border-slate-200 bg-white p-4 text-center">
           <CheckCircle2 className="size-6 text-green-500 mx-auto mb-1" />
-          <div className="text-2xl font-bold text-slate-900 dark:text-white">{totalSolved}</div>
-          <div className="text-xs text-slate-500 dark:text-slate-400">Solved</div>
+          <div className="text-2xl font-bold text-slate-900">{totalSolved}</div>
+          <div className="text-xs text-slate-500">Solved</div>
         </div>
-        <div className="rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-4 text-center">
+        <div className="rounded-xl border border-slate-200 bg-white p-4 text-center">
           <Bookmark className="size-6 text-amber-500 mx-auto mb-1" />
-          <div className="text-2xl font-bold text-slate-900 dark:text-white">{totalBookmarked}</div>
-          <div className="text-xs text-slate-500 dark:text-slate-400">Bookmarked</div>
+          <div className="text-2xl font-bold text-slate-900">{totalBookmarked}</div>
+          <div className="text-xs text-slate-500">Bookmarked</div>
         </div>
-        <div className="rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-4 text-center">
+        <div className="rounded-xl border border-slate-200 bg-white p-4 text-center">
           <Trophy className="size-6 text-purple-500 mx-auto mb-1" />
-          <div className="text-2xl font-bold text-slate-900 dark:text-white">{overallPct}%</div>
-          <div className="text-xs text-slate-500 dark:text-slate-400">Complete</div>
+          <div className="text-2xl font-bold text-slate-900">{overallPct}%</div>
+          <div className="text-xs text-slate-500">Complete</div>
         </div>
       </div>
 
       {/* Overall progress */}
-      <div className="rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-5">
+      <div className="rounded-xl border border-slate-200 bg-white p-5">
         <div className="flex items-center justify-between mb-3">
-          <h2 className="font-semibold text-slate-900 dark:text-white">Overall Progress</h2>
-          <span className="text-sm text-slate-500 dark:text-slate-400">
+          <h2 className="font-semibold text-slate-900">Overall Progress</h2>
+          <span className="text-sm text-slate-500">
             {totalSolved}/{totalQuestions}
           </span>
         </div>
@@ -78,14 +78,14 @@ export default function ProgressPage() {
           color="bg-gradient-to-r from-blue-500 to-indigo-500"
           showLabel={false}
         />
-        <p className="mt-2 text-xs text-slate-500 dark:text-slate-400">
+        <p className="mt-2 text-xs text-slate-500">
           {totalQuestions - totalSolved} questions remaining
         </p>
       </div>
 
       {/* Chapter-wise progress */}
       <div>
-        <h2 className="text-base font-bold text-slate-900 dark:text-white mb-4">Chapter Progress</h2>
+        <h2 className="text-base font-bold text-slate-900 mb-4">Chapter Progress</h2>
         <div className="space-y-3">
           {CHAPTERS.map((chapter) => {
             const stat = chapterStats.find((s) => s.chapter === chapter);
@@ -100,7 +100,7 @@ export default function ProgressPage() {
               <Link
                 key={chapter}
                 href={`/chapter/${encodeURIComponent(chapter)}`}
-                className="flex items-center gap-3 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-4 hover:shadow-sm transition-shadow"
+                className="flex items-center gap-3 rounded-xl border border-slate-200 bg-white p-4 hover:shadow-sm transition-shadow"
               >
                 <div
                   className={cn(
@@ -112,10 +112,10 @@ export default function ProgressPage() {
                 </div>
                 <div className="flex-1 min-w-0">
                   <div className="flex items-center justify-between mb-1.5">
-                    <span className="text-sm font-medium text-slate-800 dark:text-slate-200 truncate">
+                    <span className="text-sm font-medium text-slate-800 truncate">
                       {chapter}
                     </span>
-                    <span className="text-xs text-slate-500 dark:text-slate-400 ml-2 shrink-0">
+                    <span className="text-xs text-slate-500 ml-2 shrink-0">
                       {solved}/{total}
                     </span>
                   </div>

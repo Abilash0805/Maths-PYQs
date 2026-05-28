@@ -64,16 +64,16 @@ export const CHAPTER_COLORS: Record<string, string> = {
 };
 
 export const CHAPTER_BG: Record<string, string> = {
-  "Relations and Functions": "bg-blue-50 dark:bg-blue-950/30 border-blue-200 dark:border-blue-800",
-  "Inverse Trigonometric Functions": "bg-purple-50 dark:bg-purple-950/30 border-purple-200 dark:border-purple-800",
-  "Matrices": "bg-emerald-50 dark:bg-emerald-950/30 border-emerald-200 dark:border-emerald-800",
-  "Determinants": "bg-teal-50 dark:bg-teal-950/30 border-teal-200 dark:border-teal-800",
-  "Continuity and Differentiability": "bg-orange-50 dark:bg-orange-950/30 border-orange-200 dark:border-orange-800",
-  "Application of Derivatives": "bg-rose-50 dark:bg-rose-950/30 border-rose-200 dark:border-rose-800",
-  "Integrals": "bg-indigo-50 dark:bg-indigo-950/30 border-indigo-200 dark:border-indigo-800",
-  "Differential Equations": "bg-cyan-50 dark:bg-cyan-950/30 border-cyan-200 dark:border-cyan-800",
-  "Vector Algebra": "bg-violet-50 dark:bg-violet-950/30 border-violet-200 dark:border-violet-800",
-  "Three Dimensional Geometry": "bg-amber-50 dark:bg-amber-950/30 border-amber-200 dark:border-amber-800",
-  "Linear Programming": "bg-lime-50 dark:bg-lime-950/30 border-lime-200 dark:border-lime-800",
-  "Probability": "bg-pink-50 dark:bg-pink-950/30 border-pink-200 dark:border-pink-800",
+  "Relations and Functions": "bg-blue-50 border-blue-200",
+  "Inverse Trigonometric Functions": "bg-purple-50 border-purple-200",
+  "Matrices": "bg-emerald-50 border-emerald-200",
+  "Determinants": "bg-teal-50 border-teal-200",
+  "Continuity and Differentiability": "bg-orange-50 border-orange-200",
+  "Application of Derivatives": "bg-rose-50 border-rose-200",
+  "Integrals": "bg-indigo-50 border-indigo-200",
+  "Differential Equations": "bg-cyan-50 border-cyan-200",
+  "Vector Algebra": "bg-violet-50 border-violet-200",
+  "Three Dimensional Geometry": "bg-amber-50 border-amber-200",
+  "Linear Programming": "bg-lime-50 border-lime-200",
+  "Probability": "bg-pink-50 border-pink-200",
 };

@@ -15,7 +15,7 @@ const buttonVariants = cva(
         ghost: "hover:bg-accent hover:text-accent-foreground",
         link: "text-primary underline-offset-4 hover:underline",
         success: "bg-green-600 text-white shadow-sm hover:bg-green-700 active:scale-95",
-        bookmark: "border border-amber-300 bg-amber-50 text-amber-700 hover:bg-amber-100 dark:border-amber-700 dark:bg-amber-950/30 dark:text-amber-400 dark:hover:bg-amber-900/30",
+        bookmark: "border border-amber-300 bg-amber-50 text-amber-700 hover:bg-amber-100",
       },
       size: {
         default: "h-9 px-4 py-2",

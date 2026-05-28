@@ -20,8 +20,8 @@ export default function ImportantPage() {
             <Star className="size-5" />
           </div>
           <div>
-            <h1 className="text-xl font-bold text-slate-900 dark:text-white">Important Questions</h1>
-            <p className="text-sm text-slate-500 dark:text-slate-400">
+            <h1 className="text-xl font-bold text-slate-900">Important Questions</h1>
+            <p className="text-sm text-slate-500">
               Long answer (5-mark) and marked important questions
             </p>
           </div>
@@ -43,8 +43,8 @@ export default function ImportantPage() {
               <TrendingUp className="size-5" />
             </div>
             <div>
-              <h2 className="text-xl font-bold text-slate-900 dark:text-white">Frequently Repeated</h2>
-              <p className="text-sm text-slate-500 dark:text-slate-400">
+              <h2 className="text-xl font-bold text-slate-900">Frequently Repeated</h2>
+              <p className="text-sm text-slate-500">
                 Questions that appeared in multiple years
               </p>
             </div>

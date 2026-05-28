@@ -56,8 +56,8 @@ export default async function ChapterPage({ params }: Props) {
             {icon}
           </div>
           <div className="flex-1">
-            <h1 className="text-xl font-bold text-slate-900 dark:text-white mb-1">{decoded}</h1>
-            <p className="text-sm text-slate-500 dark:text-slate-400 mb-3">
+            <h1 className="text-xl font-bold text-slate-900 mb-1">{decoded}</h1>
+            <p className="text-sm text-slate-500 mb-3">
               CBSE Class 12 Mathematics — Chapter-wise PYQs
             </p>
             <div className="flex flex-wrap gap-2">
@@ -79,7 +79,7 @@ export default async function ChapterPage({ params }: Props) {
             return (
               <span
                 key={y}
-                className="inline-flex items-center gap-1 rounded-full border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 px-3 py-1 text-xs font-medium text-slate-600 dark:text-slate-300"
+                className="inline-flex items-center gap-1 rounded-full border border-slate-200 bg-white px-3 py-1 text-xs font-medium text-slate-600"
               >
                 {y} <span className="text-slate-400">({cnt})</span>
               </span>

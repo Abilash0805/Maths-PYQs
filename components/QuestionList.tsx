@@ -71,7 +71,7 @@ export function QuestionList({ questions, showChapter = false, title, emptyMessa
       {/* Header */}
       {title && (
         <div className="flex items-center justify-between">
-          <h2 className="text-lg font-bold text-slate-900 dark:text-white">{title}</h2>
+          <h2 className="text-lg font-bold text-slate-900">{title}</h2>
           <Badge variant="outline">{filtered.length} questions</Badge>
         </div>
       )}
@@ -121,10 +121,10 @@ export function QuestionList({ questions, showChapter = false, title, emptyMessa
             transition={{ duration: 0.2 }}
             className="overflow-hidden"
           >
-            <div className="rounded-xl border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-800/50 p-4 space-y-3">
+            <div className="rounded-xl border border-slate-200 bg-slate-50 p-4 space-y-3">
               {/* Year filter */}
               <div>
-                <p className="text-xs font-semibold text-slate-500 dark:text-slate-400 uppercase tracking-wide mb-2">Year</p>
+                <p className="text-xs font-semibold text-slate-500 uppercase tracking-wide mb-2">Year</p>
                 <div className="flex flex-wrap gap-1.5">
                   {availableYears.map((y) => (
                     <button
@@ -134,7 +134,7 @@ export function QuestionList({ questions, showChapter = false, title, emptyMessa
                         "px-3 py-1 rounded-full text-xs font-medium transition-colors",
                         yearFilter === y
                           ? "bg-blue-600 text-white"
-                          : "bg-white dark:bg-slate-700 border border-slate-200 dark:border-slate-600 text-slate-600 dark:text-slate-300 hover:border-blue-300"
+                          : "bg-white border border-slate-200 text-slate-600 hover:border-blue-300"
                       )}
                     >
                       {y}
@@ -145,7 +145,7 @@ export function QuestionList({ questions, showChapter = false, title, emptyMessa
 
               {/* Marks filter */}
               <div>
-                <p className="text-xs font-semibold text-slate-500 dark:text-slate-400 uppercase tracking-wide mb-2">Marks</p>
+                <p className="text-xs font-semibold text-slate-500 uppercase tracking-wide mb-2">Marks</p>
                 <div className="flex flex-wrap gap-1.5">
                   {availableMarks.map((m) => (
                     <button
@@ -155,7 +155,7 @@ export function QuestionList({ questions, showChapter = false, title, emptyMessa
                         "px-3 py-1 rounded-full text-xs font-medium transition-colors",
                         marksFilter === m
                           ? "bg-blue-600 text-white"
-                          : "bg-white dark:bg-slate-700 border border-slate-200 dark:border-slate-600 text-slate-600 dark:text-slate-300 hover:border-blue-300"
+                          : "bg-white border border-slate-200 text-slate-600 hover:border-blue-300"
                       )}
                     >
                       {m}M
@@ -167,7 +167,7 @@ export function QuestionList({ questions, showChapter = false, title, emptyMessa
               {/* Type filter */}
               {availableTypes.length > 1 && (
                 <div>
-                  <p className="text-xs font-semibold text-slate-500 dark:text-slate-400 uppercase tracking-wide mb-2">Type</p>
+                  <p className="text-xs font-semibold text-slate-500 uppercase tracking-wide mb-2">Type</p>
                   <div className="flex flex-wrap gap-1.5">
                     {availableTypes.map((t) => (
                       <button
@@ -177,7 +177,7 @@ export function QuestionList({ questions, showChapter = false, title, emptyMessa
                           "px-3 py-1 rounded-full text-xs font-medium transition-colors",
                           typeFilter === t
                             ? "bg-blue-600 text-white"
-                            : "bg-white dark:bg-slate-700 border border-slate-200 dark:border-slate-600 text-slate-600 dark:text-slate-300 hover:border-blue-300"
+                            : "bg-white border border-slate-200 text-slate-600 hover:border-blue-300"
                         )}
                       >
                         {t}
@@ -202,8 +202,8 @@ export function QuestionList({ questions, showChapter = false, title, emptyMessa
 
       {/* Results count */}
       {(search || activeFilters > 0) && (
-        <p className="text-sm text-slate-500 dark:text-slate-400">
-          Found <strong className="text-slate-900 dark:text-slate-100">{filtered.length}</strong> questions
+        <p className="text-sm text-slate-500">
+          Found <strong className="text-slate-900">{filtered.length}</strong> questions
         </p>
       )}
 
@@ -218,7 +218,7 @@ export function QuestionList({ questions, showChapter = false, title, emptyMessa
               className="flex flex-col items-center justify-center py-16 text-center"
             >
               <div className="text-4xl mb-3">📚</div>
-              <p className="text-slate-500 dark:text-slate-400 text-sm">
+              <p className="text-slate-500 text-sm">
                 {emptyMessage || "No questions found"}
               </p>
               {(search || activeFilters > 0) && (

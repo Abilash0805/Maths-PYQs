@@ -16,8 +16,8 @@ export default function SearchPage() {
           <Search className="size-5" />
         </div>
         <div>
-          <h1 className="text-xl font-bold text-slate-900 dark:text-white">Search Questions</h1>
-          <p className="text-sm text-slate-500 dark:text-slate-400">
+          <h1 className="text-xl font-bold text-slate-900">Search Questions</h1>
+          <p className="text-sm text-slate-500">
             Search across all {questions.length} questions
           </p>
         </div>
