@@ -1,9 +1,8 @@
 "use client";
 
 import React, { useState } from "react";
-import { Menu, BookOpen } from "lucide-react";
+import { Menu } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { ThemeToggle } from "./ThemeToggle";
 import { Sidebar } from "./Sidebar";
 import { cn } from "@/lib/utils";
 
@@ -16,7 +15,7 @@ export function MobileHeader({ stats }: MobileHeaderProps) {
 
   return (
     <>
-      <header className="lg:hidden sticky top-0 z-40 bg-white/80 dark:bg-slate-900/80 backdrop-blur border-b border-slate-200 dark:border-slate-800 px-4 py-3 flex items-center gap-3">
+      <header className="lg:hidden sticky top-0 z-40 bg-white/80 backdrop-blur border-b border-slate-200 px-4 py-3 flex items-center gap-3">
         <Button variant="ghost" size="icon" onClick={() => setSidebarOpen(true)}>
           <Menu className="size-5" />
         </Button>
@@ -24,10 +23,7 @@ export function MobileHeader({ stats }: MobileHeaderProps) {
           <div className="flex h-7 w-7 items-center justify-center rounded-lg bg-gradient-to-br from-blue-500 to-indigo-600 text-white text-xs font-bold">
             M
           </div>
-          <span className="font-bold text-sm text-slate-900 dark:text-white">MathsPYQ</span>
-        </div>
-        <div className="ml-auto">
-          <ThemeToggle />
+          <span className="font-bold text-sm text-slate-900">MathsPYQ</span>
         </div>
       </header>
 
