@@ -24,35 +24,46 @@ from pathlib import Path
 CHAPTER_KEYWORDS = {
     "Relations and Functions": [
         "injective", "surjective", "bijective", "one-one", "onto",
-        "reflexive relation", "symmetric relation", "transitive",
-        "equivalence relation", "domain", "range", "codomain",
-        "composite function", "many-one", "into function",
-        r"\brelation\b", r"\bfunction\b", "f : ", "f:",
+        "reflexive", "equivalence relation", "equivalence class",
+        "domain", "range", "codomain",
+        "composite function", "many-one", "binary operation",
+        r"\brelation\b", r"\bfunction\b",
     ],
     "Inverse Trigonometric Functions": [
-        "sin-1", "cos-1", "tan-1", "sin-1", "cos-1", "tan-1",
-        "sin-1", "cos-1", "tan-1",
+        "sin-1", "cos-1", "tan-1", "cot-1", "sec-1",
         "arcsin", "arccos", "arctan",
         "inverse trigonometric", "principal value",
+        r"sin\s*\^\s*\{?\-1\}?", r"cos\s*\^\s*\{?\-1\}?", r"tan\s*\^\s*\{?\-1\}?",
+        r"tan\s*-?\s*1[^0-9]", r"sin\s*-?\s*1[^0-9]", r"cos\s*-?\s*1[^0-9]",
+        r"tan.*–.*1", r"sin.*–.*1",
     ],
     "Matrices": [
         r"\bmatri[cx]\b", r"\bmatrices\b",
         "transpose", "symmetric matrix", "skew-symmetric", "skew symmetric",
-        r"order \d+\s*[x]\s*\d+",
         "identity matrix", "null matrix", "zero matrix",
+        r"\d+\s*x\s*\d+ matrix",
+        "scalar matrix", "diagonal matrix",
+        "order of matrix",
     ],
     "Determinants": [
-        r"\bdeterminant\b", r"\|A\|", r"\|adj",
-        "cofactor", "adjoint", "singular matrix", "non-singular",
-        "|adj A|", "adj A",
-        r"det\s*[\(\|]",
+        r"\bdeterminant\b",
+        "cofactor",
+        "adjoint of",
+        "singular matrix", "non-singular",
+        "properties of determinants",
+        "expand along",
+        r"\badj\s*[aA]\b",
+        r"A\s*\-1\b",
+        r"\|[A-Z]\|",
+        "det(",
     ],
     "Continuity and Differentiability": [
         r"\bcontinuous\b", r"\bcontinuity\b",
         r"\bdifferentiable\b", r"\bdifferentiability\b",
-        "rolle's theorem", "mean value theorem", "lagrange",
-        "dy/dx", "d2y",
+        "rolle's theorem", "mean value theorem",
         "implicit differentiation", "logarithmic differentiation",
+        "left hand derivative", "right hand derivative",
+        "lhd", "rhd", "lhl", "rhl",
     ],
     "Application of Derivatives": [
         r"\bincreasing\b", r"\bdecreasing\b",
@@ -60,34 +71,51 @@ CHAPTER_KEYWORDS = {
         r"\btangent\b", r"\bnormal to\b",
         "rate of change", r"\bslope\b",
         "optimiz", "stationary point", "critical point",
-        "local maximum", "local minimum", "absolute maximum",
+        "local maximum", "local minimum",
         "point of inflection",
+        "rate at which",
+        "monoton",
     ],
     "Integrals": [
         r"\bintegral\b", r"\bintegrate\b", r"\bintegration\b",
         "antiderivative", "area under",
         "definite integral", "indefinite integral",
         "by parts", "partial fractions",
+        r"\bdx\b", r"\bdy\b",
+        "area bounded", "area of region", "bounded by curve",
+        r"\bevaluate\b",
+        "area of the region", "find the area",
+        "x-axis between", "y-axis between",
+        "area enclosed",
     ],
     "Differential Equations": [
         "differential equation",
-        "d2y", "dy/dx",
         "general solution", "particular solution",
         "variable separable", "homogeneous equation",
         "linear differential", "integrating factor",
+        "order and degree",
+        r"dy/dx", r"d2y/dx",
     ],
     "Vector Algebra": [
         r"\bvector\b", r"\bvectors\b",
         "scalar product", "cross product", "dot product",
         r"\bcollinear\b", r"\bcoplanar\b",
-        "unit vector", "position vector", "magnitude of",
+        "unit vector", "position vector",
         "scalar triple product", "vector triple product",
+        "projection of",
+        "triangle law", "parallelogram law",
     ],
     "Three Dimensional Geometry": [
         "direction cosines", "direction ratios",
-        "distance from", "three dimensional", "3-d geometry",
+        "three dimensional", "3-d geometry",
         "equation of plane", "equation of line",
-        "skew lines", "shortest distance", "perpendicular distance",
+        "skew lines", "shortest distance",
+        "foot of perpendicular",
+        "makes angles.*axis", "angle.*coordinate",
+        "line passing through",
+        "distance from plane",
+        "parallel to z-axis", "parallel to x-axis", "parallel to y-axis",
+        "perpendicular to plane",
     ],
     "Linear Programming": [
         "linear programming", "objective function",
@@ -98,10 +126,12 @@ CHAPTER_KEYWORDS = {
     ],
     "Probability": [
         r"\bprobability\b", r"\bbayes\b",
-        r"\bconditional\b", "random variable",
-        r"\bP\(", r"\bevent\b", "independent events", "mutually exclusive",
+        "conditional probability", "random variable",
+        r"\bevent\b", "independent events", "mutually exclusive",
         "binomial distribution",
         "sample space",
+        r"\bp\(", r"\bp\(a\)", r"\bp\(b\)",
+        "bag", "ball", "card", "dice",
     ],
 }
 
@@ -247,9 +277,15 @@ def split_q_sol(block):
 
 # ─── Question-number pattern ───────────────────────────────────────────────────
 
-# Match ' 1. ' or '  12. ' at line start followed by word char or '('
-# The lookahead avoids matching standalone digit references in equations
-_Q_NUM_RE = re.compile(r'(?:^|\n)\s{0,4}\*?\s*(\d{1,2})\. +(?=[A-Za-z\(])', re.MULTILINE)
+# Matches question numbers at:
+# - Line start with up to 4 leading spaces: '\n   17. Text'
+# - After '. ' (end of previous option/sentence): 'value. 17. Text'
+# - After a marks-indicator: '2 37. Text'
+# Followed by a letter/( directly OR on next line with indent.
+_Q_NUM_RE = re.compile(
+    r'(?:(?:^|\n)\s{0,4}|[.] |\d+ )(\d{1,2})\.\s+(?=[A-Za-z\(]|\n\s+[A-Za-z\(])',
+    re.MULTILINE
+)
 
 
 def parse_section_block(sec_text, section, marks, qtype):
@@ -371,7 +407,7 @@ def parse_multiset_paper(text, year):
                 if num not in answers_by_num or len(ans) > len(answers_by_num[num]):
                     answers_by_num[num] = ans
 
-    # Dedup questions (multiple sets may repeat same Q numbers)
+    # Dedup questions: multiple sets may have same Q number, keep richest
     best_qs = {}
     for q in all_qs:
         k = q["question_number"]
@@ -409,7 +445,7 @@ def parse_interleaved_paper(text, year):
         parsed = parse_section_block(sec_text, sec_letter, marks, qtype)
         all_qs.extend(parsed)
 
-    # Dedup by (section, question_number)
+    # Dedup by (section, question_number), keeping richest
     best = {}
     for q in all_qs:
         k = (q["section"], q["question_number"])
