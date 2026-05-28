@@ -12,7 +12,7 @@ interface Props {
 
 export async function generateStaticParams() {
   return CHAPTERS.map((chapter) => ({
-    chapter: encodeURIComponent(chapter),
+    chapter,
   }));
 }
 

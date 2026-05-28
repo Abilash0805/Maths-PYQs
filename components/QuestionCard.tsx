@@ -5,7 +5,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Bookmark, BookmarkCheck, CheckCircle2, Circle, ChevronDown, ChevronUp, Star } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { cn } from "@/lib/utils";
+import { cn, cleanMathText } from "@/lib/utils";
 import { PYQItem, CHAPTER_COLORS } from "@/lib/types";
 
 interface QuestionCardProps {
@@ -52,9 +52,9 @@ export function QuestionCard({
       exit={{ opacity: 0, y: -8 }}
       transition={{ duration: 0.25 }}
       className={cn(
-        "relative rounded-2xl border bg-white dark:bg-slate-900 shadow-sm hover:shadow-md transition-shadow overflow-hidden",
-        isSolved && "border-green-300 dark:border-green-700",
-        !isSolved && "border-slate-200 dark:border-slate-800"
+        "relative rounded-2xl border bg-white shadow-sm hover:shadow-md transition-shadow overflow-hidden",
+        isSolved && "border-green-300",
+        !isSolved && "border-slate-200"
       )}
     >
       {/* Accent top bar */}
@@ -63,8 +63,8 @@ export function QuestionCard({
       <div className="p-5">
         {/* Header row */}
         <div className="flex flex-wrap items-center gap-2 mb-3">
-          <span className="flex items-center gap-1.5 text-xs font-bold text-slate-500 dark:text-slate-400">
-            <span className="text-slate-400 dark:text-slate-600">Q{question.question_number}</span>
+          <span className="flex items-center gap-1.5 text-xs font-bold text-slate-500">
+            <span className="text-slate-400">Q{question.question_number}</span>
           </span>
 
           <Badge variant="info" className="text-xs">
@@ -122,8 +122,8 @@ export function QuestionCard({
         </div>
 
         {/* Question text */}
-        <div className="text-sm text-slate-800 dark:text-slate-100 leading-relaxed font-medium mb-3 whitespace-pre-wrap">
-          {question.question}
+        <div className="text-sm text-slate-800 leading-relaxed font-medium mb-3 whitespace-pre-wrap">
+          {cleanMathText(question.question)}
         </div>
 
         {/* MCQ options */}
@@ -132,10 +132,10 @@ export function QuestionCard({
             {Object.entries(question.options).map(([key, val]) => (
               <div
                 key={key}
-                className="flex items-start gap-2 text-sm text-slate-700 dark:text-slate-300 bg-slate-50 dark:bg-slate-800 rounded-lg px-3 py-2"
+                className="flex items-start gap-2 text-sm text-slate-700 bg-slate-50 rounded-lg px-3 py-2"
               >
                 <span className="font-semibold text-primary min-w-[18px]">({key})</span>
-                <span className="whitespace-pre-wrap">{val}</span>
+                <span className="whitespace-pre-wrap">{cleanMathText(val)}</span>
               </div>
             ))}
           </div>
@@ -173,15 +173,15 @@ export function QuestionCard({
             className="overflow-hidden"
           >
             <div className="px-5 pb-5">
-              <div className="rounded-xl border border-green-200 dark:border-green-800 bg-green-50 dark:bg-green-950/30 p-4">
+              <div className="rounded-xl border border-green-200 bg-green-50 p-4">
                 <div className="flex items-center gap-2 mb-2">
-                  <CheckCircle2 className="size-4 text-green-600 dark:text-green-400 shrink-0" />
-                  <span className="text-xs font-semibold text-green-700 dark:text-green-400 uppercase tracking-wide">
+                  <CheckCircle2 className="size-4 text-green-600 shrink-0" />
+                  <span className="text-xs font-semibold text-green-700 uppercase tracking-wide">
                     Solution
                   </span>
                 </div>
-                <div className="text-sm text-slate-800 dark:text-slate-100 leading-relaxed whitespace-pre-wrap">
-                  {question.answer}
+                <div className="text-sm text-slate-800 leading-relaxed whitespace-pre-wrap">
+                  {cleanMathText(question.answer)}
                 </div>
               </div>
             </div>

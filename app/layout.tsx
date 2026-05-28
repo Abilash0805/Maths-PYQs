@@ -3,7 +3,6 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { Providers } from "./providers";
 import { Sidebar } from "@/components/Sidebar";
-import { ThemeToggle } from "@/components/ThemeToggle";
 import { MobileHeader } from "@/components/MobileHeader";
 import { getChapterStats } from "@/lib/data";
 
@@ -43,11 +42,10 @@ export default function RootLayout({
             {/* Main content */}
             <div className="flex-1 flex flex-col min-w-0 overflow-hidden">
               {/* Desktop top bar */}
-              <header className="hidden lg:flex items-center justify-between px-6 py-3 border-b border-slate-200 dark:border-slate-800 bg-white/80 dark:bg-slate-900/80 backdrop-blur sticky top-0 z-30">
-                <div className="text-sm text-slate-500 dark:text-slate-400">
+              <header className="hidden lg:flex items-center px-6 py-3 border-b border-slate-200 bg-white/80 backdrop-blur sticky top-0 z-30">
+                <div className="text-sm text-slate-500">
                   CBSE Class 12 Mathematics — Previous Year Questions
                 </div>
-                <ThemeToggle />
               </header>
 
               {/* Mobile header */}
