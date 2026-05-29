@@ -20,6 +20,11 @@ export const metadata: Metadata = {
   title: "CBSE Class 12 Maths PYQ | Previous Year Questions",
   description:
     "Practice CBSE Class 12 Mathematics Previous Year Questions chapter-wise with detailed solutions. 2015–2025 papers.",
+  openGraph: {
+    title: "CBSE Class 12 Maths PYQ",
+    description: "Chapter-wise Previous Year Questions with solutions. 2015–2025.",
+    images: [{ url: "/logo.svg", width: 540, height: 540 }],
+  },
 };
 
 export default function RootLayout({

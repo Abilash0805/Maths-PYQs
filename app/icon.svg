@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <!-- Background -->
+  <rect width="64" height="64" rx="10" fill="#D6E8F7"/>
+
+  <!-- Open book (simplified) -->
+  <path d="M8 46 L30 42 L30 26 L8 30 Z" fill="#2B7DE0" opacity="0.3"/>
+  <path d="M30 42 L52 46 L52 30 L30 26 Z" fill="#2B7DE0" opacity="0.3"/>
+  <path d="M8 46 L52 46 L52 50 L8 50 Z" fill="#1A3A6B"/>
+  <path d="M30 26 L30 42" stroke="#1A3A6B" stroke-width="1.5"/>
+
+  <!-- Sine curve -->
+  <path d="M10 22 C14 22 17 10 22 10 C27 10 30 32 35 32 C40 32 43 10 48 10 C51 10 53 18 56 18"
+        fill="none" stroke="#2B7DE0" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- Axes (small) -->
+  <line x1="8" y1="22" x2="58" y2="22" stroke="#1A3A6B" stroke-width="1.2"/>
+  <line x1="22" y1="36" x2="22" y2="6" stroke="#1A3A6B" stroke-width="1.2"/>
+
+  <!-- "12" label -->
+  <text x="34" y="24" font-family="Arial Black, sans-serif" font-weight="900"
+        font-size="13" fill="#2B7DE0">12</text>
+</svg>
