@@ -6793,5 +6793,3009 @@
     "marks": 5,
     "chapter": "Integrals",
     "type": "LA"
+  },
+  {
+    "id": "ex_2015_1",
+    "year": 2015,
+    "question_number": 1,
+    "question": "If , then a = 7 i + j − 4 k and b = 2 i + 6 j + 3 k → → find the projection of a on b . 1 →→ a . b",
+    "answer": "p =\n→\n| b |\n^ ^ ^ ^ ^ ^\n( 7 i + j − 4 k ),( 2 i + 6 j + 3 k )\n=\n| 2 ^ i + 6 ^ j + 3 ^ )|\nk\n14 + 6 − 12\n=\n4 + 36 + 9\n8\n=\n7\n→ ∧ ∧ ∧ → ∧ ∧ ∧",
+    "section": "A",
+    "marks": 1,
+    "chapter": "Relations and Functions",
+    "type": "MCQ"
+  },
+  {
+    "id": "ex_2015_2",
+    "year": 2015,
+    "question_number": 2,
+    "question": "Find l, if the vectors a = i + 3 + , = 2 i −− * j k b j k → ∧ ∧ and c = λ j +3 k are coplanar. 1",
+    "answer": "See solution.",
+    "section": "A",
+    "marks": 1,
+    "chapter": "Vector Algebra",
+    "type": "MCQ"
+  },
+  {
+    "id": "ex_2015_3",
+    "year": 2015,
+    "question_number": 3,
+    "question": "If a line makes angles 90°, 60° and q with X, Y Z-axis respectively, when q is acute, then find q. π π",
+    "answer": "cos 2 + cos 2 + cos 2 θ = 1\n2 3\nπ\n⟹ q =\n6",
+    "section": "A",
+    "marks": 1,
+    "chapter": "Relations and Functions",
+    "type": "MCQ"
+  },
+  {
+    "id": "ex_2015_5",
+    "year": 2015,
+    "question_number": 5,
+    "question": "Find the differential equation representing the A family of curves v = + B, where A and B are r arbitrary constants. dv A",
+    "answer": "= ,\nr²\ndr\nd 2 v dv\n⟹ r 2 + 2 r\n= 0\ndr 2 dr",
+    "section": "A",
+    "marks": 1,
+    "chapter": "Differential Equations",
+    "type": "MCQ"
+  },
+  {
+    "id": "ex_2015_8",
+    "year": 2015,
+    "question_number": 8,
+    "question": "If f(x) = ax a − 1 , using properties of ax 2 ax a determinants find the value of f(2x) - f(x). a − 1 0 ax a − 1",
+    "answer": "f(x) =\nax 2 ax a\nx²R1\nR² → R² - x R1 and R³ → R³ -\na − 1 0\n0 a + x − 1\nf(x) =\n0 ax + x 2 a\n(For brining 2 zeroes in any row/column)\n... (a² x²) a)2\nf(x) = a + 2ax + = a (x +\n...\nf (2x) - f (x) = a [2x + a]2 - a(x + a)2\n= ax (3x + 2a)\ndx\n∫",
+    "section": "A",
+    "marks": 1,
+    "chapter": "Integrals",
+    "type": "MCQ"
+  },
+  {
+    "id": "ex_2015_9",
+    "year": 2015,
+    "question_number": 9,
+    "question": "Find : sin x + sin 2 x OR Intergrate the following w.r.t. x x 2 − 3 x + 1 2 1 − x dx dx ∫ ∫ =",
+    "answer": "sin x + sin 2 x sin x ( 1 + 2 cos x )\nsin x . dx\n∫\n=\n( 1 − cos x )( 1 + cos x )( 1 + 2 cos x )\ndt\n∫\n= − where cos x = t\n( 1 − t )( 1 + t )( 1 + 2 t )\n 1 1 4 \n−\n 6 2 3 \n= ∫ + − dt\n \n1 − t 1 + t 1 + 2 t\n1 1 2\n= + log| 1 − t | + log| 1 + t | − log| 1 + 2 t | + c\n6 2 3\n1 1\n− + +\n= log| 1 cos x | log| 1 cos x |\n6 2\n2\n− log| 1 + 2 cos x | + c\n3\nOR\n2 2\nx − 3 x + 1 2 − 3 x − ( 1 − x )\n∫ dx ∫ dx\n=\n1 − x 2 1 − x 2\n1 x\n∫ − ∫ − ∫ − 2\n= 2 dx 3 dx 1 x dx\n2 2\n1 − x 1 − x\nx 1\n− −\n= 2 sin 1 x + 3 1 − x 2 − 1 − x 2 − sin 1 x + c\n2 2\n3 1\n− 1 + − − 2 +\n= sin x ( 6 x ) 1 x c\n2 2\nπ",
+    "section": "A",
+    "marks": 1,
+    "chapter": "Integrals",
+    "type": "MCQ"
+  },
+  {
+    "id": "ex_2015_10",
+    "year": 2015,
+    "question_number": 10,
+    "question": "Evaluate: −∫ (cos ax − sin bx ) 2 dx π π −∫ 2",
+    "answer": "I = (cos ax − sin bx ) dx\nπ\nπ π\n∫ 2 2 ∫\n= (cos ax + sin bx ) dx − 2 cos ax sin bxdx\n− π − π\n= I1 - I²\nπ\n2 ∫ (cos 2 ax + sin 2 bx ) dx\nI1 = (being an even fun)\n0\nI² = 0 (being an odd fun.)\nπ\n... ∫\nI = I1 = ( 1 + cos 2 ax + 1 − cos 2 bx ) dx\n0\nπ\n sin 2 ax sin 2 bx \n= 2 x + −\n \n2 a 2 b\n0\n 1 sin 2 b π \n= 2 x + .sin 2 a π − or 2p\n \n2 a 2 b",
+    "section": "A",
+    "marks": 1,
+    "chapter": "Integrals",
+    "type": "MCQ"
+  },
+  {
+    "id": "ex_2015_11",
+    "year": 2015,
+    "question_number": 11,
+    "question": "A bag A contains 4 black and 6 red balls and bag B contains 7 black and 3 red balls. A die is thrown. If 1 or 2 appears on it, then bag A is chosen, otherwise bag B. If two balls are drawn at random (without replacement) from the selected bag. find the probability of one of them being red and another black. OR * An unbiased coin is tossed 4 times. Find the mean and variance of the number of heads obtained.",
+    "answer": "Let E1: selecting bag A, and E² : selecting bag B.\n1 2\n...\nP(E1) = , P(E²) =\n3 3\nLet A : Getting one Red and one black ball\n4 C . 6 C\n... 8\nP(A/E1) = 1 1 = ,\n10 C 15\n2\n7 C . 3 C\n7\nP(A/E²) = 1 1\n10 =\nC 15\n2\nP(A) = P(E1).P(A|E1) + P(E²).P(A|E²)\n1 8 2 7 22\n+\n= . . =\n3 15 3 15 45\n→ → →\n∧ ∧ ∧ ∧ ∧",
+    "section": "B",
+    "marks": 1,
+    "chapter": "Matrices",
+    "type": "VSA"
+  },
+  {
+    "id": "ex_2015_12",
+    "year": 2015,
+    "question_number": 12,
+    "question": "If r = x i + y j + zk , find ( r × i ).( r × j ) + xy → → ^ ^ ^ ^ ^ ^ r × i = ( x i + y j + zk ) × i = − yk + z j",
+    "answer": "→ →\n( x ^ + y ^ + zk ^ ) ^ ^ ^\nr × j = i j j = xk − z i\n→ →\n( r × ^ ).( r × ^ ) ( o ^ + z ^ − yk ^ ).( − z ^ + o ^ + xk ^ )\ni j = i j i j\n= - xy\n→ →\n× ^ × ^ +\n( r i ).( r j ) xy = - xy + xy = 0\n* 13. Find the distance between the point (- 1, - 5, - 10)\n−2\nx\nand the point of intersection of the line =\n3\ny+1 z−2\n= and the plane x - y + z = 5.\n4 12\n[cot⁻¹ cos(tan-1x),",
+    "section": "B",
+    "marks": 1,
+    "chapter": "Inverse Trigonometric Functions",
+    "type": "VSA"
+  },
+  {
+    "id": "ex_2015_16",
+    "year": 2015,
+    "question_number": 16,
+    "question": "If x = a cos q + b sin q, y = a sin q - b cos q, show 2 d y dy than y 2 − x − y = 0. dx 2 dx dx",
+    "answer": "= - a sin q + b cos q\ndθ\ndy\n= a cos q + b sin q\ndθ\na cos θ + b sin θ −x\n... dy\n= =\n− a sin θ + b cos θ y\ndx\ndy\nor y + x = 0\ndx\nd 2 y dy dy\n...\ny + . + 1 = 0 ...(i)\n2\ndx dx dx\nd 2 y x dy\nUsing (i) we get y − + 1 = 0\n2\ndx y dx\nd 2 y dy\n... y 2 − x + y = 0\ndx 2 dx",
+    "section": "C",
+    "marks": 4,
+    "chapter": "Continuity and Differentiability",
+    "type": "SA"
+  },
+  {
+    "id": "ex_2015_17",
+    "year": 2015,
+    "question_number": 17,
+    "question": "The side of an equilateral triangle is increasing at the rate of 2 cm/s. At what rate is its area increasing when the side of the triangle is 20 cm ?",
+    "answer": "Let x be the side of an equileteral triangle\ndx\n... cm²/s.\n= 2\ndt\n2\n3 x\nArea (A) =\n4\ndA 3 dx\n⟹ = ×\ndt 2 dt\ndA 3\n⟹ = .( 20 ).( 2 )\ndt 2\n= 20 3 cm 2 /s",
+    "section": "C",
+    "marks": 4,
+    "chapter": "Application of Derivatives",
+    "type": "SA"
+  },
+  {
+    "id": "ex_2015_19",
+    "year": 2015,
+    "question_number": 19,
+    "question": "Three schools A, B and C organized a mela for collecting funds for helping the rehabilitation of flood victims. They sold hand made fans, mats and plates from recycled material at a cost of ` 25, ` 100 and ` 50 each. The number of articles sold are given below : School A B C Article Hand - fans 40 25 35 Mats 50 40 50 Plants 20 30 40 * Out of Syllabus Find the funds collected by each school separately by selling the above articles. Also find the total funds collected for the purpose. Write one value generated by the above situation.",
+    "answer": "HF. M P\n 7000 \nA  40 50 20   25 \n 6125 \nB  25 40 30   100  =\n \n   \n 7875 \nC  35 50 40   50 \nFunds collected by school A : ` 7000,\nSchool B : ` 6125, School C : ` 7875\nTotal collected : ` 21000\nHelpting the flovod vietims.\n\nQuestion numbers 20 to 26 carry 6 mark each.",
+    "section": "C",
+    "marks": 4,
+    "chapter": "Matrices",
+    "type": "SA"
+  },
+  {
+    "id": "ex_2015_20",
+    "year": 2015,
+    "question_number": 20,
+    "question": "Let N denote the set of all natural numbers and R be the relation on N × N defined by (a, b) R (c, d) if ad (b + c) = bc (a + d). Show that R is an equivalence relation.",
+    "answer": "\" a, b ∈ N, (a, b) R (a, b) as ab (b + a) = ba (a + b)\n...\nR is reflexive ...(i)\nLet (a, b) R (c, d) for (a, b), (c, d) ∈ N × N\n...\nab (b + c) = bc (a + d) ...(ii)\n...\nAlso (c, d) R (a, b) cb (d + a) = da (c + b) (using ii)\n...\nR is symmetric ...(iii)\nLet (a, b) R (c, d) and (c, d) R (e, f), for a, b, c, d, e, f, ∈ N\n...\nad (b + c) = bc (a + d) and cf (d + e) = de (c + f)\nc + f\n... b + c a + b d + e\n= and =\ncf\nbc ad de\n1 1\n1 1 1 1 1 1 +\ni.e., + = + and + =\nf e\nc b d a e d\n1 1 1 1\n1 1 1 1\nadding we get + + + = + + +\nd a f c\nc b e d\n⟹ af (b + e) = be (a + f)\n...\nHence (a, b) R (e, f) R is transitive ...(iv)\nForm (i), (iii) and (iv) R is an equivalence relation.\n* 21. Using integration find the area of the triangle\nformed by position tangent and normal to the\nx² y²\ncircle + = 4 at (1, 3 ).\nOR\n3\n* Evaluate ∫ 2 − 3 x + 2 + as a limit of a sum.\n( e x 1 ) dx\n1",
+    "section": "C",
+    "marks": 4,
+    "chapter": "Relations and Functions",
+    "type": "SA"
+  },
+  {
+    "id": "ex_2015_22",
+    "year": 2015,
+    "question_number": 22,
+    "question": "Solve the differential equation: (tan-1y - x) dy = (1 + y²) dx. OR Find the particular solution of the differential xy dy equation = given that y = 1, when 2 2 dx x + y x = 0.",
+    "answer": "Given differential equation can be written as\ntan− 1\ndx 1 y\n+ . x =\ndy 1 + y 2 1 + y 2\netan-1\n... y\nIntegrating factor is\n− − 1\ntan 1 y . e tan y\n... x.etan-1 y ∫ dy\nSolution is ; =\n1 + y 2\nx.etan-1 y et tan⁻¹\n⟹ = ∫ t dt where y = t\net et etan-1 y (tan⁻¹\n= t - + c = y - 1) + c\ne-tan⁻¹\ntan⁻¹ y\nor x = y - 1 + c\nOR\ny\ndy\nx\nGiven differential equation is =\n2\ndx  y \n1 +  \nx\ny dv v\nPutting = v to get v + x =\n+ 2\nx dx 1 v\nv − v 3\n... dv\nx = − v =\n+ 2 + 2\ndx 1 v 1 v\nv 2 + 1 dx\n∫ −∫\n⟹ dv =\nv 3\nx\n−1\n⟹ log| v | = - log |x| + c\n2\n2 v\nx 2\n...\nlog y − = c\n2\n2 y\n2\nx\n... log y −\nx = 0, y = 1 ⟹ c = 0 = 0\n2 y 2\nx −1 y+1 z−1 x −3 y − k\n* 23. If lines = = and =\n2 3 4 1 2\nz\n= intersect, then find the value of k and hence\n1\nfind the equation of the plane containing these\nlines.",
+    "section": "C",
+    "marks": 4,
+    "chapter": "Inverse Trigonometric Functions",
+    "type": "SA"
+  },
+  {
+    "id": "ex_2015_24",
+    "year": 2015,
+    "question_number": 24,
+    "question": "If A and B are two independent events such −∩ 2 1 P ( A B ) = = , then find P(A) and P ( A ∩ B ) 15 6 and P(B). * Out of Syllabus Class-12th 2 P ( A ∩ B ) =",
+    "answer": "15\n2\n⟹ =\nP ( A ). P ( B )\n15\n1\nP ( A ∩ B ) =\n6\n1\n⟹ P ( A ). P ( B ) =\n6\n2\n...\n(1 - P(A)) P(B) =\n15\n2\nor P(B) - P(A).P(B) = ...(i)\n15\n1\nP(A)(1 - P(B)) =\n6\n1\nor P(A) - P(A).P(B) = ...(ii)\n6\n1 2 1\nFrom (i) and (ii) P(A) - P(B) = − =\n6 15 30\nLet P(A) = x, P(B) = y\n1\n...  \nx =  + y \n30\n 1  2\n(i) ⟹ y −  + y  y =\n30 15\n... 30y²\n- 29y + 4 = 0\n(6y - 1) (5y - 4) = 0\n1 4\nSolving to get y = or y =\n6 5\n... 1 5\nx = or x =\n5 6\n1 1\nHence P(A) = , P(B) =\n5 6\n5 4\nOR P(A) = , P(B) =\n6 5",
+    "section": "C",
+    "marks": 4,
+    "chapter": "Probability",
+    "type": "MCQ"
+  },
+  {
+    "id": "ex_2015_25",
+    "year": 2015,
+    "question_number": 25,
+    "question": "Find the local maxima and local minima, of the function f(x) = sin x - cos x, 0 < x < 2p. Also find the local maximum and local minimum values. 2p",
+    "answer": "f(x) = sin x - cos x, 0 < x <\nf '(x) = 0 ⟹ cos x + sin x = 0 or tan x = - 1,\n3 π 7 π\n...\nx = ,\n4 4\nf\"(x) = cos x - sin x\n 3 π  1 1\nf \" − −\n  =\n4 2 2\n3 π\ni.e., - ve so, x = is Local Maxima\n4\nπ\n 7  1 1\nand f \"   = − +\n4 2 2\n7 π\ni.e., + ve so, x = is Local Minima\n4\n1 1\n+ = 2\nLocal Maximum value =\n2 2\n1 1\nLocal Minimum value = − − = 2\n2 2",
+    "section": "C",
+    "marks": 4,
+    "chapter": "Application of Derivatives",
+    "type": "SA"
+  },
+  {
+    "id": "ex_2015_26",
+    "year": 2015,
+    "question_number": 26,
+    "question": "Find graphically, the maximum value of z = 2x + 5y, subject to containts given below: 2x + 4y ≤ 8 3x + y ≤ 6 x + y ≤ 4 x ≥ 0, y ≥ 0",
+    "answer": "Correct graph of three lines\nCorrectly shading\nfeasible region\nVertices are\nA(0, 2), B(1.6, 1.2), C(2, 0)\nZ = 2x + 5y is maximum\nat A(0, 2) and maximum value = 10",
+    "section": "D",
+    "marks": 6,
+    "chapter": "Linear Programming",
+    "type": "LA"
+  },
+  {
+    "id": "ex_2016_1",
+    "year": 2016,
+    "question_number": 1,
+    "question": "All questions are compulsory.",
+    "answer": "See solution.",
+    "section": "A",
+    "marks": 1,
+    "chapter": "Relations and Functions",
+    "type": "MCQ"
+  },
+  {
+    "id": "ex_2016_7",
+    "year": 2016,
+    "question_number": 7,
+    "question": "Prove that: 1 1 1 1 ≠ − 1 − 1 − 1 − 1 tan + tan + tan + tan = 5 7 3 8 4 OR",
+    "answer": "ve for the x : 2 tan⁻¹ (cos x) = tan⁻¹ (2cosec)\n 1 1  1 1\n \n+ +\n   \nAns. LHS = tan − 1 5 7 + tan − 1 3 8 1\n   \n1 1 1 1\n 1 − .   1 − . \n \n 5 7  3 8\n 6   11 \n− 1 − 1\n= tan   + tan   1\n 17   23 \n 6 11 \n+\n   325 \n− 1 17 23 − 1 1\n= tan   = tan  \n6 11  325 \n 1 − . \n 17 23 \nπ\n= − 1 ( ) = 1\ntan 1\n4\n[CBSE Marking Scheme, 2016]\nOR\n 2cos x  − 2 \n⟹ = tan − 1   = tan 1 2\n   \n1 − cos 2 x  sin x \n⟹ sin x (sin x - cos x) = 0 1\n⟹\nsin x = cos x ½\nπ\n⟹ the solution is x = ½\n4\n[CBSE Marking Scheme, 2016]",
+    "section": "A",
+    "marks": 1,
+    "chapter": "Inverse Trigonometric Functions",
+    "type": "MCQ"
+  },
+  {
+    "id": "ex_2016_15",
+    "year": 2016,
+    "question_number": 15,
+    "question": "Find the particular solution of the differential equation (1 - y²) (1 + log x)dx + 2xy dy = 0, given that y = 0 when x = 1. Ans. Given differential equation can be written as (1 + log x ) 2 y dx + dy = 0 1 x 1 − y 2 integrating to get, 1 (1 + log x ) 2 - log|1 - y 2 | = C 2 2 1 ½ x = 1, y = 0 ⟹ C = 2 ⟹ (1 + log x)2 - 2 log |1 - y² | = 1 ½ [CBSE Marking Scheme, 2016]",
+    "answer": "See solution.",
+    "section": "B",
+    "marks": 1,
+    "chapter": "Differential Equations",
+    "type": "VSA"
+  },
+  {
+    "id": "ex_2016_16",
+    "year": 2016,
+    "question_number": 16,
+    "question": "Find the general solution of the following differential equation: dy y²) tan −1 y (1 + + ( x − e ) = 0 dx Ans. Given differential equation can be written as − 1 dx 1 e tan y + x = 1 dy + 2 + 2 1 y 1 y etan-1y Integrating factor is 1 1 tan − 1 y = ∫ 2tan − 1 y ∴ Solution is x . e e dy 1 1 + y 2 1 ∴ xe tan − 1 y = e 2 tan − 1 y + C 1 2 [CBSE Marking Scheme, 2016] →→ → * 17. Show that the vectors a , b and c are coplanar if → → → → → → a + b , b + c and are coplanar. c + a",
+    "answer": "See solution.",
+    "section": "C",
+    "marks": 4,
+    "chapter": "Differential Equations",
+    "type": "SA"
+  },
+  {
+    "id": "ex_2016_18",
+    "year": 2016,
+    "question_number": 18,
+    "question": "Find the vector and cartesian equations of the line through the point (1, 2, -4) and perpendicu- lar to the two lines → a = ( 8 i − 9 j + 10 k ) + λ ( 3 i − 16 j + 7 k ) and → ( 15 i + 29 j + 5 k ) + µ ( 3 i + 8 j − 5 k ) r = Ans. Vector equation of the required line is = ˆ + ˆ − ˆ + µ ˆ − ˆ + ˆ × ˆ + ˆ − ˆ r ( i 2 j 4 k ) [(3 i 16 j 7 k ) (3 i 8 j 5 k )] 1 r = ( ˆ i + 2 ˆ j − 4 k ˆ ) + λ [(2 ˆ i + 3 ˆ j + 6 k ˆ ) 2 x − 1 y − 2 z + 4 in cartesian form, = = 1 2 3 6 [CBSE Marking Scheme, 2016]",
+    "answer": "See solution.",
+    "section": "C",
+    "marks": 4,
+    "chapter": "Three-Dimensional Geometry",
+    "type": "SA"
+  },
+  {
+    "id": "ex_2016_20",
+    "year": 2016,
+    "question_number": 20,
+    "question": "Let f : N → N be a function defined as f (x) = 9x² + 6x - 5. Show that f : N → S, where S is the range of f. Find the inverse of f and hence find f-1 (43) and f-1 (163). Ans. Let x1 , x² ∈ N and f(x1) = f(x²) 2 2 9 x + 6 x - 5 = 9 x + 6 x - 5 1 1 2 2 ⟹ 9 ( x 2 − x 2 ) + 6( x − x ) = 0 1 2 1 2 ⟹ ( x − x ) (9 x + 9 x +6) = 0 1 2 1 2 ⟹ x1 - x² = 0 or x1 = x² as (9x1 + 9x² + 6) ≠ 0, x1, x² ∈ N ∴ f is a one-one function 2 f: N → S is ONTO as co-domain = Range 1 Hence f is invertible y + 6 − 1 2 2 y = 9 x + 6 x − 5 = (3 x + 1) − 6 ⟹ x = 3 y + 6 − 1 − 1 ∴ f ( y ) = , y ∈ S 3 2 49 − 1 − f 1 (43) = = 2 ½ 3 169 − 1 f − 1 (163) = = 4 ½ 3 [CBSE Marking Scheme, 2016] yz − x 2 zx − y 2 xy − z 2",
+    "answer": "See solution.",
+    "section": "C",
+    "marks": 4,
+    "chapter": "Relations and Functions",
+    "type": "SA"
+  },
+  {
+    "id": "ex_2016_13",
+    "year": 2016,
+    "question_number": 13,
+    "question": "Find: dx 4 + 2 − x x 2 2 2 x x Ans. Let x 2 = t ∴ = 1 x 4 + x 2 − 2 ( x 2 − 1)( x 2 + 2) t A B = = + ( t − 1)( t + 2) t − 1 t + 2 1 2",
+    "answer": "ving for A and B to get, 1\nA = , B =\n3 3\nx 2 1 1 2 1\n∫ ∫ ∫\ndx = dx + dx\n4 2 3 2 3 2\nx + x − 2 x − 1 x + 2\n1 x − 1 2 x\n= log + tan − 1 + c\n6 x + 1 3 2\n1+1\n[CBSE Marking Scheme, 2016]\nπ\n2 sin 2 x\n∫",
+    "section": "B",
+    "marks": 1,
+    "chapter": "Integrals",
+    "type": "VSA"
+  },
+  {
+    "id": "ex_2016_25",
+    "year": 2016,
+    "question_number": 25,
+    "question": "Prove that the curves = 4x and = 4y divide the area of square bounded by x = 0, x = 4, y = 4 and y = 0 into three equal parts. Ans. Image Point of intersection of y² = 4x and x² = 4y are (0, 0) and (4, 4);",
+    "answer": "See solution.",
+    "section": "C",
+    "marks": 4,
+    "chapter": "Relations and Functions",
+    "type": "SA"
+  },
+  {
+    "id": "ex_2017_1",
+    "year": 2017,
+    "question_number": 1,
+    "question": "All questions are compulsory.",
+    "answer": "See solution.",
+    "section": "A",
+    "marks": 1,
+    "chapter": "Relations and Functions",
+    "type": "MCQ"
+  },
+  {
+    "id": "ex_2017_2",
+    "year": 2017,
+    "question_number": 2,
+    "question": "The question paper consists of 29 questions divided into of one mark each, Section B comprises of 8 questions marks each and Section D comprises of 6 questions of",
+    "answer": "See solution.",
+    "section": "A",
+    "marks": 1,
+    "chapter": "Relations and Functions",
+    "type": "MCQ"
+  },
+  {
+    "id": "ex_2017_3",
+    "year": 2017,
+    "question_number": 3,
+    "question": "All questions in Section A are to be answered in one word,",
+    "answer": "See solution.",
+    "section": "A",
+    "marks": 1,
+    "chapter": "Relations and Functions",
+    "type": "MCQ"
+  },
+  {
+    "id": "ex_2017_4",
+    "year": 2017,
+    "question_number": 4,
+    "question": "There is no overall choice. However, internal choice has of six marks each. You have to attempt only one of the",
+    "answer": "See solution.",
+    "section": "A",
+    "marks": 1,
+    "chapter": "Relations and Functions",
+    "type": "MCQ"
+  },
+  {
+    "id": "ex_2017_5",
+    "year": 2017,
+    "question_number": 5,
+    "question": "Use of calculators is not permitted. You may ask for logarithmic SECTION A",
+    "answer": "See solution.",
+    "section": "A",
+    "marks": 1,
+    "chapter": "Relations and Functions",
+    "type": "MCQ"
+  },
+  {
+    "id": "ex_2017_7",
+    "year": 2017,
+    "question_number": 7,
+    "question": "The volume of a sphere is increasing at the rate of 3 cubic centimeter per second. Find the rate of increase of its surface area, when the radius is 2 cm. 4 Ans. V = pr 3 3 dv dr dr 3 Þ = 4 π r 2 ⟹ = 1 dt dt dt 4 π r 2 S = 4pr² dS dr 3 8 π r . = 8 π r . Þ = ½ dt π 2 dt 4 r dS Þ = 3 cm²/s ½ dt r=2 [CBSE Marking Scheme 2017]",
+    "answer": "See solution.",
+    "section": "B",
+    "marks": 1,
+    "chapter": "Application of Derivatives",
+    "type": "VSA"
+  },
+  {
+    "id": "ex_2017_8",
+    "year": 2017,
+    "question_number": 8,
+    "question": "Show that the function f(x) = 4x³ - 18x² + 27x - 7 is always increasing on R. 4x³ -18x² Ans. f(x) = + 27x - 7 f’(x) = 12x² - 36x + 27 ½ = 3(2x - 3)2 ³ 0 \" x Î R 1 Þ f(x) is increasing on R ½ [CBSE Marking Scheme 2017]",
+    "answer": "See solution.",
+    "section": "B",
+    "marks": 1,
+    "chapter": "Relations and Functions",
+    "type": "VSA"
+  },
+  {
+    "id": "ex_2017_9",
+    "year": 2017,
+    "question_number": 9,
+    "question": "Find the vector equation of the line passing through the point A(1, 2, - 1) and parallel to the line 5x - 25 = 14 - 7y = 35z. Ans. Equation of given line is x −5 y − 2 z = = ½ 1 / 5 − 1 / 7 1 / 35 1 1 1 , − , or 7 , − 5 , 1 Its DR’s ½ 5 7 35 Equation of required line is = ( i + 2 j − k ) + λ ( 7 i − 5 j + k ) 1 r [CBSE Marking Scheme 2017]",
+    "answer": "See solution.",
+    "section": "B",
+    "marks": 1,
+    "chapter": "Determinants",
+    "type": "VSA"
+  },
+  {
+    "id": "ex_2017_10",
+    "year": 2017,
+    "question_number": 10,
+    "question": "Prove that if E and F are independent events, then the events E' and F' are also independent. Ans. P(E' ∩ F') = P(E) - P(E ∩ F) 1 = P(E) - P(E) . P(F) ½ = P(E)[1 - P(F)] = P(E)P(F¢) ½ Þ E' and F¢ are independent events [CBSE Marking Scheme 2017]",
+    "answer": "See solution.",
+    "section": "B",
+    "marks": 1,
+    "chapter": "Probability",
+    "type": "VSA"
+  },
+  {
+    "id": "ex_2017_11",
+    "year": 2017,
+    "question_number": 11,
+    "question": "A small firm manufactures necklaces and bracelets. The total number of necklaces and bracelets that it can handle per day is at most 24. It takes one hour to make a bracelet and half an hour to make a necklace. The maximum number of hours available per day is 16. If the profit on a necklace is ` 100 and that on a bracelet is ` 300. Formulate on L.P.P. for finding how many of each should be produced daily to maximize the profit ? It is being given that at least one of each must be produced. Ans. Let x necklaces and y bracelets are manufactured \\ L.P.P. is Maximize profit, P = 100x + 300y ½ subject to constraints x + y £ 24 1 x + y £ £ 16 or x + 2y 32 ½×3=1½ 2 x, y, ≥ 1 [CBSE Marking Scheme 2017] Detailed Answer: Let x necklace and y bracelets to be produced x + y £ 24 1 x + y £ 16 Þ x + 2y £ 32 2 z = 100x + 300y x + y = 24 x + 2y = 32 (0, 24) (24, 0) (0, 16) (32, 0) Points Z = 100x + 300y (1, 1) Z = 100 + 300 400 (24, 0) Z = 2400 + 0 2400 (16, 8) Z = 1600 + 2400 4000 (1, 15.5) Z = 100 + 4650 4750 Maximum is 4750 when 16 bracelets and 0 necklaces but condition is given that at least one of each must be produced. \\ 15 necklaces and 1 bracelets to be produced to make maximum profit of ` 4600 dx .",
+    "answer": "See solution.",
+    "section": "B",
+    "marks": 1,
+    "chapter": "Linear Programming",
+    "type": "VSA"
+  },
+  {
+    "id": "ex_2017_12",
+    "year": 2017,
+    "question_number": 12,
+    "question": "Find ∫ 2 + + x 4 x 8 dx dx ∫ ∫ Ans. = 1 2 + 2 + 2 x + 4 x + 8 ( x 2 ) ( 2 ) 1 x + 2 = tan− 1 + C 1 2 2 [CBSE Marking Scheme 2017] SECTION C",
+    "answer": "See solution.",
+    "section": "B",
+    "marks": 1,
+    "chapter": "Integrals",
+    "type": "VSA"
+  },
+  {
+    "id": "ex_2017_16",
+    "year": 2017,
+    "question_number": 16,
+    "question": "Find ∫ dx 2 2 2 ( x + 1 )( x + 2 ) 2 x dy ∫ ∫ Ans. = ( x 2 + 1 )( x 2 + 2 ) 2 ( y + 1 )( y + 2 ) 2 x² [by substituting = y] 1 dy dy dy ∫ ∫ ∫ = − − 1½ y + 1 y + 2 2 ( y + 2 ) (using partial fraction) 1 = log(y + 1) - log(y +2) + + C 1 + y 2 1 log(x² log(x² + C = + 1) - +2) + ½ x 2 + 2 [CBSE Marking Scheme 2017] π x sin x",
+    "answer": "See solution.",
+    "section": "C",
+    "marks": 4,
+    "chapter": "Integrals",
+    "type": "SA"
+  },
+  {
+    "id": "ex_2017_18",
+    "year": 2017,
+    "question_number": 18,
+    "question": "Prove that x² - y² = C(x² + y²)2 is the general solution of the differential equation (x³ - 3xy²)dx = (y³ - 3x²y)dy, where C is a parameter. * Out of Syllabus Ans. x² - y² = C(x² + y²)2 Þ 2x - 2yy¢ = 2C(x² + y²)(2x + 2yy¢) 1 2 2 x − y ( 2 x + 2 yy ') Þ (x - yy¢) = y 2 + x 2 (y² x²)(x (x² y²)(2x Þ + - yy¢) = - + 2yy¢) 1 dy Þ [-2y(x² - y²) - y(y² + x²)] dx 2x(x² y²) (y² x²) = - - x + 1 dy (y³ 3x²y) = (x³ - 3xy²) Þ - dx Þ (y³ - 3x²y)dy = (x³ - 3xy²)dx 1 Hence x² - y² = C (x² + y²)2 is the solution of given differential equation. [CBSE Marking Scheme 2017] → → * 19. Let a = i + j + k , b = i and → c = c i + c j + c k , then 1 2 3",
+    "answer": "See solution.",
+    "section": "C",
+    "marks": 4,
+    "chapter": "Differential Equations",
+    "type": "MCQ",
+    "options": {
+      "A": "Let c1 = 1 and c2 = 2, find c3 which makes\n→→ →\na , b and c coplanar.",
+      "B": "If c2 = – 1 and c3 = 1, show that no value of c1\n→→\n→\ncan make a , b c\nand coplanar.\n→→→"
+    }
+  },
+  {
+    "id": "ex_2017_21",
+    "year": 2017,
+    "question_number": 21,
+    "question": "The random variable X can take only the values 0, 1, 2, 3. Given that P(X = 0) = P(X = 1) = p and Sp1x² 2 2Sp1x1, P (X = 2) = P(X = 3) such that = find the value of p. Ans. x 0 1 2 3 P(x) p p k k 1 Sp(x) = 1 Þ 2p + 2k = 1 Þ k = −p 1 2 xi pi pixi pix² i 0 p 0 0 1 p p p 1 −p 2 2 1 - 2p 2 - 4p 3 9 1 −p −p 3 −p 9 3 2 2 2 5 13 −p 4 − 12 p 2 2 Spixi 2 2Spixi As per problem, = 2 3 Þ p = 1 8 [CBSE Marking Scheme 2017]",
+    "answer": "See solution.",
+    "section": "C",
+    "marks": 4,
+    "chapter": "Matrices",
+    "type": "SA"
+  },
+  {
+    "id": "ex_2017_22",
+    "year": 2017,
+    "question_number": 22,
+    "question": "Often it is taken that a truthful person commands, more respect in the society. A man is known to speak the truth 4 out of 5 times, He throws a die and reports that it is a six. Find the probability that it is actually a six. Do you also agree that the value of truthfulness leads to more respect in the society ? Ans. Let H1 be the event that 6 appears on throwing a die H² be the event that 6 does not appear on throwing a die E be the event that he reports it is six 1 1 1 5 = − = P(H1) = , P ( H ) 1 6 2 6 6 4 1 P(E/H1) = , P ( E / H ) = 1 5 2 5 P ( H ). P ( E / H ) 1 I P(H1/E) = ½ + P ( H ). P ( E / H ) P ( H ) P ( E / H ) 1 1 2 2 1 4 × 6 5 4 = = ½ 1 4 5 1 9 × + × 6 5 6 5 Relevant value : Yes, Truthness leads to more re- spect in society. 1 [CBSE Marking Scheme 2017]",
+    "answer": "See solution.",
+    "section": "C",
+    "marks": 4,
+    "chapter": "Matrices",
+    "type": "SA"
+  },
+  {
+    "id": "ex_2017_26",
+    "year": 2017,
+    "question_number": 26,
+    "question": "If the sum of lengths of the hypotenuse and a side of a right angled triangle is given, show that the area of the triangle is maximum, when the π angle between them is . 3 Ans. Given x + y = k 1 A y B C x 1 2 2 Area of D = x y − x 2 1 Let Z = x²(y² - x²) 4 1 = x²[(k - x)2 - x²] 1 4 1 2 2 3 = [ k x − 2 kx ] 4 * Out of Syllabus dz 1 2 2 = [ 2 k x − 6 kx ] = 0 dx 4 k Þ Þ k - 3x = 0 x = 1½ 3 Þ x + y - 3x = 0 or y = 2x d 2 z 1 = [ 2 k 2 − 12 kx ] 1 2 dx 4 d 2 z 2 1 k = [ 2 k 2 − 4 k 2 ] = − < 0 2 dx k 4 2 x = 3 \\ Area will be maximum for 2x = y 1 x q Þ q but = cos cos y x 1 π = = Þ q = ½ 2 x 2 3 [CBSE Marking Scheme 2017]",
+    "answer": "See solution.",
+    "section": "D",
+    "marks": 6,
+    "chapter": "Matrices",
+    "type": "LA"
+  },
+  {
+    "id": "ex_2017_28",
+    "year": 2017,
+    "question_number": 28,
+    "question": "Solve the differential equation dy + = + x y x cos x sin x , given that y = 1 when dx π x = . 2 Ans. The given equation can be written as dy y sin x + = cos x + 1 dx x x 1 ∫ xdx elog x I.F. = e = = x ∫ + + \\ Solution is y . x = ( x cos x sin x ) dx c 1 Þ y . x = x sin x + c 1 c or y = sin x + x π when x = , y =1 1 2 Note: Expect these, all other questions are from SECTION B",
+    "answer": "See solution.",
+    "section": "D",
+    "marks": 6,
+    "chapter": "Integrals",
+    "type": "LA"
+  },
+  {
+    "id": "ex_2017_20",
+    "year": 2017,
+    "question_number": 20,
+    "question": "The random variable X can take only the values, 0, 1, 2, 3. Given that P(2) = P(3) = p and P(0) = Spi xi 2 2Spi xi, 2P(1), If = find the value of p. Ans. xi pi pixi pixi 2 0 2q 0 0 1 q q q 2 p 2p 4p 3 p 3p 9p 2 Spi = 1 Þ 3q + 2p ...(1) ½ Spixi 2 = 2Spixi Þ q - 3p ...(2) ½ 1 from (I) and (2), p = 1 11 [CBSE Marking Scheme 2017]",
+    "answer": "See solution.",
+    "section": "C",
+    "marks": 4,
+    "chapter": "Matrices",
+    "type": "SA"
+  },
+  {
+    "id": "ex_2017_23",
+    "year": 2017,
+    "question_number": 23,
+    "question": "Find : ∫ dx 2 4 ( x + 1 )( x + 4 ) 2 x dx dy ∫ ∫ Ans. = 2 + 4 + + 2 + ( x 1 )( x 4 ) ( y 1 )( y 4 ) x² [put = y Þ 2x dx = dy] ½ 1 1 − y 1 1 5 5 = + 1½ 2 2 ( y + 1 )( y + 4 ) 5 ( y + 1 ) y + 4 dy ∫ 1 1 y = log| y + 1 | + tan − 1 2 ( y + 1 )( y + 4 ) 5 10 2 1 − log( y 2 + 4 ) + C 1½ 10 1 1 x² 2 − 1 = log( x + 1 ) + tan 5 10 2 1 4 − log( x + 4 ) + C ½ 10 [CBSE Marking Scheme 2017] SECTION D",
+    "answer": "See solution.",
+    "section": "D",
+    "marks": 6,
+    "chapter": "Integrals",
+    "type": "LA"
+  },
+  {
+    "id": "ex_2017_29",
+    "year": 2017,
+    "question_number": 29,
+    "question": "Find the particular solution of the differential equation dy tan x = 2 x tan x + x 2 − y ; (tan x ≠ 0) given · dx p that y = 0 when x = . 2 Ans. Given equation can be written as dy Þ x² +(cot x ) y = 2x + cot x 1 dx I.F. = ∫ cot x dx ∫ logsin x 1 e = e = sin x ∫ ( 2 x sin x + x 2 cos x ) dx",
+    "answer": "ution is, y × sin x = 1\nÞ y sin x = x² sin x + C 1½\nπ\nwhen x = , y = 0\n2\n−π2\nwe get c = 1\n4\n\\ 4x² p²\nRequired solution is, 4y sin x = sin x -\nor, y = x² - p²/4 cosec x ½\n[CBSE Marking Scheme 2017]\nOutside",
+    "section": "D",
+    "marks": 6,
+    "chapter": "Integrals",
+    "type": "LA"
+  },
+  {
+    "id": "ex_2017_19",
+    "year": 2017,
+    "question_number": 19,
+    "question": "Show that the point A, B, C with position vectors 2 i − j + k , i − 3 j − 5 k and 3 i − 4 j − 4 k respectively, are the vertices of a right-angled triangle, Hence find the area of the triangle. Ans. AB = −− i 2 j − 6 k , = 2i −+ j k , BC = −+ i 3 j + 5 k 1 CA Since AB , BC , CA , are not parallel vectors, and AB + BC + CA = 0 ∴ A, B, C form a triangle 1 Also BC . CA = 0 1 \\ A, B, C form a right triangle 1 1 Area of D = 2| AB × BC | = 210 1 2 [CBSE Marking Scheme 2017] * 20. Find the value of l, if four points with position vectors 3 i + 6 j + 9 k , i + 2 j + 3 k , 2 i + 3 j + k and +λ 4 i + 6 j k are coplanar. * 21. There are 4 cards numbered 1, 3, 5 and 7, one number on one card. Two cards are drawn at random without replacement. Let X denote the sum of the numbers on the two drawn cards. Find the mean and variance of X.",
+    "answer": "See solution.",
+    "section": "C",
+    "marks": 4,
+    "chapter": "Vector Algebra",
+    "type": "SA"
+  },
+  {
+    "id": "ex_2018_3",
+    "year": 2018,
+    "question_number": 3,
+    "question": "Find the magnitude of each of the vectors a → and b , having the same magnitude such that the angle between them is 60° and their scalar 9 product is . 2 → → Ans. | a | = | b | = 3 ½+½ [CBSE Marking Scheme, 2018] * Out of Syllabus 2018 Max. Marks : 100 four sections A, B, C and D. Section A comprises of 4 questions two marks each, Section C comprises of 11 questions of four marks each. one sentence or as per the exact requirement of the question. been provided in 3 questions of four marks each and 3 questions alternatives in all such questions. tables, if required. * 4. If a * b denotes the large of ‘a’ and ‘b’ if a o b = (a * b) + 3, then write the value of (5) o (10), where * and o are binary operations.",
+    "answer": "See solution.",
+    "section": "A",
+    "marks": 1,
+    "chapter": "Vector Algebra",
+    "type": "MCQ"
+  },
+  {
+    "id": "ex_2018_8",
+    "year": 2018,
+    "question_number": 8,
+    "question": "The total cost C(x) associated with the production x units of an item is given by C(x) = 0.005x³ - 0.02x² + 30x + 5000. Find the marginal cost when 3 units are produced, where by marginal cost we mean the instantaneous rate of change of total cost at any level of output. Ans. Marginal cost = C'(x) = 0·015 x² - 0·04x + 30 1 At x = 3, C'(3) = 30·015 1 [CBSE Marking Scheme, 2018]",
+    "answer": "See solution.",
+    "section": "B",
+    "marks": 1,
+    "chapter": "Application of Derivatives",
+    "type": "VSA"
+  },
+  {
+    "id": "ex_2018_9",
+    "year": 2018,
+    "question_number": 9,
+    "question": "Evaluate: 2 cos 2 x + 2 sin x ∫ dx cos 2 x 1 − 2 sin 2 x + 2 sin 2 x ∫ Ans. I = dx ½ 2 cos x = ∫ sec² xdx 1 = tan x + C ½ [CBSE Marking Scheme, 2018]",
+    "answer": "See solution.",
+    "section": "B",
+    "marks": 1,
+    "chapter": "Integrals",
+    "type": "VSA"
+  },
+  {
+    "id": "ex_2018_12",
+    "year": 2018,
+    "question_number": 12,
+    "question": "A black and a red die are rolled together. Find the conditional probability of obtaining the sum 8, given that the red die resulted in a number less than 4. Ans. A : Getting a sum of 8, B : Red die resulted in no. < 4. ( ) P A ∩ B P(A/B) = 1 P ( B ) 2 / 36 1 = = 1 18 / 36 9 [CBSE Marking Scheme, 2018]",
+    "answer": "See solution.",
+    "section": "B",
+    "marks": 1,
+    "chapter": "Continuity and Differentiability",
+    "type": "VSA"
+  },
+  {
+    "id": "ex_2018_13",
+    "year": 2018,
+    "question_number": 13,
+    "question": "Using properties of determinants, prove that 1 1 1 + 3 x + = + + + 1 3 y 1 1 9 ( 3 xyz xy yz zx ) 1 1 + 3 z 1 1 1 1 + 3 x Ans. LHS = 1 + 3 y 1 1 1 1 1 + 3 z 1 1 0 3 x = 1 + 3 y − 3 y − 3 y 1 1 3 z 0 (Using C² ® C² - C1 & C³ ® C³ - C1 = 1 × (9yz) + 3x(3z + 9yz + 3y) (Expanding along R1) 1 = 9(3xyz + xy + yz + zx) = RHS 1 [CBSE Marking Scheme, 2018] dy (x² y²)2",
+    "answer": "See solution.",
+    "section": "B",
+    "marks": 1,
+    "chapter": "Determinants",
+    "type": "VSA"
+  },
+  {
+    "id": "ex_2018_15",
+    "year": 2018,
+    "question_number": 15,
+    "question": "If y = sin (sin x), prove that d 2 y dy tan 2 + x +y cos x = 0 . dx 2 dx Ans. y = sin (sinx) dy Þ = cos (sinx)·cosx 1 dx d 2 y (sinx)·cos² and = - sin x - sinx cos (sinx) dx 2 1+1 cos² LHS = - sin (sinx) x - sinx cos (sinx) sin x cos2x + cos (sinx) cosx + sin (sinx) cos x = 0 = RHS 1 [CBSE Marking Scheme, 2018] * 16. Find the equations of the tangent and the normal, 16x² 9y² to the curve + = 145 at the point (x1, y1), where x1 = 2 and y1 > 0. OR Find the intervals in which the function x 4 3 2 f (x) = − x − 5 x + 24 x + 12 is (a) strictly 4 increasing, (b) strictly decreasing. * Out of Syllabus Ans. OR x³ 3x² f '(x) = - - 10x + 24 ½ = (x - 2) (x - 4)(x + 3) 1 f '(x) = 0 Þ x = -3, 2, 4. ½ sign of f '(x): (-) (+) (-) (+) -∞ -3 2 4 ∞ \\ f(x) is strictly increasing on (-3, 2) È (4, ¥) 1 and f(x) is strictly decreasing on (-¥, -3) È (2, 4) 1 [CBSE Marking Scheme, 2018]",
+    "answer": "See solution.",
+    "section": "C",
+    "marks": 4,
+    "chapter": "Application of Derivatives",
+    "type": "MCQ"
+  },
+  {
+    "id": "ex_2018_17",
+    "year": 2018,
+    "question_number": 17,
+    "question": "An open tank with a square base and vertical sides is to be constructed from a metal sheet so as to hold a given quantity of water. Show that the cost of material will be least when depth of the tank is half of its width. If the cost is to be borne by nearby settled lower income families, for whom water will be provided, what kind of value is hidden in this question ? Ans. Let side of base = x and depth of tank = y V V = x²y Þ y = , x² (V = Quantity of water = constant) Cost of material is least when area of sheet used is minimum. A (Surface area of tank) = x² + 4xy 4V x² = + x dA 4 V dA = 2x - , = 0 ½+½ dx x 2 dx x 3 x x³ Þ = 2V, y = = ½+½ 2 x 2 2 d 2 A 8 V = 2 + > 0 , ½+½ dx 2 x 3 \\ Area is minimum, thus cost is minimum when x y = 2 Value: Any relevant value. 1 [CBSE Marking Scheme, 2018] 2 cos x",
+    "answer": "See solution.",
+    "section": "C",
+    "marks": 4,
+    "chapter": "Matrices",
+    "type": "SA"
+  },
+  {
+    "id": "ex_2018_18",
+    "year": 2018,
+    "question_number": 18,
+    "question": "Find: dx ∫ − + 2 ( 1 sin x )( 1 sin x ) Þ Ans. Put sin x = t cos x dx = dt ½ 2 cos x dx Let I = ∫ ( ) ( ) 1 − sin x 1 + sin 2 x 2 = ∫ dt ( ) ( 1 − t ) 1 + t 2 2 A Bt + C Let = + , ( ) ( ) − + 2 1 − t 1 + t 2 1 t 1 t",
+    "answer": "ving we get\nA = 1, B = 1, C = 1 1½\n1 1 2 t 1\n∫ ∫ ∫\n\\ I = tdt + dt + dt\n1 − 2 1 + t 2 1 + t 2\n1\n= -log 1 −t + log 1 + t 2 + tan⁻¹ t + C\n2\n1½\n1\n= -log(1 - sinx) + log (1 + sin² x) +\n2\ntan⁻¹ (sinx) +C ½\n[CBSE Marking Scheme, 2018]",
+    "section": "C",
+    "marks": 4,
+    "chapter": "Integrals",
+    "type": "SA"
+  },
+  {
+    "id": "ex_2018_19",
+    "year": 2018,
+    "question_number": 19,
+    "question": "Find the particular solution of the differential equation ex tan y dx + (2 - ex) sec² y dy =0, given π that y = when x = 0. 4 OR Find the particular solution of the differential dy equation + 2 y tan x = sin x, given that y = dx π 0 when x = . 3 Ans. Separating the variables, we get: sec 2 y e x ∫ ∫ dy = dx 1½ tan y e x − 2 ex −2 1½ ⟹ log tan y = log + log C ⟹ C(ex p/4, tan y = - 2), for x = 0, y = C = -1 ½ ∴ Particular solution is: tan y = 2 - ex. ½ OR ∫ Integrating factor = e 2 tan xdx = sec² x 1 y·sec² ∫ ∴ Solution is: x = sin x ·sec 2 xdx 1 ∫ = sec x ·tan xdx π y·sec² x = sec x + C, for x = , y = 0, 3 ∴ C = -2 1+½ ∴ Particular solution is: y·sec² x = sec x - 2 or y = cos x - 2 cos² x ½ [CBSE Marking Scheme, 2018] → ∧ ∧ ∧→ ∧ ∧ ∧",
+    "answer": "See solution.",
+    "section": "C",
+    "marks": 4,
+    "chapter": "Integrals",
+    "type": "SA"
+  },
+  {
+    "id": "ex_2018_20",
+    "year": 2018,
+    "question_number": 20,
+    "question": "Let a = 4 i + 5 j − k , b = i − 4 j + 5 k and → ∧ ∧ ∧ → c = 3 i + j − k . Find a vector d which is → → → → perpendicular to both c and b and d . a =",
+    "answer": "See solution.",
+    "section": "C",
+    "marks": 4,
+    "chapter": "Vector Algebra",
+    "type": "SA"
+  },
+  {
+    "id": "ex_2018_21",
+    "year": 2018,
+    "question_number": 21,
+    "question": "i j k ( ) Ans. d = λ c × b = l 3 1 − 1 1 1 − 4 5 \\ d = λ i − 16 λ j − 13 λ k 1 d · a = 21 Þ 4l - 80l + 13l = 21 −1 Þ l = 1 3 1 16 13 \\ d = − i + j + k 1 3 3 3 [CBSE Marking Scheme, 2018]",
+    "answer": "See solution.",
+    "section": "C",
+    "marks": 4,
+    "chapter": "Relations and Functions",
+    "type": "SA"
+  },
+  {
+    "id": "ex_2019_4",
+    "year": 2019,
+    "question_number": 4,
+    "question": "If a line makes angles 90°, 135°, 45° with the X, Y and Z axes respectively, find its direction cosines. OR Find the vector equation of the line which passes through the point (3, 4, 5) and is parallel to the vector 2 i + 2 j + 3 k . * Out of Syllabus 2019 Max. Marks : 100 four sections A, B, C and D. Section A comprises of 4 questions of two marks each, Section C comprises of 11 questions of four six marks each. one sentence or as per the exact requirement of the question. been provided in 1 questions of section A, 3 questions of section B, have to attempt only one of the alternatives in all such questions. tables, if required Code No. Ans. d.c. 's = < cos 90°, cos 135°, cos 45°> ½ 1 1 = < 0,− , , > 2 2 ½ OR ∧ ∧ ∧ ∧ ∧ ∧ r = ( 3 i + 4 j + 5 k ) + λ ( 2 i + 2 j + 3 k ) 1 [CBSE Marking Scheme 2019]",
+    "answer": "See solution.",
+    "section": "A",
+    "marks": 1,
+    "chapter": "Three-Dimensional Geometry",
+    "type": "MCQ"
+  },
+  {
+    "id": "ex_2019_6",
+    "year": 2019,
+    "question_number": 6,
+    "question": "Evaluate: −∫ 1 − x 2 sin x cos 2 x dx . π OR 2 x −1∫ dx. Evaluate: x Ans. = − 2 2 Let f ( x ) ( 1 x ).sin x cos xs as f ( − x ) = − f ( x ) ⟹ f is odd function . ∴= I 0 OR 2 0 2 x I = ∫ dx = ∫ − 1 dx + ∫ 1 dx x − 1 − 1 0 = −+ 1 2 = 1 1 [CBSE Marking Scheme 2019] *7. Examine whether the operation * defined on R by a * b = ab + 1 is (i) a binary or not. (ii) if a binary operation, is it associative or not ?",
+    "answer": "See solution.",
+    "section": "B",
+    "marks": 2,
+    "chapter": "Integrals",
+    "type": "VSA"
+  },
+  {
+    "id": "ex_2019_9",
+    "year": 2019,
+    "question_number": 9,
+    "question": "A die marked 1, 2, 3 in red and 4, 5, 6 in green is tossed. Let A be the event \"number is even\" and B be the event \"number is marked red\". Find whether the events A and B are independent or not. Ans. A={2, 4, 6}, B={1, 2, 3}, (A ∩ B)= {2} 1 1 1 1 Now, P(A) = , P(B) = , P(A ∩ B) = 2 2 6 1 1 1 As P(A)×P(B) = × = ≠ P(A ∩ B) ½ 2 2 6 ⟹ A and B are not independent. ½ [CBSE Marking Scheme, 2019]",
+    "answer": "See solution.",
+    "section": "B",
+    "marks": 2,
+    "chapter": "Probability",
+    "type": "MCQ"
+  },
+  {
+    "id": "ex_2019_12",
+    "year": 2019,
+    "question_number": 12,
+    "question": "If the sum of two unit vectors is a unit vector, prove that the magnitude of their difference is",
+    "answer": "See solution.",
+    "section": "B",
+    "marks": 2,
+    "chapter": "Vector Algebra",
+    "type": "VSA"
+  },
+  {
+    "id": "ex_2019_13",
+    "year": 2019,
+    "question_number": 13,
+    "question": "Using properties of determinants, prove the following: a b c a − b b − c c − a = a 3 + b 3 + c 3 − 3 abc . b + c c + a a + b Ans. Refer the Q.33 in Outside p tan⁻¹ tan⁻¹",
+    "answer": "See solution.",
+    "section": "C",
+    "marks": 4,
+    "chapter": "Inverse Trigonometric Functions",
+    "type": "SA"
+  },
+  {
+    "id": "ex_2019_18",
+    "year": 2019,
+    "question_number": 18,
+    "question": "If y = (sin-1x)2, prove that d 2 y dy (1 - x²) − x − 2 = 0 2 dx dx Ans. y = (sin⁻¹ x)2 1 ⟹ y ′ = 2 ⋅ sin − 1 x ⋅ 1 2 1 − x ⟹ 1 − x 2 ⋅ y ′ = 2sin − 1 x 1 2 ⟹ 1 − x 2 ⋅ y ′′ + y ′ ⋅ ( − 2 x ) = 2 − 2 − 2 2 1 x 1 x d 2 y dy ⟹ (1 − x 2 ) ⋅ y ′′ − xy ′ = 2 or (1 − x 2 ) ⋅ − x − 2 = 0. dx 2 dx 1 [CBSE Marking, Scheme 2019] a a ∫ ( ) ∫ ( )",
+    "answer": "See solution.",
+    "section": "C",
+    "marks": 4,
+    "chapter": "Inverse Trigonometric Functions",
+    "type": "SA"
+  },
+  {
+    "id": "ex_2019_19",
+    "year": 2019,
+    "question_number": 19,
+    "question": "Prove that f x dx = f a − x dx , hence evaluate 0 0 π x sin x ∫ dx . 2 1 + cos x 0 Ans. Please refer the Q.29 in Outside Delhi Paper 2022. cos x ∫",
+    "answer": "See solution.",
+    "section": "C",
+    "marks": 4,
+    "chapter": "Integrals",
+    "type": "SA"
+  },
+  {
+    "id": "ex_2019_21",
+    "year": 2019,
+    "question_number": 21,
+    "question": "Solve the differential equation : − y = dx 1 + x 2 x² + 2 OR",
+    "answer": "ve the differential equation :\n( ) dy\nx + 1 = 2 e − y − 1; y(0) = 0.\ndx\n2 x\n− ∫ dx 1\n2\nAns. I.F. = e 1 + x = 1\n2\n1 + x\nSolution is given by,\n2\n 1  x + 2\ny ⋅ = ∫ dx\n  1\n 1 + x 2  1 + x 2\n1  1 \ny ⋅ = 1 + dx = x + tan − 1 x + c 1\n∫ \n+ 2  + 2 \n1 x 1 x\nor y = (1 + x² ) (x + tan⁻¹ x + c) 1\nOR\nGiven equation can be written as\ndy dx\n∫ ∫\n=\ne− y\n2 − 1 x + 1\ny\ne dx\n⟹ ∫ dy = ∫\n2 − e y x + 1\n1\n⟹ - log|2 - ey| + log c = log|x + 1| 1½\n⟹ (2 - ey ) (x + 1) = c\nWhen x = 0, y = 0 ⟹ c = 1 1\n∴ Solution is (2 - ey) (x + 1) = 1 ½\n[CBSE Marking Scheme 2019]\ni + j + k , 2 i + 5 j , 3 i + 2 j − 3 k i − 6 j − k\nand",
+    "section": "C",
+    "marks": 4,
+    "chapter": "Integrals",
+    "type": "SA"
+  },
+  {
+    "id": "ex_2019_22",
+    "year": 2019,
+    "question_number": 22,
+    "question": "If respectively are the position vectors of points A, B, C and D, then find the angle between the → straight lines AB and CD. Find whether AB and → CD are collinear or not. Ans. AB = ˆ i + 4 ˆ j − k ˆ 1 CD = − 2 ˆ i − 8 ˆ j + 2 k ˆ 1 Let required angle be θ. AB ⋅ CD −− 2 32 − 2 Then cos θ = = = − 1 18 72 1 AB CD ⟹ θ = 180° or π ½ Since θ = π so AB and CD are collinear. ½ [CBSE Marking Scheme 2019] 1 −x",
+    "answer": "See solution.",
+    "section": "C",
+    "marks": 4,
+    "chapter": "Vector Algebra",
+    "type": "SA"
+  },
+  {
+    "id": "ex_2019_2",
+    "year": 2019,
+    "question_number": 2,
+    "question": "If y = x x , find for x < 0. dx Ans. For x < 0, y = x |x| = -x² ½ dy ∴ = − 2 x dx ½ [CBSE Marking Scheme, 2019]",
+    "answer": "See solution.",
+    "section": "A",
+    "marks": 1,
+    "chapter": "Integrals",
+    "type": "MCQ"
+  },
+  {
+    "id": "ex_2019_10",
+    "year": 2019,
+    "question_number": 10,
+    "question": "If and a b 3 i 2 j 6 k , find the angle between a and b . OR Find the volume of a cuboid whose edges are given by − 3 i + 7 j + 5 k , − 5 i + 7 j − 3 k and − − 7 i 5 j 3 k . Ans. Let θ be the angle between a and b , then a × b 7 1 sin θ= = = 1½ a b 2.7 2 π 5 π ½ ⟹θ = or 6 6 OR { } ( ) ( ) ( − 3 ˆ i + 7 ˆ j + 5 k ˆ ) ⋅ − 5 ˆ i + 7 ˆ j − 3 k ˆ × 7 ˆ i − 5 ˆ j − 3 k ˆ − 3 7 5 1 = − 5 7 − 3 7 − 5 − 3 = -264 ½ ∴ Volume of cuboid = 264 cubic units ½ [CBSE Marking Scheme, 2019]",
+    "answer": "See solution.",
+    "section": "B",
+    "marks": 2,
+    "chapter": "Relations and Functions",
+    "type": "VSA"
+  },
+  {
+    "id": "ex_2019_11",
+    "year": 2019,
+    "question_number": 11,
+    "question": "If P(not A) = 0.7, P(B) = 0.7 and P(B/A) = 0.5, then find P(A/B). Ans. P ( A ) = 0.7 ⟹− 1 P(A) = 0.7 ⟹ P ( A ) = 0.3 ½ P ( A ∩ B ) = P ( A ) ⋅ P ( B | A ) = 0.3 × 0.5 = 0.15 ½ P ( A ∩ B ) 0.15 15 3 ( ) P A | B = = = or 1 P ( B ) 0.7 70 14 [CBSE Marking Scheme, 2019] * 12. A coin is tossed 5 times. What is the probability of getting (i) 3 heads, (ii) atmost 3 heads ? OR * Find the probability distribution of X, the number of heads in a simultaneous toss of two coins.",
+    "answer": "See solution.",
+    "section": "B",
+    "marks": 2,
+    "chapter": "Probability",
+    "type": "MCQ"
+  },
+  {
+    "id": "ex_2019_16",
+    "year": 2019,
+    "question_number": 16,
+    "question": "If x 1 + y + y 1 + x = 0 and x ¹ y, prove that dy 1 = − . dx ( ) 2 x + 1 OR dy If (cos x)y = (sin y)x find . dx x 1 + y + y 1 + x = 0 ⟹ x 1 + y = − y 1 + x Ans. ½ Squaring to get: x² (1 + y) = y² (1 + x) ½ Simplifying to get : (x - y) (x + y + xy) = 0 1 x ∴ As, x ≠ y y = − 1 + 1 x Differentiating w.r.t x, we get dy − 1(1 + x ) −− ( x ) ⋅ 1 − 1 = = 1 dx ( + ) 2 ( + ) 2 1 x 1 x OR (cos x)y = (sin y)x ⟹ y ⋅ log (cos x) = x ⋅ log (sin y) 1 Differentiating w.r.t ‘x’ dy ( ) ⟹ ⋅ logcos x + y − tan x dx ( ) dy = log sin y + x ⋅ cot y ⋅ 2 dx dy y ⋅ tan x + log(sin y ) ⟹ = 1 − dx log(cos x ) x cot y [CBSE Marking Scheme, 2019] a)2 b)2 c²,",
+    "answer": "See solution.",
+    "section": "C",
+    "marks": 4,
+    "chapter": "Integrals",
+    "type": "SA"
+  },
+  {
+    "id": "ex_2019_28",
+    "year": 2019,
+    "question_number": 28,
+    "question": "There are three coins. One is a two-headed coin, another is a biased coin that comes up heads 75% of the time and the third is an unbiased coin. One of the three coins is chosen at random and tossed. If it shows heads, what is the probability that it is the two-headed coin ? Ans. 1 Let E =Eventthattwo-headedcoinis chosen 1 E =Eventthat biasedcoi nis chosen 2 E =Eventthat unbiasedcoinis chosen 3 A =Eventthatcoint ossed showshead Then,P ( E ) = P ( E ) = P ( E ) = 1 / 3 1 1 2 3 75 3 1 1½ P ( A | E ) = 1 , P ( A | E ) = = , P ( A | E ) = 1 2 100 4 3 2 P ( E ). P ( A | E ) P ( E 1| A )= 1 1 P ( E ). P ( A | E ) + P ( E ). P ( A | E ) + P ( E ). P ( A | E³ 1 1 2 2 3 1 . 1 4 = 3 = 1 1 3 1 1 9 . 1 + . + . 3 3 4 3 2 2½ [CBSE Marking Scheme, 2019]",
+    "answer": "See solution.",
+    "section": "D",
+    "marks": 6,
+    "chapter": "Matrices",
+    "type": "LA"
+  },
+  {
+    "id": "ex_2019_1",
+    "year": 2019,
+    "question_number": 1,
+    "question": "If A and B are square matrices of the same order 3, such that |A| = 2 and AB = 2I, write the value of |B|. Ans. AB = 2I ⟹ |AB| = |2I| ⟹ |A| ⋅ |B| = 23|I| ½ ⟹ 2 × |B| = 8 ⟹ |B| = 4 ½ [CBSE Marking Scheme, 2019] differential",
+    "answer": "See solution.",
+    "section": "A",
+    "marks": 1,
+    "chapter": "Continuity and Differentiability",
+    "type": "MCQ"
+  },
+  {
+    "id": "ex_2019_7",
+    "year": 2019,
+    "question_number": 7,
+    "question": "Find: dx . tan 2 x + 4 Ans. Put tan x = t ⟹ sec2x dx = dt ½ sec 2 x dt ∫ = ∫ dx tan 2 x + 4 t 2 + 4 = log| t + t 2 + 4| + c ½ * Out of Syllabus Y x = 4 14 C(4, 13) 12 B(4, 9) 10 y=3x+1 8 y=2x+1 6 4 2 A(0,1) X’ X 0 2 4 6 Y’ [CBSE Marking Scheme, 2019] = log|tan x + tan 2 x + 4| + c ½ [CBSE Marking Scheme, 2019] π π",
+    "answer": "See solution.",
+    "section": "B",
+    "marks": 2,
+    "chapter": "Integrals",
+    "type": "VSA"
+  },
+  {
+    "id": "ex_2019_15",
+    "year": 2019,
+    "question_number": 15,
+    "question": "Using properties of determinants, prove that 2 a + 2 a 2 a + 1 1 = 2 a + 1 a + 2 1 = (a - 1)3. 3 3 1 a 2 + 2 a 2 a + 1 1 Ans. LHS = 2 a + 1 a + 1 1 3 3 1 R1 → R1 - R², R² → R² - R³ 2 a − 1 a − 1 0 = 2( a − 1) a − 1 0 2 3 3 1 a + 1 1 0 = ( a − 1) 2 2 1 0 3 3 1 1 Expanding along C³, =(a - 1)2.(a - 1) = (a - 1)3 = RHS. 1 [CBSE Marking Scheme, 2019] 3 x + 5",
+    "answer": "See solution.",
+    "section": "C",
+    "marks": 4,
+    "chapter": "Determinants",
+    "type": "SA"
+  },
+  {
+    "id": "ex_2020_1",
+    "year": 2020,
+    "question_number": 1,
+    "question": "If A is a square matrix of order 3, such that A(adj A) = 10 I, then |adj A| is equal to",
+    "answer": "See solution.",
+    "section": "A",
+    "marks": 1,
+    "chapter": "Determinants",
+    "type": "MCQ",
+    "options": {
+      "A": "1",
+      "B": "10",
+      "C": "100",
+      "D": "101\nAns. Option"
+    }
+  },
+  {
+    "id": "ex_2020_2",
+    "year": 2020,
+    "question_number": 2,
+    "question": "If A is a 3 × 3 matrix such that |A| = 8, then |3A| equals",
+    "answer": "See solution.",
+    "section": "A",
+    "marks": 1,
+    "chapter": "Matrices",
+    "type": "MCQ",
+    "options": {
+      "A": "8",
+      "B": "24",
+      "C": "72",
+      "D": "is correct.\nExplanation:\nHere |A| = 8\n33|A|\nThen |3A| = = 27 × 8 = 216\nd 2 y"
+    }
+  },
+  {
+    "id": "ex_2020_3",
+    "year": 2020,
+    "question_number": 3,
+    "question": "If y = Ae5x + Be-5x, then is equal to dx 2",
+    "answer": "See solution.",
+    "section": "A",
+    "marks": 1,
+    "chapter": "Integrals",
+    "type": "MCQ",
+    "options": {
+      "A": "is correct.\nExplanation:\ny = Ae5x + Be–5x\n:\ndy\nÞ = 5Ae5x – 5Be–5x\ndx\nd 2 y\nÞ = 25Ae5x + 25Be–5x\nd 2 x\n= 25 y\n∫",
+      "B": "5 y",
+      "C": "– 25 y",
+      "D": "15 y\n2020\nMax. Marks : 80\nfollow them :\nand D.\nare compulsory.\nof one mark each.\nof two marks each.\nof four marks each.\nof six marks each.\nan internal choice has been provided in 3 questions of one mark,\n2 questions of six marks. Only one of the choices in such questions\neach section and question, wherever necessary.\nAns. Option"
+    }
+  },
+  {
+    "id": "ex_2020_5",
+    "year": 2020,
+    "question_number": 5,
+    "question": "If i , j , k are unit vectors along three mutually perpendicular directions, then",
+    "answer": "See solution.",
+    "section": "A",
+    "marks": 1,
+    "chapter": "Vector Algebra",
+    "type": "MCQ",
+    "options": {
+      "A": "i . j = 1",
+      "B": "i × j = 1",
+      "C": "is correct.\nExplanation:\nπ\ni . k = | i || k |cos = 1 × 1 × 0 = 0\n2",
+      "D": "i × k = 0\nAns. Option"
+    }
+  },
+  {
+    "id": "ex_2020_6",
+    "year": 2020,
+    "question_number": 6,
+    "question": "ABCD is a rhombus whose diagonals intersect at E. → → → → Then EA + EB + EC + ED equals → →",
+    "answer": "See solution.",
+    "section": "A",
+    "marks": 1,
+    "chapter": "Matrices",
+    "type": "MCQ",
+    "options": {
+      "A": "is correct.\nExplanation:\nEA + EB + EC + ED = EA + EB − EA − EB = 0\nx − 2 y − 3 4 − z x − 1 y − 4",
+      "B": "0 AD\n→ →",
+      "C": "2BC",
+      "D": "2 AD\nAns. Option"
+    }
+  },
+  {
+    "id": "ex_2020_7",
+    "year": 2020,
+    "question_number": 7,
+    "question": "The lines = = and = = 1 1 k k 2 z − 5 are mutually perpendicular if the value of k − 2 is 2 2",
+    "answer": "See solution.",
+    "section": "A",
+    "marks": 1,
+    "chapter": "Relations and Functions",
+    "type": "MCQ",
+    "options": {
+      "A": "–",
+      "B": "3 3",
+      "C": "– 2",
+      "D": "2\nAns. Option"
+    }
+  },
+  {
+    "id": "ex_2020_8",
+    "year": 2020,
+    "question_number": 8,
+    "question": "The graph of the inequality 2x + 3y > 6 is",
+    "answer": "See solution.",
+    "section": "A",
+    "marks": 1,
+    "chapter": "Relations and Functions",
+    "type": "MCQ",
+    "options": {
+      "A": "half plane that contains the origin.",
+      "B": "is correct.\nExplanation: Since, the equation 2x + 3y >6, hence\nhalf plane that neither contains the origin nor the\npoints of the line 2x + 3y = 6.",
+      "C": "whole XOY-plane excluding the points on the\nline 2x + 3y = 6.",
+      "D": "entire XOY plane.\nAns. Option"
+    }
+  },
+  {
+    "id": "ex_2020_9",
+    "year": 2020,
+    "question_number": 9,
+    "question": "A card is picked at random from a pack of 52 playing cards. Given that the picked card is a queen, the probability of this card to be a card of spade is 1 4",
+    "answer": "See solution.",
+    "section": "A",
+    "marks": 1,
+    "chapter": "Matrices",
+    "type": "MCQ",
+    "options": {
+      "A": "",
+      "B": "3 13\n1 1",
+      "C": "",
+      "D": "4 2\nAns. Option"
+    }
+  },
+  {
+    "id": "ex_2020_10",
+    "year": 2020,
+    "question_number": 10,
+    "question": "A die is thrown once. Let A be the event that the number obtained is greater than 3. Let B be the event that the number obtained is less than 5. Then È P(A B) is 2 3",
+    "answer": "See solution.",
+    "section": "A",
+    "marks": 1,
+    "chapter": "Relations and Functions",
+    "type": "MCQ",
+    "options": {
+      "A": "+ P",
+      "B": "5 5",
+      "C": "0",
+      "D": "1\nAns. Option"
+    }
+  },
+  {
+    "id": "ex_2020_19",
+    "year": 2020,
+    "question_number": 19,
+    "question": "If f(x) = - 10, then find the approximate value of f(2.1). OR * Find the slope of the tangent to the curve π y = 2 sin²(3x) at x = . 6 Ans. Since, f(x + h) = f(x) + h f'(x), where h ® 0 here x =2, h = 0·1 \\ f(2·1) = f(2) + (0·1)f'(2) ...(i) Also f'(x) = 4x³ 23 f'(2) = 4 × = 32 From (i) f(2·1) = 16 - 10 + (0·1) × 32 f(2·1) = 6 + 3·2 = 9·2 4 ∫ −",
+    "answer": "See solution.",
+    "section": "C",
+    "marks": 3,
+    "chapter": "Determinants",
+    "type": "SA"
+  },
+  {
+    "id": "ex_2020_20",
+    "year": 2020,
+    "question_number": 20,
+    "question": "Find the value of | x 5 | dx . 1 4 4 ∫ | x − 5 | dx ∫( − x − 5 ) dx Ans. = 1 1 1 − − 2 4 = [( x 5 ) ] 2 1 4 1 15 ∫ | x − 5 | dx = − [ 1 − 16 ] = 2 2 1 Question numbers 21 to 26 carry 2 marks each. 4 x + 3 2 * 21. If f ( x ) = , x ≠ , then show that (fof) (x) = x, 6 x − 4 3 2 for all x . Also, write inverse of f. „ 3 OR Check if the relation R in the set R of real numbers defined as R = {(a, b) : a < b} is (i) symmetric, (ii) transitive. Ans. OR (i) It is not symmetric because if a < b then b < a is not true (ii) Here, if a < b and b < c then a < c is also true for all a, b, c Î Real numbers. Therefore R is transitive. x",
+    "answer": "See solution.",
+    "section": "C",
+    "marks": 3,
+    "chapter": "Determinants",
+    "type": "SA"
+  },
+  {
+    "id": "ex_2020_26",
+    "year": 2020,
+    "question_number": 26,
+    "question": "Given two independent events A and B such that P(A) = 0.3 and P(B) = 0.6, find P(A' Ç B'). P(A'ÇB') Ans. = P(A').P(B') = [1 - P(A)] [1 - P(B)] = [1 - 0.3] [1 - 0.6] = (0.7).(0.4) Þ P(A'ÇB') = 0.28 Question numbers 27 to 32 carry 4 marks each. π",
+    "answer": "See solution.",
+    "section": "D",
+    "marks": 5,
+    "chapter": "Probability",
+    "type": "MCQ"
+  },
+  {
+    "id": "ex_2020_30",
+    "year": 2020,
+    "question_number": 30,
+    "question": "If a = i + 2 j + 3 k and b = 2 i + 4 j − 5 k represent two adjacent sides of a parallelogram, find unit vectors parallel to the diagonals of the parallelogram. OR Using vectors, find the area of the triangle ABC with vertices A(1, 2, 3), B(2, -1, 4) and C(4, 5, -1). + + Ans. Given that, a = i 2 j 3 k and b = 2 i + 4 j − 5 k are two adjacent sides of a parallelogram. Let us suppose d1 and d² are two diagonals of parallelogram. Then, d1 = a + b + + + + − = i 2 j 3 k 2 i 4 j 5 k = 3 i + 6 j − 2 k and d² = b − a = 2 i + 4 j − 5 k −− i 2 j − 3 k = i + 2 j − 8 k Now, unit vector parallel to d1 is 3 i + 6 j − 2 k d = 1 9 + 36 + 4 3 i + 6 j − 2 k = 49 3 i + 6 j − 2 k d = 1 7 And unit vector parallel to d² is i + 2 j − 8 k d² = + + 1 4 64 i + 2 j − 8 k = 69 OR Given that, = i + 2 j + 3 k OA − + OB = 2 i j 4 k and OC = 4 i + 5 j − k Now, AB = OB - OA = 2 i − j + 4 k −− i 2 j − 3 k = i − 3 j + k and AC = OC - OA = 4 i + 5 j − k −− i 2 j − 3 k = 3 i + 3 j − 4 k We know the area of the given triangle 1 = 2| AB × AC | i j k Now, AB × AC = 1 − 3 1 3 3 − 4 = i ( 12 − 3 ) + j ( 3 + 4 ) + k ( 3 + 9 ) = 9 i + 7 j + 12 k Therefore, | AB × AC | = ( 9 ) 2 + ( 7 ) 2 + ( 12 ) 2 = 81 + 49 + 144 = 274 1 Hence, Required area = 274 unit² 2",
+    "answer": "See solution.",
+    "section": "D",
+    "marks": 5,
+    "chapter": "Determinants",
+    "type": "LA"
+  },
+  {
+    "id": "ex_2020_31",
+    "year": 2020,
+    "question_number": 31,
+    "question": "A company manufactures two types of novelty souvenirs made of plywood. Souvenirs of type A requires 5 minutes each for cutting and 10 minutes each for assembling. Souvenirs of type B require 8 minutes each for cutting and 8 minutes each for assembling. Given that total time for cutting is 3 hours 20 minutes and for assembling 4 hours. The profit for type A souvenir is ` 100 each and for type B souvenir, profit is 120 each. How ` many souvenirs of each type should the company manufacture in order to maximize the profit ? Formulate the problem as an LPP and solve it graphically. Ans. Suppose number of souvenirs of type A and type B are x and y respectively. Then, the LPP is as follows : Maximize Z = 100x + 120y Subject to 5x + 8y £ 200 10x + 8y £ 240 and x, y ³ 0 To solve the LPP graphically first we convert inequalities into equations and draw the corresponding lines. Then, Corner points Value of Z in ` A (0, 25) 3000 B (8, 20) 3200 maximum C (24, 0) 2400 y 40 30 (0, 30) 10 x + 8 y = 240 (0, 25) B(8, 20) 20 10 5 x + 8 y = 200 (40, 0) x 0 10 20 30 40 C(24, 0) Clearly, maximum profit is obtained when 8 souvenirs of type A and 20 souvenirs of type B is manufactured. Then Maximum profit = 100 × 8 + 120 × 20 = `3200",
+    "answer": "See solution.",
+    "section": "D",
+    "marks": 5,
+    "chapter": "Linear Programming",
+    "type": "LA"
+  },
+  {
+    "id": "ex_2020_33",
+    "year": 2020,
+    "question_number": 33,
+    "question": "Find the vector and cartesian equations of the line which is perpendicular to the lines with equations x + 2 y − 3 z + 1 x − 1 y − 2 z − 3 = = and = = 1 2 4 2 3 4 and passes through the point (1, 1, 1). Also find the angle between the given lines. Ans. Let us suppose the direction ratios of the required line L is a, b, c and it is perpendicular to the given lines Then, a + 2b + 4c = 0 ...(i) 2a + 3b + 4c = 0 ...(ii)",
+    "answer": "ving (i) and (ii) by cross multiplication\na b c\n= =\n8 − 12 8 − 4 3 − 4\na b c\n= =\n−4 4 −1\n\\ Direction ratios of line L are -4, 4, -1.\nThen required vector and cartesian equations of the\nline L are respectively\n^ ^ ^ ^\nr = i + j + k + λ ( − 4 i + 4 j − k )\nx − 1 y −1 z − 1\nand = =\n− 4 4 − 1\nNow, Suppose q is the angle between given lines,\n| 1 × 2 + 2 × 3 + 4 × 4 |\nSo cosq =\n1 + 4 + 16 4 + 9 + 16\n24\n=\n21 29\ncos− 24 \n\\ q 1\n=  \n609",
+    "section": "D",
+    "marks": 5,
+    "chapter": "Three-Dimensional Geometry",
+    "type": "LA"
+  },
+  {
+    "id": "ex_2020_21",
+    "year": 2020,
+    "question_number": 21,
+    "question": "Find ∫ dx . x ( 1 − 2 x ) x + 1 x 1 ∫ ∫ ∫ Ans. dx = dx + dx − − − x ( 1 2 x ) x ( 1 2 x ) x ( 1 2 x ) x + 1 1 1 2 ∫ dx ∫ dx + ∫ xdx + ∫ dx Þ = x ( 1 − 2 x ) ( 1 − 2 x ) ( 1 − 2 x ) x + 1 ∫ 1 Þ dx = − log| 1 − 2 x | + log| x | x ( 1 − 2 x ) 2 1 −× 2 log| 1 − 2 x | + C 2 x + 1 3 ∫ dx Þ = − log| 1 − 2 x | + log| x | + C x ( 1 − 2 x ) 2 x sin − 1 ( x 2 )",
+    "answer": "See solution.",
+    "section": "C",
+    "marks": 3,
+    "chapter": "Integrals",
+    "type": "SA"
+  },
+  {
+    "id": "ex_2020_36",
+    "year": 2020,
+    "question_number": 36,
+    "question": "Find the point on the curve y² = 4x which is nearest to the point (2, 1). Ans. Suppose the required point on the curve is K(p, q) and the given point is A(2, 1). \\ q² = 4p ...(i) Note: Except these, all other questions are from Question numbers 1 to 10 are multiple choice questions of 1 mark each. Select the correct option:",
+    "answer": "See solution.",
+    "section": "D",
+    "marks": 5,
+    "chapter": "Relations and Functions",
+    "type": "LA"
+  },
+  {
+    "id": "ex_2020_18",
+    "year": 2020,
+    "question_number": 18,
+    "question": "Evaluate |sin x | dx 0 2π ∫ Ans. |sin x | dx 0 2π ∫ |sin x | dx Let I = 0 π 2 π = ∫ |sin x | dx + ∫ |sin x | dx 0 π π 2 π ∫ sin xdx − ∫ sin xdx = 0 π −[ ] π −−[ ] 2 π = cos x cos x π 0 = [-cosp + cos0] - [-cos²p + cosp] = [1 + 1] - [-1 - 1] = 2 + 2 = 4 a dx π ∫",
+    "answer": "See solution.",
+    "section": "C",
+    "marks": 3,
+    "chapter": "Integrals",
+    "type": "SA"
+  },
+  {
+    "id": "ex_2020_23",
+    "year": 2020,
+    "question_number": 23,
+    "question": "Show that the function f defined by f(x) = (x - 1)ex + 1 is an increasing function for all x > 0. Ans. f(x) = (x - 1)ex + 1, x > 0 f'(x) = (x - 1)ex + ex(1 - 0) + 0 = xex - ex + ex = xex For all x > 0 xex > 0 f'(x) > 0 1)ex Hence, function f(x) = (x - + 1 is an increasing function for all x > 0. → → → →",
+    "answer": "See solution.",
+    "section": "D",
+    "marks": 5,
+    "chapter": "Relations and Functions",
+    "type": "LA"
+  },
+  {
+    "id": "ex_2020_24",
+    "year": 2020,
+    "question_number": 24,
+    "question": "Find | a | and | b | , if | a | = 2 | b | and → → → → ( a + b ).( a − b ) = 12 . OR Find the unit vector perpendicular to each of the → → ^ a = 4 i + 3 j + ^ k b = 2 i − j + 2 k . vectors and Ans. | a | = ? | b | = ? | a | = 2| b | Given, and ( a + b ).( a − b ) = 12 Þ a . a − a . b + b . a − b . b = 12 Þ − a . a b . b = 12 Þ | a | 2 − | b | 2 = 12 Þ ( 2 | b |) 2 − (| b |) 2 = 12 4 | b | 2 − | b | 2 Þ = 12 Þ 3 | b | 2 = 12 Þ | b | 2 = 4 Þ | b | = 2 Þ | a | = 2| b | = 2(2) = 4 Hence, | a | = 4 and | b | = 2 OR a Given, = 4 i + 3 j + k and b = 2 i − j + 2 k i j k Hence, a × b = 4 3 1 2 − 1 2 = i ( 6 + 1 ) − j ( 8 − 2 ) + k ( − 4 − 6 ) = 7 i − 6 j − 10 k Unit vector perpendicular to each at the vector a and b * Out of Syllabus a × b = | a × b | 7 i − 6 j − 10 k = 2 + − 2 + − 2 ( 7 ) ( 6 ) ( 10 ) 7 6 10 = i − j − k 185 185 185 * 25. Find the equation of the plane with intercept 3 on the y-axis and parallel to xz - plane. 3 2",
+    "answer": "See solution.",
+    "section": "D",
+    "marks": 5,
+    "chapter": "Vector Algebra",
+    "type": "LA"
+  },
+  {
+    "id": "ex_2020_32",
+    "year": 2020,
+    "question_number": 32,
+    "question": "A coin is biased so that the head is three times as likely to occur as tail. If the coin is tossed twice, find the probability distribution of number of tails. Hence find the mean of the number of tails. OR Suppose that 5 men out of 100 and 25 women out of 1000 are good orators. Assuming that there are equal number of men and women, find the probability of choosing a good orator. 3 1 Ans. P(Head) = , P(Tail) = 4 4 Let X be the number of tails in two tosses : X 0 1 2 3 3 3 1 1 1 × 2 × × × 4 4 4 4 4 4 9 6 1 P(X) 16 16 16 Mean = SXP(X) 9 6 1 = 0 × + 1 × + 2 × 16 16 16 6 2 = 0 + + 16 16 8 = 16 1 = 2 OR 5 P(Men good orator) = 100 25 P(Women good orator) = 1000 P(of choosing good orator) = ? Let E1 and E² denote the events that the person is a good orator. 1 E1 = Man orator, P(E1) = 2 1 E² = Woman orator, P(E²) = 2 A = Selecting good orator 5 ( ) ( ) 25 P A / E = , P A / E = 1 100 2 1000 Required Probability P(A) = P ( E ) × P ( A / E ) + P ( E ) × P ( A / E ) 1 1 2 2 1 5 1 25 = × + × 2 100 2 1000 3 = 80 Q. 33 to 36 carry 6 marks each.",
+    "answer": "See solution.",
+    "section": "D",
+    "marks": 5,
+    "chapter": "Matrices",
+    "type": "MCQ"
+  },
+  {
+    "id": "ex_2020_35",
+    "year": 2020,
+    "question_number": 35,
+    "question": "Find the area of the region lying in the first quadrant and enclosed by the X-axis, the line y = x x² y² and the circle + = 32. Ans. We have y = 0, y = x and the circle x² + y² = 32 in the first quadrant.",
+    "answer": "ving y = x with the circle\nx² + x² = 32\nx² = 16\nx = 4 (In the first quadrant)\nWhen x = 4,\ny = 4 for the point of intersection of the circle with\nthe X-axis.\nPut y = 0\nx² + 0 = 32\nx = ±4 2\nSo, the circle intersects the X-axis at ( ± 4 2, 0) .\nOutside Note : Except these, all other questions from outside \nQuestion numbers 1 to 10 are multiple choice\nquestions of 1 mark each. Select the correct option:\n 200 50   50 40 \n   ,",
+    "section": "D",
+    "marks": 5,
+    "chapter": "Application of Integrals",
+    "type": "LA"
+  },
+  {
+    "id": "ex_2020_25",
+    "year": 2020,
+    "question_number": 25,
+    "question": "Find the derivative of xlog x w.r.t. log x. Ans. let u = xlogx, v = logx and u = xlogx taking log on both sides logu = logxlogx logu = logxlogx logu = (logx)2 Differentiate w.r.t. x 1 du 1 = 2 logx × u dx x du 2 log x = u · dx x du x log x . 2 log x = ...(i) dx x v = logx Differentiate w.r.t. to x dv 1 = ...(ii) dx x On dividing eq(i) by eqn. (ii) du 2 log x x log x . dx x = 1 dv dx x du = 2logx.xlogx dv The derivative of xlogx w.r.t. to logx is 2logx.xlogx. Q. 27 to 32 carry 4 marks each. ®",
+    "answer": "See solution.",
+    "section": "D",
+    "marks": 5,
+    "chapter": "Continuity and Differentiability",
+    "type": "LA"
+  },
+  {
+    "id": "ex_2022_T1_1",
+    "year": "2022-T1",
+    "question_number": 1,
+    "question": "Differential of log [log (log x5)] w.r.t x is 5 (a) 5 5 x log( x )log(log x ) 5 (b) x log(log x 5 ) 5 x 4 (c) 5 5 log( x )log(log x ) 5 x 4 (d) log x 5 log(log x 5 )",
+    "answer": "(A) 1 d\nd 5\n\\ = [log(log x )]\n5 dx\ndx log(log x )\n(By Chain Rule)\n1 1 d\n. log x 5\n=\nlog(log x 5 ) log x 5 dx\n1 1 d\n( x 5 )\n=\nlog( x 5 )log(log x 5 ) x 5 dx\n5\n=\nx log( x 5 )log(log x 5 )",
+    "section": "A",
+    "marks": 1,
+    "chapter": "Continuity and Differentiability",
+    "type": "MCQ"
+  },
+  {
+    "id": "ex_2022_T1_2",
+    "year": "2022-T1",
+    "question_number": 2,
+    "question": "The number of all possible matrices of order 2 × 3 with each entry 1 or 2 is",
+    "answer": "(C) The order of the matrix = 2 × 3\nThe number of elements = 2 × 3 = 6\nEach place can have either 1 or 2. So, each place can be\nfilled in 2 ways.\nThus, the number of possible matrices = 26 = 64\nx3",
+    "section": "A",
+    "marks": 1,
+    "chapter": "Matrices",
+    "type": "MCQ",
+    "options": {
+      "A": "16",
+      "B": "6",
+      "C": "64"
+    }
+  },
+  {
+    "id": "ex_2022_T1_3",
+    "year": "2022-T1",
+    "question_number": 3,
+    "question": "A function f : R ® R is defined as f(x) = + 1. Then the function has",
+    "answer": "(D) Given, f(x) = + 1\n3x²\n\\ f '(x) = and f \"(x) = 6x\nPut f '(x) = 0\n3x²\nÞ = 0 Þ x = 0\nAt x = 0, f \"(x) = 0\nThus, f(x) has neither maximum value nor minimum\nvalue.\ndx",
+    "section": "A",
+    "marks": 1,
+    "chapter": "Application of Derivatives",
+    "type": "MCQ",
+    "options": {
+      "A": "no minimum value",
+      "B": "no maximum value",
+      "C": "both maximum and minimum values",
+      "D": "neither maximum value nor minimum value"
+    }
+  },
+  {
+    "id": "ex_2022_T1_4",
+    "year": "2022-T1",
+    "question_number": 4,
+    "question": "If sin y = x cos(a + y), then is dy cos a − cos a",
+    "answer": "(A) sin y\nÞ x =\ncos( a + y )\nDifferentiating with respect to y, we get\nd d\ncos( a + y ) (sin y ) − sin y {cos( a + y )}\ndx dy dy\n=\ndy cos 2 ( a + y )\n+ − − +\ndx cos( a y )cos y sin y [ sin( a y )]\n=\nÞ\ndy cos 2 ( a + y )\ncos( a + y )cos y + sin y sin( a + y )\ndx\nÞ =\n2\ndy cos ( a + y )\ndx cos[( a + y ) − y ]\nÞ =\ndy 2\ncos ( a + y )\ndx cos a\nÞ =\ndy cos 2 ( a + y )\nx 2 y 2",
+    "section": "A",
+    "marks": 1,
+    "chapter": "Integrals",
+    "type": "MCQ",
+    "options": {
+      "A": "",
+      "C": "",
+      "D": "sin 2 y sin 2 y"
+    }
+  },
+  {
+    "id": "ex_2022_T1_5",
+    "year": "2022-T1",
+    "question_number": 5,
+    "question": "The points on the curve + = 1, where 9 25 tangent is parallel to X-axis are (±5, ±5) (a) 0) (b) (0, (c) (0, ±3) (d) (±3, 0)",
+    "answer": "(B) 2 2\nx y\n+ = 1 ...(i)\n9 25\nOn differentiating both sides w.r.t. x, we get\n2 x 2 y dy\n+ = 1\n9 25 dx\ndy −25 x\nÞ =\n9 y\ndx\nSince, tangent is parallel to X-axis, then the slope of\nthe tangent is zero.\n−25 x\n\\ = 0, which is possible if x = 0\n9 y\nPut x = 0 in eq (i), we get\ny²\ny²\n= 1 Þ = 25 Þ y = ±5\n25\nHence, required points are (0, ±5).",
+    "section": "A",
+    "marks": 1,
+    "chapter": "Application of Derivatives",
+    "type": "MCQ"
+  },
+  {
+    "id": "ex_2022_T1_6",
+    "year": "2022-T1",
+    "question_number": 6,
+    "question": "Three points P(2x, x + 3), Q(0, x) and R(x + 3, x + 6) are collinear, then x is equal to",
+    "answer": "(D) As points are collinear\nÞ area of triangle formed by 3 points is zero.\n− −\n1 ( x x ) ( x x )\nÞ 1 2 2 3 = 0\n2 ( y − y ) ( y − y )\n1 2 2 3\n1 ( 2 x − 0 ) { 0 − ( x + 3 )}\nÞ\n= 0\n2 ( x + 3 − x ) { x − ( x + 6 )}\n2 x − ( x + 3 )\nÞ = 0\n3 − 6\nÞ -12x + 3(x + 3) = 0\nÞ -12x + 3x + 9 = 0\nÞ -9x = -9\nÞ x = 1\n 1   1 \n− 1 + − 1 −",
+    "section": "A",
+    "marks": 1,
+    "chapter": "Relations and Functions",
+    "type": "MCQ",
+    "options": {
+      "A": "0",
+      "B": "2",
+      "C": "3",
+      "D": "1"
+    }
+  },
+  {
+    "id": "ex_2022_T1_8",
+    "year": "2022-T1",
+    "question_number": 8,
+    "question": "If (x² + y²)2 = xy, then is dx y + 4 x ( x 2 + y 2 ) y − 4 x ( x 2 + y 2 )",
+    "answer": "(C) Þ x⁴ + 2x²y2 + y⁴ - xy = 0\nDifferentiating w.r.t. x, we get\n dy  dy  dy \n3 2 2 3\n4 x + 2 2 xy + x . 2 y + 4 y − y + x = 0\n  \ndx dx dx\ndy\n 4 x 2 y + 4 y 3 − x +  4 x 3 + 4 xy 2 − y  = 0\ndx\n3 2\ndy − [ 4 x + 4 xy − y ]\n=\n[ 4 x 2 y + 4 y 3 − x ]\ndx\ny − 4 x ( x 2 + y 2 )\ndy\nor =\n2 + 2 −\ndx 4 y ( x y ) x",
+    "section": "A",
+    "marks": 1,
+    "chapter": "Integrals",
+    "type": "MCQ",
+    "options": {
+      "A": "",
+      "C": ""
+    }
+  },
+  {
+    "id": "ex_2022_T1_9",
+    "year": "2022-T1",
+    "question_number": 9,
+    "question": "If a matrix A is both symmetric and skew symmetric, then A is necessarily a",
+    "answer": "(B) If matrix A is symmetric\nAT = A\nIf matrix A is skew-symmetric\nAT = -A\nAlso, diagonal elements are zero.\nSince, it is given that matrix A is both symmetric and\nskew-symmetric.\n\\ A = AT = -A\nWhich is only possible if A is zero matrix.\n 0 0 \nA = = AT = -A\n \n0 0\nThus, if a matrix A is both symmetric and skew\nsymmetric, then A is necessarily a zero matrix.",
+    "section": "A",
+    "marks": 1,
+    "chapter": "Matrices",
+    "type": "MCQ",
+    "options": {
+      "A": "Diagonal matrix",
+      "B": "Zero square matrix",
+      "C": "Square matrix",
+      "D": "Identity matrix"
+    }
+  },
+  {
+    "id": "ex_2022_T1_10",
+    "year": "2022-T1",
+    "question_number": 10,
+    "question": "Let set X = {1, 2, 3} and a relation R is defined in X as: R = {(1, 3), (2, 2), (3, 2)}, then minimum ordered pairs which should be added in relation R to make it reflexive and symmetric are (a) {(1, 1), (2, 3), (1, 2)} (b) {(3, 3), (3, 1), (1, 2)} (c) {(1, 1), (3, 3), (3, 1). (2, 3)} (d) {(1, 1), (3, 3), (3, 1), (1, 2)}",
+    "answer": "(C) }.\nSince, (2, 2) Î R. So, we need to add (1, 1) and\n(3, 3) to make R reflexive.\n(ii) R is symmetric if it contains {(2, 2), (1, 3), (3, 1), (3, 2),\n(2, 3)}.\nSince, {(2, 2), (1, 3), (3, 2)} Î R. So, we need to add\n(3, 1) and (2, 3).\nThus, minimum ordered pairs which should\nbe added in relation R to make it reflexive and\nsymmetric are {(1, 1), (3, 3), (3, 1), (2, 3)}.",
+    "section": "A",
+    "marks": 1,
+    "chapter": "Relations and Functions",
+    "type": "MCQ"
+  },
+  {
+    "id": "ex_2022_T1_11",
+    "year": "2022-T1",
+    "question_number": 11,
+    "question": "A Linear Programming Problem is as follows: Minimise z = 2x + y subject to the constraints x ³ 3, x £ 9, y ³ 0 x - y ³ 0, x + y £ 14 The feasible region has (a) 5 corner points including (0, 0) and (9, 5) (b) 5 corner points including (7, 7) and (3, 3) (c) 5 corner points including (14, 0) and (9, 0) (d) 5 corner points including (3, 6) and (9, 5)",
+    "answer": "(B) x = 9, x = y and x + y = 14, we get the following\ngraph. From the graph given below it clear that\nfeasible region is ABCDEA, including corner points\nA(9, 0), B(3, 0), C(3, 3), D(7, 7) and E(9, 5).\nThus feasible region has 5 corner points including\n(7, 7) and (3, 3).\nClass-12th\n e 3 x − e − 5 x\n\n, if x ≠ 0",
+    "section": "A",
+    "marks": 1,
+    "chapter": "Linear Programming",
+    "type": "MCQ"
+  },
+  {
+    "id": "ex_2022_T1_14",
+    "year": "2022-T1",
+    "question_number": 14,
+    "question": "The function y = x²e-x is decreasing in the interval (a) (0, 2) (b) (2, ¥) (c) (-¥, 0) (d) (-¥, 0) È (2, ¥)",
+    "answer": "See solution.",
+    "section": "A",
+    "marks": 1,
+    "chapter": "Application of Derivatives",
+    "type": "MCQ"
+  },
+  {
+    "id": "ex_2022_T1_15",
+    "year": "2022-T1",
+    "question_number": 15,
+    "question": "If R = {(x , y); x, y Î Z, x² + y² £ 4} is a relation in set Z, then domain of R is",
+    "answer": "(B) Given,\nR = {(x, y) : x, y Î Z, x² + y² £ 4 }\nSince, y = f(x)\ny = 4 −x 2\nFor, x = 0, ± 1, ± 2, Þ y = ± 2, ± 3 , 0\nHence, the required domain will be 0 ±1, ±2",
+    "section": "A",
+    "marks": 1,
+    "chapter": "Relations and Functions",
+    "type": "MCQ",
+    "options": {
+      "A": "{0, 1, 2}",
+      "B": "{–2, –1, 0, 1, 2}",
+      "C": "{0, –1, –2}",
+      "D": "{–1, 0, 1}"
+    }
+  },
+  {
+    "id": "ex_2022_T1_16",
+    "year": "2022-T1",
+    "question_number": 16,
+    "question": "The system of linear equations 5x + ky = 5, 3x + 3y = 5; will be consistent if",
+    "answer": "(D) We have, 5x + ky - 5 = 0\nand 3x + 3y - 5 = 0\nFor consistent system\n5 k\n¹\n3 3\nÞ k ¹ 5\n* 17. The equation of the tangent to the curve y (1 + x²)\n= 2 - x, where it crosses the X-axis is\n(a) x - 5y = 2 (b) 5x - y = 2\n(c) x + 5y = 2 (d) 5x + y = 2\n 3 c + 6 a − d   12 2 ",
+    "section": "A",
+    "marks": 1,
+    "chapter": "Application of Derivatives",
+    "type": "MCQ",
+    "options": {
+      "A": "k ¹ – 3",
+      "B": "k = –5",
+      "C": "k = 5",
+      "D": "k ¹ 5"
+    }
+  },
+  {
+    "id": "ex_2022_T1_21",
+    "year": "2022-T1",
+    "question_number": 21,
+    "question": "The function f(x) = - + 36x + 6 is increasing in the interval (a) (-¥, 2) È (3, ¥) (b) (-¥, 2) (c) (-¥, 2] È [3, ¥) (d) [3, ¥)",
+    "answer": "(C) 6x²\n\\ f '(x) = - 30x + 36\nIt f '(x) ³ 0, then f(x) is increasing.\nSo, 6x² - 30x + 36 ³ 0\nor, x² - 5x + 6 ³ 0\nor, (x - 3)(x - 2) ³ 0\n\\ x Î (-¥, 2] È [3, ¥)",
+    "section": "A",
+    "marks": 1,
+    "chapter": "Relations and Functions",
+    "type": "MCQ"
+  },
+  {
+    "id": "ex_2022_T1_22",
+    "year": "2022-T1",
+    "question_number": 22,
+    "question": "If x = 2cos q - cos 2q and y = 2sin q - sin² q, then dy is dx cos θ + cos 2 θ cos θ − cos 2 θ",
+    "answer": "(B) cos θ − cos 2 θ cos 2 θ − cos θ\n\nGiven, x = 2 cos q - cos 2q\nand y = 2 sin q - sin 2q\ndx\nTherefore, = -2 sin q + 2 sin 2q\ndθ\ndy\nand = 2 cos q - 2 cos 2q\ndθ\ndy 2 cos θ − 2 cos 2 θ\n\\ =\ndx − 2 sin θ + 2 sin 2 θ\ndy cos θ − cos 2 θ\nor =\ndx sin 2 θ − sin θ",
+    "section": "A",
+    "marks": 1,
+    "chapter": "Integrals",
+    "type": "MCQ",
+    "options": {
+      "A": "",
+      "B": "sin θ − sin 2 θ sin 2 θ − sin θ\ncos θ − cos 2 θ cos 2 θ − cos θ",
+      "C": "",
+      "D": "sin θ − sin 2 θ sin 2 θ + sin θ"
+    }
+  },
+  {
+    "id": "ex_2022_T1_23",
+    "year": "2022-T1",
+    "question_number": 23,
+    "question": "What is the domain of the function cos⁻¹ (2x - 3)?",
+    "answer": "(D) Let, f(x) = cos⁻¹ (2x - 3)\nQ -1 £ 2x - 3 £ 1\nÞ 2 £ 2x £ 4\nÞ 1 £ x £ 2\n\\ x Î [1, 2] or domain of x is [1, 2].",
+    "section": "A",
+    "marks": 1,
+    "chapter": "Relations and Functions",
+    "type": "MCQ",
+    "options": {
+      "A": "[–1, 1]",
+      "D": "[1, 2]"
+    }
+  },
+  {
+    "id": "ex_2022_T1_27",
+    "year": "2022-T1",
+    "question_number": 27,
+    "question": "Let X = : x Î N} and the function f : N ® X is x², defined by f(x) = x Î N. Then this function is",
+    "answer": "(A) Let x1, x² Î N\nf(x1) = f(x²)\nÞ x1 2 = x² 2\nÞ x1 2 - x² 2 = 0\nÞ (x1 + x²) (x1 - x²) = 0\nÞ x1 = x²\n{x1 + x1 ¹ 0 as x1, x² Î N}\nHence, f(x) is injective.\nAlso, the elements like 2 and 3 have no pre-image in\nN. Thus, f(x) is not surjective.",
+    "section": "B",
+    "marks": 2,
+    "chapter": "Relations and Functions",
+    "type": "MCQ",
+    "options": {
+      "A": "injective only",
+      "B": "not bijective",
+      "C": "surjective only",
+      "D": "bijective"
+    }
+  },
+  {
+    "id": "ex_2022_T1_28",
+    "year": "2022-T1",
+    "question_number": 28,
+    "question": "The corner points of the feasible region for a Linear Programming problem are P(0, 5), Q(1, 5), R(4, 2) and S(12, 0). The minimum value of the objective function Z= 2x + 5y is at the point",
+    "answer": "(C) Corner Points Value of Z = 2x + 5y\nP(0, 5) Z = 2(0) + 5(5) = 25\nQ(1, 5) Z = 2(1) + 5(5) = 27\nZ = 2(4) + 5(2) = 18 Minimum\nR(4, 2)\nS(12, 0) Z = 2(12) + 5(0) = 24\nThus, minimum value of Z occurs at R(4, 2).\nay² x³\n* 29. The equation of the normal to the curve = at\nthe point (am², am³) is\nam³\n(a) 2y - 3mx + = 0\n(b) 2x + 3my 3am⁴ - am² = 0\n(c) 2x + 3my + 3am⁴ - 2am = 0\n3am⁴ 2am²\n(d) 2x + 3my - - = 0",
+    "section": "B",
+    "marks": 2,
+    "chapter": "Linear Programming",
+    "type": "MCQ",
+    "options": {
+      "A": "P",
+      "B": "Q",
+      "C": "R",
+      "D": "S"
+    }
+  },
+  {
+    "id": "ex_2022_T1_30",
+    "year": "2022-T1",
+    "question_number": 30,
+    "question": "If A is a square matrix of order 3 and |A| = -5, then |adj A| is",
+    "answer": "(C) We know that,\n|A|n - 1\n|adj A| =\nwhere n is the order of the matrix\n\\ |adj A| = (5)3 - 1\n= 52 = 25\n \n1 + x − 1 − x",
+    "section": "B",
+    "marks": 2,
+    "chapter": "Determinants",
+    "type": "MCQ",
+    "options": {
+      "A": "125",
+      "B": "– 25",
+      "C": "25",
+      "D": "±25"
+    }
+  },
+  {
+    "id": "ex_2022_T1_33",
+    "year": "2022-T1",
+    "question_number": 33,
+    "question": "If y = sin x), then which one of the following equations is true ? d 2 y dy 2 2 (a) ( 1 − x ) + x + m y = 0 2 dx dx d 2 y dy (b) ( 1 − x 2 ) − x + m 2 y = 0 dx 2 dx d 2 y dy 2 2 (c) ( 1 + x ) − x − m y = 0 2 dx dx d 2 y dy (d) ( 1 + x 2 ) + x − m 2 x = 0 dx 2 dx",
+    "answer": "(B) Differentiating both sides w.r.t. x, we get\nm\ndy cos( m sin − 1 x ) ×\n=\ndx 1 − x 2\nm cos( m sin − 1 x )\ndy\nÞ =\n...(ii)\ndx 1 − x 2\n− 1\nm cos( m sin x )\nÞ y' = ...(ii)\n− 2\n1 x\n( )\n−1\nÞ 1 − x 2 y' = m cos( m sin x )\nDifferentiating again w.r.t. 'x', we get\n( )\n( − 2 x )\ny \" 1 − x 2 + y '\n2\n2 1 − x\n1\n2 − 1\n= − m sin( m sin x )\n1 − x 2\nÞ y\"(1 - x²) - xy' = - m²y\nÞ y\"(1 - x²) - xy' + m²y = 0\nd 2 y dy\nor, − 2 − + 2 =\n( 1 x ) x m y 0\ndx 2 dx",
+    "section": "B",
+    "marks": 2,
+    "chapter": "Inverse Trigonometric Functions",
+    "type": "MCQ"
+  },
+  {
+    "id": "ex_2022_T1_34",
+    "year": "2022-T1",
+    "question_number": 34,
+    "question": "The principal value of [tan − 1 3 − cot − 1 ( − 3 )] is −π",
+    "answer": "(B) We have,\n−( )\n− 1 − 1\ntan 3 − cot 3\nπ  π \n= −  π − \n3 6\n π  π\n= tan − 1 tan − π + cot − 1 cot\n\n3 6\nπ 5 π\n−\n=\n3 6\n−π\n=\n2\nx\n 1 ",
+    "section": "B",
+    "marks": 2,
+    "chapter": "Inverse Trigonometric Functions",
+    "type": "MCQ",
+    "options": {
+      "A": "p",
+      "B": "2",
+      "C": "0",
+      "D": "2 3"
+    }
+  },
+  {
+    "id": "ex_2022_T1_37",
+    "year": "2022-T1",
+    "question_number": 37,
+    "question": "A function f : R ® R defined by f(x) = 2 + x² is",
+    "answer": "(D) Given, f(x) = 2 + x²\nFor one-one, f(x1) = f(x²)\nÞ 2 2\n2 + x1 = 2 + x²\nÞ 2 2\nx1 = x²\nÞ x1 = ±x²\nÞ x1 = x²\nor x1 = -x²\nThus, f(x) is not one-one.\nFor onto\nLet f(x) = y such that y Î R\n\\ x² = y - 2\n± −\nÞ x = y 2\nPut y = -3, we get\nx = ± −− 3 2 = ± − 5\nWhich is not possible as root of negative is not a real\nnumber.\nHence, x is not real.\nSo, f(x) is not onto.",
+    "section": "B",
+    "marks": 2,
+    "chapter": "Relations and Functions",
+    "type": "MCQ",
+    "options": {
+      "A": "not one-one",
+      "B": "one-one",
+      "C": "not onto",
+      "D": "neither one-one nor onto"
+    }
+  },
+  {
+    "id": "ex_2022_T1_38",
+    "year": "2022-T1",
+    "question_number": 38,
+    "question": "A Linear Programming Problem is as follows: Maximise / Minimise objective function Z = 2x - y + 5 Subject to the constraints 3x + 4y £ 60 x + 3y £ 30 x ³ 0, y ³ 0 If the corner points of the feasible region are A(0, 10), B(12, 6), C(20, 0) and O(0,0), then which of the following is true ?",
+    "answer": "(B) Corner Value of Z = 2x - y + 5\nPoints\nA(0, 10) Z = 2(0) - 10 + 5 = -5 (Minimum)\nB(12, 6) Z = 2(12) - 6 + 5 = 23\nC(20, 0) Z = 2(20) - 0 + 5 = 45 (Maximum)\nO(0, 0) Z = 0(0) - 0 + 5 = 5\nSo the minimum value of Z is - 5.\nx 2 3\n1 x 1",
+    "section": "B",
+    "marks": 2,
+    "chapter": "Linear Programming",
+    "type": "MCQ",
+    "options": {
+      "A": "Maximum value of Z is 40",
+      "B": "Minimum value of Z is – 5",
+      "C": "Difference of maximum and minimum values\nof Z is 35",
+      "D": "At two corner points, value of Z are equal"
+    }
+  },
+  {
+    "id": "ex_2022_T1_39",
+    "year": "2022-T1",
+    "question_number": 39,
+    "question": "If x = -4 is a root of = 0, then the sum of 3 2 x the other two roots is",
+    "answer": "(A) Given, = 0\n1 x 1\n3 2 x\nÞ x(x² - 2) - 2(x - 3) + 3(2 - 3x) = 0\nÞ x³\n- 13x + 12 = 0\nSince (x + 4) is one root of above cubic equation.\nSum roots = 0\n\\ Sum of two roots + (- 4) = 0\nSum of two roots = 4",
+    "section": "B",
+    "marks": 2,
+    "chapter": "Matrices",
+    "type": "MCQ",
+    "options": {
+      "A": "4",
+      "B": "–3",
+      "C": "2",
+      "D": "5"
+    }
+  },
+  {
+    "id": "ex_2022_T2_2",
+    "year": "2022-T2",
+    "question_number": 2,
+    "question": "Find the general solution of the following differential equation: 2 dy = e x − y + x 2 e − y dx Ans. Given differential equation is dy ex - y x²e-y = + dx dy Þ = e-y(ex + x²) dx dy Þ = (ex + x²) dx − y e Þ eydy = exdx + x²dx On integrating both sides, we get x 3 ey = e x + + c 3 2022 (Term-II) Max. Marks : 40 C. each. each. each. parts of 2 marks each.",
+    "answer": "See solution.",
+    "section": "A",
+    "marks": 1,
+    "chapter": "Differential Equations",
+    "type": "MCQ"
+  },
+  {
+    "id": "ex_2022_T2_3",
+    "year": "2022-T2",
+    "question_number": 3,
+    "question": "Let X be a random variable which assumes values x1, x², x³, x⁴ such that 2P(X = x1) = 3P(X = x²) = P(X = x³) = 5P(X = x⁴). 2 Find the probability distribution of X. Ans. Given, 2P(X = x1) = 3P(X = x²) = P(X = x³) = 5P(X = x⁴) Let 2P(X = x1) = 3P(X = x²) = P(X = x³) = 5P(X = x⁴) = k k \\ P(X = x1) = ...(i) 2 k P(X = x²) = ...(ii) 3 P(X = x³) = k ...(iii) k P(X = x⁴) = ...(iv) 5 On adding eqs. (i) - (iv), and equating sum of all probabilities is equal to 1, we get k k k + + k + = 1 2 3 5 15 k + 10 k + 30 k + 6 k 30 Þ = 1Þ 61k = 30 Þ k = 30 61 The required probability distribution is: P(X = x1) P(X = x²) P(X = x³) P(X = x⁴) 30 15 30 10 30 30 6 = = = 61 × 2 61 61 × 3 61 61 61 × 5 61 ^, ^,",
+    "answer": "See solution.",
+    "section": "A",
+    "marks": 1,
+    "chapter": "Matrices",
+    "type": "MCQ"
+  },
+  {
+    "id": "ex_2022_T2_4",
+    "year": "2022-T2",
+    "question_number": 4,
+    "question": "If a = i + j + k a . b = 1 and a × b = j − k then find | b | . 2 Ans. Given, a = i + j + k a . b = 1 and a × b = j − k b = b i + b j + b k Let 1 2 3 Now, a . b = 1 Þ ( i + j + k )( b i + b j + b k ) = 1 1 2 3 Þ b1 + b² + b³ = 1 ...(i) and a × b = j − k i j k j − k Þ 1 1 1 = b b b 1 2 3 Þ i ( b − b ) − j ( b − b ) + k ( b − b ) j − k 3 2 3 1 2 1 = On comparing both sides, we get -(b³ - b1) = 1 and b² - b1 = -1 Þ b³ - b1 = -1 and b² - b1 = -1 Þ b³ = -1 + b1 and b² = -1 + b1 ...(ii) Now from eq. (i), we get b1 + (-1 + b1) + (- 1 + b1) = 1 Þ 3b1 = 3 Þ b1 = 1 From eq. (ii), we get b² = 0 and b³ = 0 \\ b = i Therefore, | b | = 1",
+    "answer": "See solution.",
+    "section": "A",
+    "marks": 1,
+    "chapter": "Relations and Functions",
+    "type": "MCQ"
+  },
+  {
+    "id": "ex_2022_T2_13",
+    "year": "2022-T2",
+    "question_number": 13,
+    "question": "(a) Solve the following differential equation: (y - sin2x)dx + tanx dy = 0 4 OR (b) Find the general solution of the differential equation: (x³ + y³)dy = x²ydx 4 Ans. (a) Given differential equation is (y - sin2x)dx + tanxdy = 0 (y - sin2x)dx = -tanxdy 2 2 dy y − sin x dy sin x − y = = dx − tan x dx tan x dy sin 2 x y − = dx tan x tan x dy = sinxcosx - ycotx dx dy + y cot x = sinxcosx dx which is a linear differential equation of the form dy + P y = Q dx where P = cot x Q = sin x cos x P∫ dx ∫ cot xdx Here, I.f. = e = e = elog|sinx| = sinx \\ Solution is given by y.I.f. = ∫ Q.I.f. dx + C 1 ∫ (sin x cos x sin x ) dx + C y.sinx = 1 ∫ 2 + y.sinx = sin x cos xdx C 1 y.sinx = I + C1 ...(i) ∫ 2 where I = sin x cos dx let sinx = t Þ cosxdx = dt ∫t t 3 \\ I = 2 dt = + C 2 3 sin³ x + C or I = 3 2 from eq. (i), we have sin³ x y.sinx = + C + C 3 2 1 sin³ x or y.sinx = + C 3 (where C = C1 + C²) OR Given differential equation is (x³ y³)dy x²ydx + = dx x 3 + y 3 = ...(i) dy x 2 y \\ Put x = vy dv dx Þ = v + y dy dy from eq. (i), we have dv ( vy ) 3 + y 3 dv v 3 y 3 + y 3 , v + y = v + y = dy 2 dy 2 3 ( vy ) y v y dv v 3 + 1 dv v 3 + 1 v + y y = , = − v dy v 2 dy v 2 dv dy y 1 = , v²dv = dy y v 2 (variable separable method) Integrating both sides, we get dy ∫ ∫ v 2 dv = y v³ = logy + C 3 x Putting v = , we get y 3 x = logy + c 3 y 3 Case Study Based Question",
+    "answer": "See solution.",
+    "section": "A",
+    "marks": 1,
+    "chapter": "Integrals",
+    "type": "MCQ"
+  },
+  {
+    "id": "ex_2022_T2_14",
+    "year": "2022-T2",
+    "question_number": 14,
+    "question": "Two motorcycles A and B are running at the speed more than the allowed speed on the roads ^ represented by the lines r = λ( i + 2 j − k ) and r = ( 3 i + 3 j ) + µ ( 2 i + j + ^ k ) respectively. 2 × 2 = 4 Based on the above information, answer the following questions:",
+    "answer": "See solution.",
+    "section": "A",
+    "marks": 1,
+    "chapter": "Matrices",
+    "type": "MCQ",
+    "options": {
+      "A": "Find the shortest distance between the given\nlines. 2",
+      "B": "Find the point at which the motorcycles may\ncollide. 2\nAns."
+    }
+  },
+  {
+    "id": "ex_2022_T2_1",
+    "year": "2022-T2",
+    "question_number": 1,
+    "question": "Find the vector equation of a line passing trough a point with position vector 2i − j + ^ k and parallel ^ to the line joining the points −+ i 4 j + k and i + 2 j + 2 ^ k . 2 Ans. Let A, B and C be the points with position vectors 2 i − j + k , −+ i 4 j + k and i + 2 j + 2 k , respectively. We have to find the equation of a line passing through the point A and parallel to vector BC. Now, BC = position vector of C - position vector of B = ( i + 2 j + 2 k ) −−+ ( i 4 j + k ) 2 i − 2 j + k = We know that, the equation of a line passing through a position vector a and parallel to vector b is r = a + λ b \\ r = ( 2 i − j + k ) + λ ( 2 i − 2 j + k ) is the required equation of line in vector from. [ Here, BC = b ] = + = − = + + ^. ^",
+    "answer": "See solution.",
+    "section": "A",
+    "marks": 1,
+    "chapter": "Vector Algebra",
+    "type": "MCQ"
+  },
+  {
+    "id": "ex_2022_T2_9",
+    "year": "2022-T2",
+    "question_number": 9,
+    "question": "(a) Let a i j , b i j and c i j k If n is a a . ^ n b . ^ n unit vector such that = 0 and = 0, then ^ find | c . n |. 3 OR (b) If a and b are unit vectors inclined at an angle 30° to each other, then find the area of the parallelogram with ( a + 3 b ) and ( 3a + b ) as adjacent sides. 3 Ans. Given, a = i + j , b = i − j and c = i + j + k Also, given a . n = 0 and b . n = 0 a × b Here, n = | a × b | i j k Here, a × b = 1 1 0 1 − 1 0 = i ( 0 − 0 ) − j ( 0 − 0 ) + k ( −− 1 1 ) = −2k − 2 k \\ −k n = = 2 ( − 2 ) Therefore, | c . n | = |( i + j + k ).( − k )| = |-1| = 1 OR We know, Area of parallelogram with adjacents sides p and q is given by A = | p × q | Here, Area = |( a + 3 b ) × ( 3 a + b )| = | 3 ( a × a ) + ( a × b ) + 9 ( b × a ) + 3 ( b × b )| | 3 × 0 + ( a × b ) − 9 ( a × b ) + 3 × 0 | = [ ∵ a × a = 0 = b × b and b × a = −× a b ] | − 8 ( a × b )| 8| a × b | = = 8| a |.| b |sin θ = | a | | b | = 8.1. 1. sin 30° [Given, = 1 = and q = 30°] 1 = 8 . 2 = 4 sq. units π / 2 1 ∫",
+    "answer": "See solution.",
+    "section": "A",
+    "marks": 1,
+    "chapter": "Vector Algebra",
+    "type": "MCQ"
+  },
+  {
+    "id": "ex_2022_T2_5",
+    "year": "2022-T2",
+    "question_number": 5,
+    "question": "Two cards are drawn successively with replacement from a well shuffled pack of 52 cards. Find the probability distribution of the number of spade cards. 2 Ans. Let X denote the number of spades in a sample of 2 drawn cards from a well shuffle pack of 52 cards. Then, X can take the values 0, 1, 2. Now, P(X = 0) = P(no spade) 39 C 741 = 2 52 = C 1326 2 19 = 34 P(X = 1) = P(one spade card) 13 39 C × C 1 1 507 13 = = = 52 C 2 1326 34 P(X = 2) = P(both cards are spade) 13 C 2 78 1 = = = 52 C 1326 17 2 Thus, the probability distribution of X is given by X P(X) 0 19 34 1 13 34 2 1 17 * Out of Syllabus",
+    "answer": "See solution.",
+    "section": "A",
+    "marks": 1,
+    "chapter": "Matrices",
+    "type": "MCQ"
+  },
+  {
+    "id": "ex_2022_T2_10",
+    "year": "2022-T2",
+    "question_number": 10,
+    "question": "Show that the lines: 3 1 − x y − 3 z x − 4 2 y − 2 = = and = = z − 1 are 2 4 − 1 3 − 4 coplanar. Ans. Given lines are: 1 −x y − 3 z x − 4 2 y − 2 = = and = = z − 1 2 4 − 1 3 − 4 − − − − − − x 1 y 3 z 0 x 4 y 1 z 1 or = = and = = − 2 4 − 1 3 − 2 1 These lines will be coplanar if x − x y − y z − z 2 1 2 1 2 1 a b c = 0 1 1 1 a b c 2 2 2 4 − 1 1 − 3 1 − 0 3 − 2 1 − 2 4 − 1 − 2 4 − 1 = = 0 3 − 2 1 3 − 2 1 [Since, R1 = R³] Thus, given lines are coplanar, Question Nos. 11 to 14 carry 4 marks each.",
+    "answer": "See solution.",
+    "section": "A",
+    "marks": 1,
+    "chapter": "Relations and Functions",
+    "type": "MCQ"
+  },
+  {
+    "id": "ex_2022_T2_12",
+    "year": "2022-T2",
+    "question_number": 12,
+    "question": "Using integration, find the area of the region bounded by the curves x² + y² = 4, x = 3y and X-axis lying in the first quadrant. 4 Ans. Given equation of circle x² + y² = 4 or x² + y² = (2)2 \\ radius = 2 So, point A is (2, 0) and point B is (0, 2) Let line x = 3 y intersect the circle at point C Series: ABCD/4/3, Outside Note: Except these all other Questions are from Set-I.",
+    "answer": "See solution.",
+    "section": "A",
+    "marks": 1,
+    "chapter": "Application of Integrals",
+    "type": "MCQ"
+  },
+  {
+    "id": "ex_2023_1",
+    "year": 2023,
+    "question_number": 1,
+    "question": "Let A = {3, 5}. Then number of reflexive relations of A is:",
+    "answer": "(B) The number of reflexive relations is\n2n(n-1)\n⟹ 22(2-1) = 4\n π  1  \n− 1",
+    "section": "A",
+    "marks": 1,
+    "chapter": "Relations and Functions",
+    "type": "MCQ",
+    "options": {
+      "A": "2",
+      "B": "4",
+      "C": "0",
+      "D": "8"
+    }
+  },
+  {
+    "id": "ex_2023_3",
+    "year": 2023,
+    "question_number": 3,
+    "question": "If for a square matrix A, - A + I = O, then equals:",
+    "answer": "(C) A²\n- A + I = 0\nA-1 A² - A-1 A + A-1 I = 0\nA-1\nIA - I + = 0\nA-1 = I - A\n 1 0   x 0 ",
+    "section": "A",
+    "marks": 1,
+    "chapter": "Matrices",
+    "type": "MCQ",
+    "options": {
+      "A": "A",
+      "B": "A + I",
+      "C": "I – A"
+    }
+  },
+  {
+    "id": "ex_2023_5",
+    "year": 2023,
+    "question_number": 5,
+    "question": "If 1 2 1 = 0, then the value of a is: 1 4 1",
+    "answer": "(D)  α 3 4 \n \n1 2 1 = 0\n \n 1 4 1 \n \n⟹ a (2 - 4) - 3 (1 - 1) + 4 (4 - 2) = 0\n- 2a + 8 = 0\na = 4",
+    "section": "A",
+    "marks": 1,
+    "chapter": "Determinants",
+    "type": "MCQ",
+    "options": {
+      "A": "1",
+      "B": "2",
+      "C": "3",
+      "D": "4"
+    }
+  },
+  {
+    "id": "ex_2023_6",
+    "year": 2023,
+    "question_number": 6,
+    "question": "The derivative of x2x w.r.t. x is: x2x - 1 2x2x",
+    "answer": "(C) log y = 2x log x\nd d\nlog y = 2 x log x\ndx dx\n1 dy  d d \n= 2 x log x + log x x\ny dx  \ndx dx\ndy  1 \n2 y x × + log x\n=  \ndx x\ndy\n= 2x2x [1 + log x]\ndx",
+    "section": "A",
+    "marks": 1,
+    "chapter": "Integrals",
+    "type": "MCQ",
+    "options": {
+      "A": "",
+      "B": "log x"
+    }
+  },
+  {
+    "id": "ex_2023_7",
+    "year": 2023,
+    "question_number": 7,
+    "question": "The function f(x) = [x], where [x] denotes the greatest integer less than or equal to x, is continuous at:",
+    "answer": "(B) The function f(x) = [x] is continuous\nfor all except all integral values of x.\n2\nd x",
+    "section": "A",
+    "marks": 1,
+    "chapter": "Relations and Functions",
+    "type": "MCQ",
+    "options": {
+      "A": "x = 1",
+      "B": "x = 1.5",
+      "C": "x = – 2",
+      "D": "x = 4"
+    }
+  },
+  {
+    "id": "ex_2023_8",
+    "year": 2023,
+    "question_number": 8,
+    "question": "If x = A cos 4t + B sin 4t, then is equal to: dt 2",
+    "answer": "(D) x = A cos 4t + B sin 4t\ndx\n= - 4 A sin 4t + 4 B cos 4t\ndt\n2\nd x\n= - 16 A cos 4t -16 B sin 4t\ndt 2\n= - 16(A cos 4t + B sin 4t)\n2\nd x\n∴ = - 16x\ndt 2\n2x³ 9x2",
+    "section": "A",
+    "marks": 1,
+    "chapter": "Integrals",
+    "type": "MCQ",
+    "options": {
+      "A": "x",
+      "B": "– x",
+      "C": "16x",
+      "D": "– 16x"
+    }
+  },
+  {
+    "id": "ex_2023_9",
+    "year": 2023,
+    "question_number": 9,
+    "question": "The interval in which the function f(x) = + + 12x - 1 is decreasing is: (a) (- 1, ∞) (b) (- 2, - 1) (c) (- ∞, - 2) (d) (- 1, 1)",
+    "answer": "(B) f(x) = + + 12x - 1\nf '(x) = 6x² + 18x + 12 - 0\nfor decreasing function f '(x) < 0\n6(x² + 3x + 2) < 0\n6(x + 2) (x + 1) < 0\nf(x) is decreasing in interval (-2, -1)\nsec x\n∫ dx",
+    "section": "A",
+    "marks": 1,
+    "chapter": "Application of Derivatives",
+    "type": "MCQ"
+  },
+  {
+    "id": "ex_2023_11",
+    "year": 2023,
+    "question_number": 11,
+    "question": "−∫ dx , x ≠ 2 is equal to: x − 2 1",
+    "answer": "(D) 1 | x − 2 |\n−∫ dx\n1 x − 2\n− ( x − 2 )\n−∫ 1\ndx = −[ x ]− 1 = -2\n−\n1 x 2 1",
+    "section": "A",
+    "marks": 1,
+    "chapter": "Integrals",
+    "type": "MCQ",
+    "options": {
+      "A": "1",
+      "B": "– 1",
+      "C": "2",
+      "D": "– 2"
+    }
+  },
+  {
+    "id": "ex_2023_13",
+    "year": 2023,
+    "question_number": 13,
+    "question": "Two vector j k and 1 2 3 → b = b ^ i + b ^ + b ^ j k are collinear if: 1 2 3",
+    "answer": "(B) 1 2 3\n\nTwo vectors → = a i + a j + a k\na 1 2 3\n→ = b i + b j + b k\nb 1 2 3\na a c\n1 2 1\nare collinear if = =\nb b c\n1 2 2\n^ ^ ^",
+    "section": "A",
+    "marks": 1,
+    "chapter": "Determinants",
+    "type": "MCQ",
+    "options": {
+      "A": "a1b1 + a2b2 + a3b3 = 0\na a a\n1 = 2 = 3",
+      "B": "b b b\n1 2 3",
+      "C": "a1 = b1, a2 = b2, a3 = b3",
+      "D": "a1 + a2 + a3 = b1 + b2 + b3"
+    }
+  },
+  {
+    "id": "ex_2023_14",
+    "year": 2023,
+    "question_number": 14,
+    "question": "The magnitude of the vector 6 i − 2 j + 3 k is:",
+    "answer": "(C) → − +\na = 6 i 2 j 3 k\n→\n2 + 2 + 2\n| a | = | 6 2 3 | = 7 units",
+    "section": "A",
+    "marks": 1,
+    "chapter": "Vector Algebra",
+    "type": "MCQ",
+    "options": {
+      "A": "1",
+      "B": "5",
+      "C": "7",
+      "D": "12"
+    }
+  },
+  {
+    "id": "ex_2023_15",
+    "year": 2023,
+    "question_number": 15,
+    "question": "If a line makes angles of 90°, 135° and 45° with the x, y and z axes respectively, then its direction cosines are: 1 1 −1 1",
+    "answer": "(A) Direction cosines are cos 90°, cos 135°\nand cos 45°\n 1 1 \n−\n∴  0 , , \n2 2",
+    "section": "A",
+    "marks": 1,
+    "chapter": "Inverse Trigonometric Functions",
+    "type": "MCQ",
+    "options": {
+      "A": "0 , − ,",
+      "B": ", 0 ,\n2 2 2 2\n1 1 1 1",
+      "C": ", 0 ,−",
+      "D": "0 , ,\n2 2 2 2"
+    }
+  },
+  {
+    "id": "ex_2023_16",
+    "year": 2023,
+    "question_number": 16,
+    "question": "The angle between the lines 2x = 3y = - z and 6x = - y = - 4z is:",
+    "answer": "(D) 2x = 3y = - z 6x = - y = - 4z\nx y z x y z\n= = = =\n3 2 −6 2 −12 −3\n+ +\na a b b c c\ncos q = 1 2 1 2 1 2\na 2 + b 2 + c 2 a 2 + b 2 + c 2\n1 1 1 2 2 2\n3 × 2 + 2( − 12) + ( − 6)( − 3)\ncos q =\n3 2 + 2 2 + 6 2 2 2 + ( − 12) 2 + ( − 3) 2\n6 − 24 + 18\ncos q = = 0\n7 . 157\nπ\n∴ q = = 90°\n2\n4",
+    "section": "A",
+    "marks": 1,
+    "chapter": "Three-Dimensional Geometry",
+    "type": "MCQ",
+    "options": {
+      "A": "0°",
+      "B": "30°",
+      "C": "45°",
+      "D": "90°"
+    }
+  },
+  {
+    "id": "ex_2023_17",
+    "year": 2023,
+    "question_number": 17,
+    "question": "If for any two events A and B, P",
+    "answer": "(C) P(A) = , P(A ∩ B) =\n5 10\n7\n B  P ( A ∩ B )\n10\nP   = =\n4\nA P ( A )\n5\n7 5 7\n×\n= =\n10 4 8",
+    "section": "A",
+    "marks": 1,
+    "chapter": "Probability",
+    "type": "MCQ",
+    "options": {
+      "A": "",
+      "B": "10 8\n7 17",
+      "C": "",
+      "D": "8 20"
+    }
+  },
+  {
+    "id": "ex_2023_18",
+    "year": 2023,
+    "question_number": 18,
+    "question": "Five fair coins are tossed simultaneously. The probability of the events that atleast one head comes up is: 27 5",
+    "answer": "(C) up\n− 1  5 31\n= 1   =\n2 32\nAssertion-Reason Based Questions\nIn the following questions 19 and 20, a statement of\nAssertion (A) is followed by a statement of Reason\n(R). Choose the correct answer out of the following\nchoices :\n(a) Both (A) and (R) are true and (R) is the correct\nexplanation of (A).\n(b) Both (A) and (R) are true, but (R) is not the cor-\nrect explanation of (A).\n(c) (A) is true and (R) is false.\n(d) (A) is false, but (R) is true.",
+    "section": "A",
+    "marks": 1,
+    "chapter": "Matrices",
+    "type": "MCQ",
+    "options": {
+      "A": "",
+      "B": "32 32\n31 1",
+      "C": "",
+      "D": "32 32"
+    }
+  },
+  {
+    "id": "ex_2023_19",
+    "year": 2023,
+    "question_number": 19,
+    "question": "Assertion (A): Two coins are tossed simultaneously. The probability of getting two heads, if it is known 1 that at least one head comes up, is . 3 Reason (R): Let E and F be two events with a P(E ∩ F) random experiment, then P(F/E) = . P(E)",
+    "answer": "(A) Probability of getting two heeds; {H, H}\n1\nn(F) =\n4\nProbability of getting at least one head:\n3\n{(H, H), (H, T) (T, H)}, n(E) =\n4\n F \nRequired probability P\n \n E \n1\n( E ∩ F )\n4\n= P =\n3\nP ( E )\n4\n1\n=\n3\n8 10 − x",
+    "section": "A",
+    "marks": 1,
+    "chapter": "Matrices",
+    "type": "MCQ"
+  },
+  {
+    "id": "ex_2023_20",
+    "year": 2023,
+    "question_number": 20,
+    "question": "Assertion (A): dx = 3 x + 10 − x 2 b b ∫ = ∫ + − Reason (R): f ( x ) dx f ( a b x ) dx a a",
+    "answer": "(A) ∫ 8\nI = dx\n2 x + 10 − x\n10 − 10 + x\n∫ 8\n= dx\n2 − + − +\n10 x 10 10 x\n8 x\n∫ dx\n=\n2 10 − x + x\n−\n8 10 x 8 x\n∫ dx + ∫ dx\n2I =\n2 10 − x + x 2 ( 10 − x + x\n8\n∫ dx x[ ]2 8\n2I = = = 6\n2\nI = 3",
+    "section": "A",
+    "marks": 1,
+    "chapter": "Integrals",
+    "type": "MCQ"
+  },
+  {
+    "id": "ex_2023_21",
+    "year": 2023,
+    "question_number": 21,
+    "question": "Write the domain and range (principle value branch) of the following functions: f (x) = tan⁻¹ x",
+    "answer": "f(x) = tan⁻¹ x\nDomain = Real number\n π π \n− ,\nRange =  \n2 2\n  x 2 , if x ≥ 1",
+    "section": "B",
+    "marks": 2,
+    "chapter": "Relations and Functions",
+    "type": "VSA"
+  },
+  {
+    "id": "ex_2023_23",
+    "year": 2023,
+    "question_number": 23,
+    "question": "Sketch the region bounded by the lines 2x + y = 8, y = 2, y = 4 and the y-axis. Hence, obtain its area using integration.",
+    "answer": "2x + y = 8\ny = 2\ny = 4\nY\n(0, 8 )\ny = 4\n= 2\ny\nX' O (4, 0) X\n2\nx +\ny =\n8\nY'\n4 8 − y\n∫ 4 ∫ dy\nRequired Area = xdy =\n2 2\n2\n 2  4\ny\n=  4 y − \n  4  \n2\n= [16 - 4 - 8 + 1]\nunit²\nRequired area = 5\n→ →",
+    "section": "B",
+    "marks": 2,
+    "chapter": "Application of Integrals",
+    "type": "VSA"
+  },
+  {
+    "id": "ex_2023_25",
+    "year": 2023,
+    "question_number": 25,
+    "question": "Find the vector and the cartesian equations of a line that passes through the point A(1, 2, - 1) and parallel to the line 5x - 25 = 14 - 7y = 35z.",
+    "answer": "Given point A (1, 2, - 1)\nGiven line 5x - 25 = 14 - 7y, = 35z,\n= 5(x - 5), = - 7(y - 2), = 35z,\nx −5 y − 7 z\n,\n= = = Divide by 35\n7 − 5 1\nDirection ration of the line (7, -5, 1)\n∴ Direction ratio of the parallel line (7, -5, 1)\nEquation of the line passing through the point A\n(1, 2, -1) and parallel to the given line\n−1\nx y − 2 z + 1\n= =\n7 − 5 1\nvector form of the line\ni + 2 j − k + λ( 7 i − 5 j + k )\n\n 1 2 3",
+    "section": "B",
+    "marks": 2,
+    "chapter": "Three-Dimensional Geometry",
+    "type": "VSA"
+  },
+  {
+    "id": "ex_2023_28",
+    "year": 2023,
+    "question_number": 28,
+    "question": "(a) Evaluate: 1 + e sin x 0 OR 4 x (b) Find: ∫ dx ( x − 1 )( x 2 + 1 ) 1 ∫ 2 π",
+    "answer": "I = dx\n+ sin x\n0 1 e\n2 π 1\nI = ∫ dx\n0 1 + e sin( 2 π − x )\n2 π 1\nI = ∫ dx\n0 1 + e − sin x\n2 π e sin x\n= ∫ dx\n0 1 + e sin x\n1 + e sin x\n∫ 2 π\n2I = dx\nsin π\n0 1 + e\n2 π\n2I = ∫ 1 dx\n0\nx[ ]0\n2π\n=\n2I = 2p-0\n2 π 1\n∴ I = ∫ = π\n0 1 + e sin x\nOR\n4\nx\n∫ dx\n( x − 1 )( x 2 + 1 )\n4\nx\n∫ dx\nx 3 − x 2 + x − 1\nx + 1\nx³ - x² + x - 1 x⁴\nx⁴ - x³ + x² - x\n(-) (+) (-) (+)\nx³ - x² + x\nx³ - x² + x - 1\n(-) (+) (-) (+)\n+ 1\n4  1 \nx ∫\n∫ dx  x + 1 +  dx\n= 2\n( x − 1 )( x 2 + 1 )  ( x − 1 )( x + 1 ) \nx 2 1\n+ x + ∫( dx\n=\n2 x − 1 )( x 2 + 1 )\n1 A Bx + C\n= +\n( x − 1 )( x 2 + 1 ) − 2\nx 1 x + 1\n(x²\n1 = A + 1) + (Bx + C) (x - 1)\n1 = (A + B) x² + (A - C) + x(C - B)\n∴ A + B = 0 ⟹ A = - B\nC - B = 0 ⟹ C = B\nA - C = 1\n1\n- 2C = 1 ⟹ C = -\n2\n1 1\nB = - and A =\n2 2\n1 1  + 1 −− x 1 \n∫ dx ∫\n=  +  dx\n( x − 1 )( x 2 + 1 ) 2 x − 1 2\n x + 1 \n1  dx x dx \n∫ − ∫ − ∫\n=  dx \n2 x − 1 x 2 + 1 x 2 + 1\n1  1 \nlog| x − 1| − log| x 2 + 1| − tan − 1 x + c\n=  \n2  2  1\n1 x − 1 1\n= − 1\nlog − tan x + c\n2 x 2 + 1 2\nx 4\n∫\ndx\n( x − 1 )( x 2 + 1 )\nx 2 1 x − 1 1\n− 1\n= + x + log − tan x + c\n2 2 2\nx 2 + 1",
+    "section": "C",
+    "marks": 3,
+    "chapter": "Integrals",
+    "type": "MCQ"
+  },
+  {
+    "id": "ex_2023_29",
+    "year": 2023,
+    "question_number": 29,
+    "question": "Find the area of the following region using integration: {(x, y) : y² ≤ 2x and y ≥ x - 4}",
+    "answer": "Given: y² = 2x ...(1)\ny = x - 4 ...(2)\nRequired area is OABCO\nfrom (1) and (2)\n(x - 4)2 = 2x\nx² - 10x + 16 = 0\n(x - 8) (x - 2) = 0\nx = 8 and x = 2\n∴ Intersection points (2, - 2) and (8, 4)\nY\ny = x - 4\nA\n(8, 4)\nB\nX' O X\n(4, 0)\n(0, -4) ( 2 , -2 ) 2 2\ny = x\nY'\n 2 3  4\ny y\nRequired Area =  + 4 y − \n 2 6 −\n \n2\n 32 4 \n8 + 16 − − 2 + 8 −\n=  \n3 3\n= 30 - 12\n= 18 unit2",
+    "section": "C",
+    "marks": 3,
+    "chapter": "Matrices",
+    "type": "SA"
+  },
+  {
+    "id": "ex_2023_30",
+    "year": 2023,
+    "question_number": 30,
+    "question": "(a) Find the coordinates of the foot of the perpendicular drawn from the point P(0, 2, 3) to the x + 3 y − 1 z + 4 line = = . 5 2 3 OR →→ → (b) Three vectors a . b and c satisfy the condition → → → → a + b + c = 0 . Evaluate the quantity m = →→ →→ →→ → → → a . b + b . c + c . a , if | a | = 3, | b | = 4 and | c | = 2.",
+    "answer": "(A) x + 3 y − 1 z + 4\nline = =\n5 2 3\nGeneral point on the line is\n[(5λ (2λ (3λ\n- 3), + 1), - 4)]\nDirection ratio of the perpendicular line\n[(5λ - 3), (2λ - 1), (3λ - 7)]\n∴ 5(5λ - 3) + 2(2λ - 1) + 3(3λ - 7) = 0\n25λ - 15 + 4λ - 2 + 9λ - 21 = 0\n38λ - 38 = 1\nλ = 1\n∴ foot of perpendicular line is\n[(5 - 3), (2 + 1), (3 - 4)\n(2, 3, - 1)\nOR\n→ → → →\n(b) a + b + c = 0\n→ → → → → →\n( a + b + c ).( a + b + c ) = 0\n→→ →→ →→ →→ →→ →→\na . a + a . b + a . c + b . a + b . c + b . b\n→→ →→ →→\n+ c . a + c . b + c . c = 0\n→ 2 → 2 → 2 →→ →→ →→\n| a | + | b | + | c | + 2 ( a . b + b . c + c . a ) = 0\n2 2 2 →→ →→ →→\n3 + 4 + 2 + 2 ( a . b + b . c + c . a ) = 0\n→→ →→ →→\n2( a . b + b . c + c . a ) = - 29\n−29\n→→ →→ →→ =\na . b + b . c + c . a\n2",
+    "section": "C",
+    "marks": 3,
+    "chapter": "Three-Dimensional Geometry",
+    "type": "MCQ"
+  },
+  {
+    "id": "ex_2023_31",
+    "year": 2023,
+    "question_number": 31,
+    "question": "Find the distance between the lines: → ^ ^ ^ ^ ^ ^ r = ( i + 2 − 4 ) + λ ( 2 i + 3 j + 6 ); j k k → ^ ^ ^ ^ ^ ^ r = ( 3 i + 3 j − 5 k ) + µ ( 4 i + 6 j + 12 k )",
+    "answer": "Given:\n→ ^ ^ ^ ^ ^ ^\nr = ( i + 2 j − 4 k ) + λ ( 2 i + 3 j + 6 k )\n→ ^ ^ ^ ^ ^ ^\nr = ( 3 i + 3 j − 5 k ) + µ ( 4 i + 6 j + 12 k )\nThese lines are parallel\n\\ Distance between two parallel lines\n→ → →\n| b × ( a − a )|\n2\n1\n= →\n| b |\n^ ^ ^\na1 = i + 2 j − 4 k\n^ ^ ^\na² = 3 i + 3 j − 5 k\n→ →\n^ ^ ^\na − a = 2 i + j − k\n2 1\n→\nand | b | = 4 + 9 + 36 = 7\n^ ^ ^\ni j k\n→ → →\n2 3 + 6\nb × ( a − a ) =\n2 1\n2 1 − 1\n^ −− − ^ −− + ^ −\n= i ( 3 6 ) j ( 2 12 ) k ( 2 6 )\n− ^ + ^ − ^\n= 9 i 14 j 4 k\n→ → →\n× − 2 + 2 + 2\n| b ( a a )| = | 9 14 4 |\n2 1\n= | 81 + 196 + 16 |\n= 293 units\n293\nShortest distance = units\n7",
+    "section": "C",
+    "marks": 3,
+    "chapter": "Three-Dimensional Geometry",
+    "type": "SA"
+  },
+  {
+    "id": "ex_2023_33",
+    "year": 2023,
+    "question_number": 33,
+    "question": "Evaluate : ∫ sin 2 x tan − 1 (sin x ) dx 0 π/ 2 ∫ sin 2 x tan − 1 (sin x ) dx",
+    "answer": "I =\n0\nπ/ 2\nI = ∫ 2 sin x cos x tan − 1 (sin x ) dx\n0\nLet sin x = t\ncos x dx = dt\nwhen x = 0, t = 0\nπ\nx = , t = 1\n2\n∫ 1 tan− 1\n\\ I = 2 t t dt\n0\n − d  \n− 1 ∫ ∫ − 1 ∫\n= 2  tan t tdt tan t tdt  .dt\n \ndx\n1\n t 2 t 2 \n− 1 ∫\n= 2  tan t − dt \n2\n  2 2 ( 1 + t )  \n0\n1 1 t 2\n t 2 tan − 1 t − ∫ dt\n=\n0 0 ( 1 + t 2 )\n 1 1 1 \n= tan− 1 1 − ∫ 1 dt − ∫ dt\n \n0 0 1 + t 2\nπ 1\n − 1 \n= − t − tan t\n4\n0\nπ π π\n= − 1 + = − 1\n4 4 2\nπ\n∫ π/ 2 −\n\\ sin 2 x tan 1 (sin x ) dx = − 1\n0 2",
+    "section": "D",
+    "marks": 5,
+    "chapter": "Integrals",
+    "type": "LA"
+  },
+  {
+    "id": "ex_2023_34",
+    "year": 2023,
+    "question_number": 34,
+    "question": "Solve the following Linear Programming Problem graphically : Maximize: P = 70x + 40y Subject to: 3x + 2y ≤ 9, 3x + y ≤ 9 x ≥ 0, y ≥ 0",
+    "answer": "Maximize: P = 70x + 40y\n3x + 2y ≤ 9, 3x + y ≤ 9\nx ≥ 0, y ≥ 0\n3x + 2y = 9 3x + y = 9\nx 0 3 x 0 3\ny 9/2 0 y 9 0\nFeasible area is OABO\nP = 70x + 40y\nAt (0, 0) P = 70 × 0 + 40 × 0 = 0\nAt (3, 0) P = 70 × 3 + 40 × 0 = 210\n9 9\nAt (0, ) P = 70 × 0 + 40 × = 180\n2 2\nMaximise at (3, 0)\nx = 3 and y = 0\nMaximum value = 210\n9\n8\n7\n6\n5\nB\n4\n3\n2\n1\nA\n0\n1 2 3 4 5 6 7 8 9",
+    "section": "D",
+    "marks": 5,
+    "chapter": "Linear Programming",
+    "type": "LA"
+  },
+  {
+    "id": "ex_2023_36",
+    "year": 2023,
+    "question_number": 36,
+    "question": "An organization conducted bike race under two different categories-Boys and Girls. There were 28 participants in all. Among all of them, finally three from category 1 and two from category 2 were selected for the final race. Ravi forms two sets B and G with these participants for his college project. let B = {b1, b², b³} and G = {g1, g²}, where B represents the set of Boys selected and G the set of Girls selected for the final race. Based on the above information, answer the following questions: (i) How many relations are possible from B to G ? (ii) Among all the possible relations from B to G, how many functions can be formed from B to G ? (iii) Let R : B → B be defined by R = {(x, y) : x and y are students of the same sex}. Check if R is an equivalence relation. OR (iii) A function f : B → G be defined by f = {(b1, g1), (b², g²), (b³, g1)}. Check if f is bijective. Justify your answer.",
+    "answer": "(i) Number of relations = 2mn\n= 22×3 = 26 = 64\n(ii) Number of functions from B to G\n= 23 = 8\n(iii) R = {(x, y) : x and y are students of same sex.}\nSince x and x are of the same sex\nSo (x, x) ∈ R for all x\n\\ R is reflexive\nIf x and y are of the same sex then y and x are also of\nthe same sex\n\\ R is symmetric\nIf (x, y) ∈ R and (y, z) ∈ R then (x, z) ∈ R\nThen x and z will be of the same sex\n\\ R is transitive\nSine R is reflexive, symmetric and transitive\n\\ R is an equivalence relation.\nOR\n(iii) Given\nR = {(b1, g1), (b², g²), (b³, g1)}\nSince b1 and b³ have the same image g1\n\\ R is not injective\nSince all elements of G has a pre-image\n\\ R is bijective\nCase Study II",
+    "section": "E",
+    "marks": 4,
+    "chapter": "Relations and Functions",
+    "type": "Case Study"
+  },
+  {
+    "id": "ex_2023_37",
+    "year": 2023,
+    "question_number": 37,
+    "question": "Gautam buys 5 pens, 3 bags and 1 instrument box and pays a sum of ` 160. From the same shop. Vikram buys 2 pens, 1 bag and 3 instrument boxes and pays a sum of ` 190. Also Ankur buys 1 pen, 2 bags and 4 instrument boxes and pays a sum of ` 250. Based on the above information, answer the following questions: (i) Convert the given above situation into a matrix equation of the form AX = B. (ii) Find |A|. (iii) Find A-1. OR (iii) Determine P = A² - 5A.",
+    "answer": "Pen Bags Instrument\nGautam 5 3 1\nVikram 2 1 3\nAnkur 1 2 4\n 5 3 1   x   160 \n     \n(i) 2 1 3 y = 190\n     \n 1 2 4   z   250 \n     \nwhere x = cost of Pen\ny = cost of Bag\nz = cost of Instrument\n 5 3 1 \n \n(ii) A = 2 1 3\n \n \n 1 2 4 \n5 3 1\n|A| = 2 1 3\n1 2 4\n= 5(4 - 6) - 3(8 - 3) + 1(4 - 1)\n= - 10 - 15 + 3\n= - 22\n1 3\n(iii) C11 = = - 2\n2 4\n−2 3\nC12 = = - 5\n1 4\n2 1\nC13 = = 3\n1 2\n−3 1\nC21 = = - 10\n2 4\n5 1\nC22 = = 19\n1 4\n−5 3\nC23 = = - 7\n1 2\n3 1\nC31 = = 8\n1 3\n−5 1\nC32 = = - 13\n2 3\n5 3\nC33 = = - 1\n2 1\n − 2 − 5 3 \n \n− 10 19 − 7\nAdj A =  \n 8 − 13 − 1 \n \n − 2 − 10 8 \n \n= − 5 19 − 13\n \n 3 − 7 − 1 \n \nAdj A\nA-1\n=\n| A |\n − 2 − 10 8 \n1  \n− − −\n=  5 19 13 \n22\n  3 − 7 − 1  \n 2 10 − 8 \n1  \n= 5 − 19 13\n \n22\n \n − 3 7 1 \nOR\n(iii) P = A² - 5A\n 5 3 1   5 3 1   5 3 1 \n     \n= 2 1 3 2 1 3 − 5 2 1 3\n     \n     \n 1 2 4   1 2 4   1 2 4 \n 25 + 6 + 1 15 + 3 + 2 5 + 9 + 4   25 15 5 \n   \n= 10 + 2 + 3 6 + 1 + 6 2 + 3 + 12 − 10 5 15\n   \n 5 + 4 + 4 3 + 2 + 8 1 + 6 + 16   5 10 20 \n   \n 32 20 18   25 15 5 \n   \n= 15 13 17 − 10 5 15\n   \n 13 13 23   5 10 20 \n   \n 7 5 13 \n \n\\ P = 5 8 2\n \n 8 3 3 \n \nCase study III",
+    "section": "E",
+    "marks": 4,
+    "chapter": "Determinants",
+    "type": "Case Study"
+  },
+  {
+    "id": "ex_2023_26",
+    "year": 2023,
+    "question_number": 26,
+    "question": "Using determinants, find the area of DPQR with vertices P(3, 1), Q(9, 3) and R(5, 7). Also, find the equation of line PQ using determinants. x y 1 1 1 1",
+    "answer": "See solution.",
+    "section": "C",
+    "marks": 3,
+    "chapter": "Determinants",
+    "type": "SA"
+  },
+  {
+    "id": "ex_2023_32",
+    "year": 2023,
+    "question_number": 32,
+    "question": "Evaluate: dx + 0 1 sin x x ∫ π",
+    "answer": "(B) \n\na = b - 2, b > 6\n\\ 6 = 8 - 2\n 5 x",
+    "section": "D",
+    "marks": 5,
+    "chapter": "Integrals",
+    "type": "LA"
+  },
+  {
+    "id": "ex_2023_27",
+    "year": 2023,
+    "question_number": 27,
+    "question": "Using integration, find the area of the region bounded by y = mx(m > 0), x = 1, x = 2 and the x-axis. ∫ 2",
+    "answer": "Required Area = ydx\n1\n2\n= ∫ mxdx\n1\nY\nX'\nX\nO\nmx\n=\ny\nY' x=1 x=2\n2\n mx² \n=  \n2\n   \n1\nm\n−\n= 2 m\n2\n3 m\n2\n= unit\n2",
+    "section": "C",
+    "marks": 3,
+    "chapter": "Application of Integrals",
+    "type": "SA"
+  },
+  {
+    "id": "ex_2023_4",
+    "year": 2023,
+    "question_number": 4,
+    "question": "If |A| = |kA|, where A is a square matrix of order 2, then sum of all possible values of k is:",
+    "answer": "(D) |A| = |kA|\n|A| = kn|A|\nwhere n is the order of matrix\n1 = kn\nk² = 1\n⟹ ±\nk = 1\nSum of all values of k = + 1 - 1 = 0\nd",
+    "section": "A",
+    "marks": 1,
+    "chapter": "Matrices",
+    "type": "MCQ",
+    "options": {
+      "A": "1",
+      "B": "–1",
+      "C": "2",
+      "D": "0"
+    }
+  },
+  {
+    "id": "ex_2023_12",
+    "year": 2023,
+    "question_number": 12,
+    "question": "If the sum of numbers obtained on throwing a pair of dice is 9, then the probability that number obtained on one of the dice is 4, is: 1 4",
+    "answer": "(D) A = Sum of numbers obtained\non the pair of dice is 9\n= {(3, 6), (4, 5), (5, 4), (6, 3)}\nB = Number obtained on 1 dice 1 and 4\n= {(4, 5), (5, 4)}\n B \nP   = Required probability\nA\n B  P ( A ∩ B )\nP =\n \nA P ( A )\n2\n36 1\n= =\n4 2\n36\ntan x − 1",
+    "section": "A",
+    "marks": 1,
+    "chapter": "Matrices",
+    "type": "MCQ",
+    "options": {
+      "A": "",
+      "B": "9 9\n1 1",
+      "C": "",
+      "D": "18 2"
+    }
+  },
+  {
+    "id": "ex_2023_22",
+    "year": 2023,
+    "question_number": 22,
+    "question": "A particle moves along the curve 3y = ax³ + 1 such that at a point with x-coordinate 1, y-coordinate is changing twice as fast at x-coordinate. Find the value of a.",
+    "answer": "3y = ax³ + 1\ndy  dx \nGiven: = 2   at x = 1\ndt dt\n3y = ax³ + 1\n3dy dx\n2 +\n= 3 x a 0\ndt dt\ndy dx\n= ax 2\ndt dt\n dx  dx\n2 2\n  = a ( 1 )\ndt\ndt\n\\ a = 2\n→ → →",
+    "section": "B",
+    "marks": 2,
+    "chapter": "Continuity and Differentiability",
+    "type": "VSA"
+  },
+  {
+    "id": "ex_2023_24",
+    "year": 2023,
+    "question_number": 24,
+    "question": "Find the coordinates of points on line = 1 2 z + 1 = which are at a distance of 11 units from 2 origin. −1 + x y z 1",
+    "answer": "Given line = =\n1 2 2\nGen. point on the line (l, 2l + 1, 2l - 1)\n2 2 2\nDistance from origin x + y + z\n1 1 1\n\\ λ 2 + ( 2 λ + 1 ) 2 + ( 2 λ − 1 ) 2 = 11 (Given)\nl² + (2l + 1)2 + (2l - 1)2 = 11\nl² + 4l² + 4l + 1 + 4l² - 4l + 1 = 11\n9l² = 9\n⟹ l = ± 1\nif l = 1 point on the line (1, 3, 1)\nif l = -1 point on the line (-1, -1, -3)\n 2  2\nd y  dy",
+    "section": "B",
+    "marks": 2,
+    "chapter": "Relations and Functions",
+    "type": "VSA"
+  },
+  {
+    "id": "ex_2023_35",
+    "year": 2023,
+    "question_number": 35,
+    "question": "A function f : [- 4, 4] → [0, 4] is given by f(x) = 2 16 −x . Show that f is an onto function but not one-one function. Further, find all possible values of ‘a’ for which f(a) = 7",
+    "answer": "f (x) = 16 −x 2\nfor x = 0 (0 ∈ (- 4, 4))\nf (0) = ± 4\nSo it is not one-one and for each value of y these\nexists x\nf (a) = 7\n\\ f is an onto function\n−a 2\n16 = 7\nSquaring both sides\n16 - a² = 7\na²\n= 16 - 7 = 9\na = ± 3\na = 3 and - 3",
+    "section": "D",
+    "marks": 5,
+    "chapter": "Relations and Functions",
+    "type": "MCQ"
+  },
+  {
+    "id": "ex_2023_38",
+    "year": 2023,
+    "question_number": 38,
+    "question": "The use of electric vehicles will curb air pollution in the long run. The use electric vehicles is increasing every year and estimated electric vehicles in use at any time t is given by the function V: 1 5 3 2 V(t) = t − t + 25 t − 2 5 2 where t represents the time and t = 1, 2, 3.... corresponds to year 2001, 2002, 2003, ....... respectively. Based on the above information, answer the following questions: (i) Can the above function be used to estimate number of vehicles in the year 2000 ? Justify. (ii) Prove that the function V(t) is an increasing function.",
+    "answer": "See solution.",
+    "section": "E",
+    "marks": 4,
+    "chapter": "Matrices",
+    "type": "Case Study"
+  },
+  {
+    "id": "ex_2023_2",
+    "year": 2023,
+    "question_number": 2,
+    "question": "The position vector of three consecutive vertices of a parallelogram ABCD are ^ ^ ^ ^ ^ ^ ^ ^ ^ A ( 4 i + 2 j − 6 k ) , B ( 5 i − 3 j + k ) and C ( 12 i + 4 j + 5 k ). The position vector of D is given by − ^ − ^ − ^ ^ + ^",
+    "answer": "(C) ^ ^ ^ ^ ^ ^\nA ( 4 i + 2 j − 6 k ) C ( 12 i + 4 j + 5 k )\n^ ^ ^ ^ ^ ^\nB ( 5 i − 3 j + k ) D ( x i + y j + zk )\nRequired Area of DABC\n0 3 3\n x + 5 \n= ∫ ( 4 x + 5 ) dx + ∫ ( 5 − x ) dx − ∫ dx\n \n4\n− 1 0 − 1\n0 3 3\n x 2   x 2  1  x 2 \n=  + 5 x  +  5 x −  −  + 5 x \n  2     2   4   2  \n− 1 0 − 1\n 9   21  1  39 9 \n= 0 + + − 0 − +\n   \n2 2 4 2 2\n9 21\n= + − 6\n2 2\n= 15 - 6 = 9 unit².\n||gm\nDiagonal of bisect each other\n1\n^ ^ ^\n\\ Position vector of mid point of AC ( 8 i + 3 j − k )\n2\n→\nPosition vector of midpoint of BD\n + − + \n5 x ^ y 3 ^ z 1 ^\n i + j + k \n2 2 2\n5 + x\n= 8 \\ x = 11\n2\n−3\ny\n= y = 9\n2\n+  \nz 1 −1 ^ ^ ^\n= z = - 2 ∴ D  11 i + 9 j − 2 k \n2 2  \n1",
+    "section": "A",
+    "marks": 1,
+    "chapter": "Vector Algebra",
+    "type": "MCQ",
+    "options": {
+      "A": "3 i 5 j 10 k",
+      "B": "21 i 3 j\n^ ^ ^ ^ ^ ^",
+      "C": "11 i + 9 j − 2 k",
+      "D": "− 11 i − 9 j + 2 k"
+    }
+  },
+  {
+    "id": "ex_2024_7",
+    "year": 2024,
+    "question_number": 7,
+    "question": "If xey = 1, then the value of at x = 1 is dx",
+    "answer": "See solution.",
+    "section": "A",
+    "marks": 1,
+    "chapter": "Integrals",
+    "type": "MCQ",
+    "options": {
+      "A": "– 1",
+      "B": "1\n−1",
+      "C": "– e",
+      "D": "e\nesin2x"
+    }
+  },
+  {
+    "id": "ex_2024_8",
+    "year": 2024,
+    "question_number": 8,
+    "question": "Derivative of with respect to cos x is esin² esin2",
+    "answer": "See solution.",
+    "section": "A",
+    "marks": 1,
+    "chapter": "Relations and Functions",
+    "type": "MCQ",
+    "options": {
+      "A": "sin x x",
+      "B": "cos x x",
+      "C": "– 2 cos x esin2 x",
+      "D": "– 2 sin2 x cos x esin2 x\nx 2"
+    }
+  },
+  {
+    "id": "ex_2024_9",
+    "year": 2024,
+    "question_number": 9,
+    "question": "The function f(x) = + has a local minima at x 2 x equal to",
+    "answer": "See solution.",
+    "section": "A",
+    "marks": 1,
+    "chapter": "Application of Derivatives",
+    "type": "MCQ",
+    "options": {
+      "A": "2",
+      "B": "1",
+      "C": "0",
+      "D": "– 2\nOSWAAL CBSE, MATHEMATICS, Class-XII"
+    }
+  },
+  {
+    "id": "ex_2024_10",
+    "year": 2024,
+    "question_number": 10,
+    "question": "Given a curve y = 7x - x³ and x increases at the rate of 2 units per second. The rate at which the slope of the curve is changing, when x = 5 is",
+    "answer": "See solution.",
+    "section": "A",
+    "marks": 1,
+    "chapter": "Relations and Functions",
+    "type": "MCQ",
+    "options": {
+      "A": "– 60 units/s",
+      "B": "60 units/s",
+      "C": "– 70 units/s",
+      "D": "–140 units/s\n1"
+    }
+  },
+  {
+    "id": "ex_2024_12",
+    "year": 2024,
+    "question_number": 12,
+    "question": "The value of x | x | dx is 1 1",
+    "answer": "See solution.",
+    "section": "A",
+    "marks": 1,
+    "chapter": "Integrals",
+    "type": "MCQ",
+    "options": {
+      "A": "",
+      "B": "6 3\n−1",
+      "C": "",
+      "D": "0\n6\ny2"
+    }
+  },
+  {
+    "id": "ex_2024_13",
+    "year": 2024,
+    "question_number": 13,
+    "question": "Area of the region bounded by curve = 4x and the X-axis between x = 0 and x = 1 is 2 8",
+    "answer": "See solution.",
+    "section": "A",
+    "marks": 1,
+    "chapter": "Application of Integrals",
+    "type": "MCQ",
+    "options": {
+      "A": "",
+      "B": "3 3\n4",
+      "C": "3",
+      "D": "3"
+    }
+  },
+  {
+    "id": "ex_2024_15",
+    "year": 2024,
+    "question_number": 15,
+    "question": "The position vectors of points P and Q are p and q respectively. The point R divides line segment PQ in the ratio 3 : 1 and S is the mid-point of line segment PR. The position vector of S is → → → → p + 3 q p + 3 q",
+    "answer": "See solution.",
+    "section": "A",
+    "marks": 1,
+    "chapter": "Vector Algebra",
+    "type": "MCQ",
+    "options": {
+      "A": "",
+      "B": "4 8\n→ → → →\n5 p + 3 q 5 p + 3 q",
+      "C": "",
+      "D": "4 8\nx y z"
+    }
+  },
+  {
+    "id": "ex_2024_16",
+    "year": 2024,
+    "question_number": 16,
+    "question": "The angle which the line = −= makes with the 1 1 0 positive direction of Y-axis is 5 p 3 p",
+    "answer": "See solution.",
+    "section": "A",
+    "marks": 1,
+    "chapter": "Three-Dimensional Geometry",
+    "type": "MCQ",
+    "options": {
+      "A": "",
+      "B": "6 4\n5 p 7 p",
+      "C": "",
+      "D": "4 4"
+    }
+  },
+  {
+    "id": "ex_2024_17",
+    "year": 2024,
+    "question_number": 17,
+    "question": "The Cartesian equation of the line passing through the point (1, -3, 2) and parallel to the line → ^ ^ ^ is r = ( 2 + λ ) i + λ j + ( 2 λ − 1 ) k x − 1 y + 3 z − 2 x + 1 y − 3 z + 2",
+    "answer": "See solution.",
+    "section": "A",
+    "marks": 1,
+    "chapter": "Three-Dimensional Geometry",
+    "type": "MCQ",
+    "options": {
+      "A": "= =",
+      "B": "= =\n2 0 − 1 1 1 2\nx + 1 y − 3 z + 2 x − 1 y + 3 z − 2",
+      "C": "= =",
+      "D": "= =\n2 0 − 1 1 1 2"
+    }
+  },
+  {
+    "id": "ex_2024_18",
+    "year": 2024,
+    "question_number": 18,
+    "question": "If A and B are events such that P(A/B) = P(B/A) ≠ 0, then",
+    "answer": "See solution.",
+    "section": "A",
+    "marks": 1,
+    "chapter": "Relations and Functions",
+    "type": "MCQ",
+    "options": {
+      "A": ".",
+      "B": "Both Assertion",
+      "C": "Assertion",
+      "D": "Assertion"
+    }
+  },
+  {
+    "id": "ex_2024_23",
+    "year": 2024,
+    "question_number": 23,
+    "question": "The area of the circle is increasing at a uniform rate of 2 cm²/s. How fast is the circumference of the circle increasing when the radius r = 5 cm ? −∫cos",
+    "answer": "See solution.",
+    "section": "B",
+    "marks": 2,
+    "chapter": "Application of Derivatives",
+    "type": "VSA"
+  },
+  {
+    "id": "ex_2024_25",
+    "year": 2024,
+    "question_number": 25,
+    "question": "Find the vector equation of the line passing through the point (2, 3, - 5) and making equal angles with the co-ordinate axes. SECTION C There are 6 short answer questions in this section. Each is of 3 marks. dy x)y y)x.",
+    "answer": "See solution.",
+    "section": "B",
+    "marks": 2,
+    "chapter": "Vector Algebra",
+    "type": "VSA"
+  },
+  {
+    "id": "ex_2024_26",
+    "year": 2024,
+    "question_number": 26,
+    "question": "(a) Find , , if (cos = (cos dx OR (b) If 1 −x 2 + 1 −y 2 = a(x - y), prove that dy 1 − y 2 = . dx 1 − x 2 2 d y p",
+    "answer": "See solution.",
+    "section": "C",
+    "marks": 3,
+    "chapter": "Integrals",
+    "type": "MCQ"
+  },
+  {
+    "id": "ex_2024_27",
+    "year": 2024,
+    "question_number": 27,
+    "question": "If x = a sin³ θ, y = b cos³ θ,then find at θ = . dx 2 4 π e cos x",
+    "answer": "See solution.",
+    "section": "C",
+    "marks": 3,
+    "chapter": "Integrals",
+    "type": "SA"
+  },
+  {
+    "id": "ex_2024_30",
+    "year": 2024,
+    "question_number": 30,
+    "question": "Find a vector of magnitude 4 units perpendicular to ^ ^ ^ ^ ^ ^ each of the vectors 2 i −+ j k and i + j − k and hence verify your answer.",
+    "answer": "See solution.",
+    "section": "C",
+    "marks": 3,
+    "chapter": "Vector Algebra",
+    "type": "SA"
+  },
+  {
+    "id": "ex_2024_33",
+    "year": 2024,
+    "question_number": 33,
+    "question": "Find the area of the region bounded by the curve 4x² y² + = 36 using integration.",
+    "answer": "See solution.",
+    "section": "D",
+    "marks": 5,
+    "chapter": "Application of Integrals",
+    "type": "LA"
+  },
+  {
+    "id": "ex_2024_34",
+    "year": 2024,
+    "question_number": 34,
+    "question": "(a) Find the co-ordinates of the foot of the perpendicular drawn from the point (2, 3, - 8) to the 4 − x y 1 − z line = = . 2 6 3 OR (b). Find the shortest distance between the lines L1 & L² given below: L1 : The line passing through (2, -1, 1) and parallel to x y z → ^ ^ ^ = = L² : r = i + ( 2 m + 1 ) j − ( m + 2 ) k . 1 1 3",
+    "answer": "See solution.",
+    "section": "D",
+    "marks": 5,
+    "chapter": "Three-Dimensional Geometry",
+    "type": "MCQ"
+  },
+  {
+    "id": "ex_2024_35",
+    "year": 2024,
+    "question_number": 35,
+    "question": "Solve the following L. P. P. graphically: Maximise Z = 60x + 40y Subject to x + 2y ≤ 12 2x + y ≤ 12 4x + 5y ≥ 20 x, y ≥ 0 SECTION E In this section there are 3 case study questions of 4 marks each.",
+    "answer": "See solution.",
+    "section": "D",
+    "marks": 5,
+    "chapter": "Linear Programming",
+    "type": "LA"
+  },
+  {
+    "id": "ex_2024_37",
+    "year": 2024,
+    "question_number": 37,
+    "question": "A rectangular visiting card is to contain 24 sq. cm. of printed matter. The margins at the top and bottom of the card are to be 1 cm and the margins on the left 1 and right are to be 1 cm as shown below: 2 1 cm 1½ 1½ cm cm 1 1 cm cm 1 cm x 1½ 1½ cm cm Printed matter y 1 cm Note: Except these, all other questions are available in SECTION A",
+    "answer": "See solution.",
+    "section": "E",
+    "marks": 4,
+    "chapter": "Matrices",
+    "type": "Case Study"
+  },
+  {
+    "id": "ex_2024_2",
+    "year": 2024,
+    "question_number": 2,
+    "question": "If A is a square metric of order 2 and |A| = -2, then value of |5A'| is",
+    "answer": "See solution.",
+    "section": "A",
+    "marks": 1,
+    "chapter": "Determinants",
+    "type": "MCQ",
+    "options": {
+      "A": "– 50",
+      "B": "– 10",
+      "C": "10",
+      "D": "50"
+    }
+  },
+  {
+    "id": "ex_2024_5",
+    "year": 2024,
+    "question_number": 5,
+    "question": "The product of matrix P and Q is equal to a diagonal matrix. If the order of matrix Q is 3 × 2, then order of matrix P is",
+    "answer": "See solution.",
+    "section": "A",
+    "marks": 1,
+    "chapter": "Matrices",
+    "type": "MCQ",
+    "options": {
+      "A": "2 × 2",
+      "B": "3 × 3",
+      "C": "2 × 3",
+      "D": "3 × 2\ndy"
+    }
+  },
+  {
+    "id": "ex_2024_38",
+    "year": 2024,
+    "question_number": 38,
+    "question": "A departmental store sends bills to charge its customers once a month. Past experience shows that 70% of its customers pay their first month bill in time. The store also found that the customer who pays the bill in time has the probability of 0.8 of paying in time next month and the customer who doesn't pay in time has the probability of 0.4 of paying in time the next month. Based on the above information, answer the following questions: (i) Let E1 and E² respectively, denote the event of customer paying or not paying the first month bill in time. (ii) Let A denotes the event of customer paying second month's bill in time, then find P(A|E1) and P(A|E²). (iii) Find the probability of customer paying second month's bill in time. OR (iii) Find the probability of customer paying first month's bill in time if it is found that customer has paid the second month's bill in time. dx ∫",
+    "answer": "See solution.",
+    "section": "E",
+    "marks": 4,
+    "chapter": "Matrices",
+    "type": "Case Study"
+  },
+  {
+    "id": "ex_2024_31",
+    "year": 2024,
+    "question_number": 31,
+    "question": "An urn contains 3 red and 2 white marbles. Two marbles are drawn one by one with replacement from the urn. Find the probability distribution of the number of white balls. Also, find the mean of the number of white balls drawn. SECTION D",
+    "answer": "See solution.",
+    "section": "C",
+    "marks": 3,
+    "chapter": "Matrices",
+    "type": "SA"
+  },
+  {
+    "id": "ex_2024_6",
+    "year": 2024,
+    "question_number": 6,
+    "question": "Derivative of e2x with respect to ex, is ex 2ex",
+    "answer": "See solution.",
+    "section": "A",
+    "marks": 1,
+    "chapter": "Relations and Functions",
+    "type": "MCQ",
+    "options": {
+      "A": "",
+      "B": "",
+      "C": "2e2x",
+      "D": "2e3x"
+    }
+  },
+  {
+    "id": "ex_2024_14",
+    "year": 2024,
+    "question_number": 14,
+    "question": "The vector equation of a line passing through the point (1, - 1, 0) and parallel to Y-axis is → →",
+    "answer": "See solution.",
+    "section": "A",
+    "marks": 1,
+    "chapter": "Vector Algebra",
+    "type": "MCQ",
+    "options": {
+      "A": "^ ^ ^ ^",
+      "C": "^ ^ ^",
+      "D": "^\nr = i −+ j λ k r = λ j\n1 − x y − 1 z 2 x − 3 y z − 4\nand = −="
+    }
+  },
+  {
+    "id": "ex_2024_19",
+    "year": 2024,
+    "question_number": 19,
+    "question": "Assertion (A): The relation R = {(x, y) : (x + y) is a prime number and x, y ∈ N} Reason (R): The number '2n' is composite for all natural numbers n.",
+    "answer": "See solution.",
+    "section": "A",
+    "marks": 1,
+    "chapter": "Relations and Functions",
+    "type": "MCQ"
+  },
+  {
+    "id": "ex_2024_24",
+    "year": 2024,
+    "question_number": 24,
+    "question": "The volume of a cube is increasing at the rate of 6 cm³/s. How fast is the surface area of cube increasing, when the length of an edge is 8 cm ? 1",
+    "answer": "See solution.",
+    "section": "B",
+    "marks": 2,
+    "chapter": "Application of Derivatives",
+    "type": "VSA"
+  },
+  {
+    "id": "ex_2024_1",
+    "year": 2024,
+    "question_number": 1,
+    "question": "Option (D) is correct. Explanation: Given, f : R → R f(x) = x² - 4x + 5 One-One (Injective) f(x1) = f(x²) ⟹ x1 2 - 4x1 + 5 = x1 2 - 4x² + 5 ⟹ x1 2 - x² 2 = 4(x1 - x²) ⟹ (x1 - x²) (x1 + x²) = 4(x1 - x²) ⟹ x1 + x² = 4 ⟹ x1 = 4 - x² Thus, f(x) is not an injective mapping. onto surjective let y = x² - 4x + 5 ⟹ y = (x - 2)2 + 1 ⟹ y - 1 = (x - 2)2 ⟹ ( y − 1 ) + 2 x = Thus, for any value of y < 1, x ∉ R. So, we don't have a pre-image for all y ∈ R in x ∈ R. Thus, f(x) = x² - 4x + 5 is not surjective.",
+    "answer": "See solution.",
+    "section": "A",
+    "marks": 1,
+    "chapter": "Relations and Functions",
+    "type": "MCQ"
+  },
+  {
+    "id": "ex_2024_3",
+    "year": 2024,
+    "question_number": 3,
+    "question": "Option (D) is correct. Explanation: We know that |adj A| = |A|n - 1 where n is the order of square matrix A Given |adj A| = 8 \\ |A|n - 1 = 8 ⟹ |A|3 - 1 = 8 ⟹ |A|2 = 8 ⟹ |A| = 2 2 Also, determinant of a matrix and its transpose has same values.",
+    "answer": "See solution.",
+    "section": "A",
+    "marks": 1,
+    "chapter": "Determinants",
+    "type": "MCQ"
+  },
+  {
+    "id": "ex_2024_20",
+    "year": 2024,
+    "question_number": 20,
+    "question": "Option (B) is correct. Explanation: Assertion: → | a | = ( 6 ) 2 + ( 2 ) 2 + ( − 8 ) 2 = 104 → | b | = ( 10 ) 2 + ( − 2 ) 2 + ( − 6 ) 2 = 140 - → 2 + − 2 + 2 = | c | = ( 4 ) ( 4 ) ( 2 ) 36 ( ) 2 ( ) 2 +( ) 2 140 104 36 = Hence, it forms a right angle triangle. Reason: Reason is correct but not the explanation of Assertion. SECTION B",
+    "answer": "See solution.",
+    "section": "A",
+    "marks": 1,
+    "chapter": "Relations and Functions",
+    "type": "MCQ"
+  },
+  {
+    "id": "ex_2024_22",
+    "year": 2024,
+    "question_number": 22,
+    "question": "(a) y = cos³ (sec² 2t) Applying chair Rule. dy = 3 cos² (sec² 2t) × [(-sin (sec² 2t)] × 2sec 2t dt × sec 2t x tan 2t × 2 = - 12 cos² (sec² 2t) × (sec² 2t) × sin(sec² 2t) ×tan²t OR (b) xy = ex-y taking log both sides y log x = x - y log e [\\ log e = 1] y log x + y = x x y = log x + 1 Now we apply quotient rule d d (log x + 1 ) ( x ) − x (log x + 1 ) dy dx dx = 2 dx ( 1 + log x ) 1 (log x + 1 ) − x × x = 2 ( 1 + log x ) log x + 1 − 1 = ( 1 + log x ) 2 log x = ( 1 + log x ) 2 Hence proved log x dy = 2 dx ( 1 + log x )",
+    "answer": "See solution.",
+    "section": "B",
+    "marks": 2,
+    "chapter": "Continuity and Differentiability",
+    "type": "MCQ"
+  },
+  {
+    "id": "ex_2024_29",
+    "year": 2024,
+    "question_number": 29,
+    "question": "(a) = y cot 2x dx p Given y = 2, x = 4 dy = cot 2x dx y ⟹ dy −∫ ∫cot = 2x dx y ⟹ 1 ⟹ log y = log|sin 2 x | + log C 2 4 ⟹ log = log C sin 2x y ⟹ = C ...(i) sin² x p Put x = , y = 2 in eq (i) 4 ⟹ C = 2 2 sin 2 x Hence [y = ] OR y ( xe x + y ) dx = xdy given y = 1, x = 1 (b) The given differential eqn is homogeneous function of degree zero. To solve it we make substitution dy dv y = vx, = v + x ...(i) dx dx y dy xe x + y ⟹ = dx x y dy y e x + ⟹ = dx x from (i) dv v + x = ev + v dx dv dx ∫ ∫ ⟹ = ev x -e-v = log x + C y − or − e x = log |x| + C It is given that x = 1, y = 1 So -e-1 = log(1) + C -e-1 or C = Hence required solution y − − e 1 − e x = log |x|",
+    "answer": "See solution.",
+    "section": "C",
+    "marks": 3,
+    "chapter": "Integrals",
+    "type": "MCQ"
+  },
+  {
+    "id": "ex_2025_4",
+    "year": 2025,
+    "question_number": 4,
+    "question": "Which of the following is not a homogeneous function of x and y?",
+    "answer": "See solution.",
+    "section": "A",
+    "marks": 1,
+    "chapter": "Differential Equations",
+    "type": "MCQ",
+    "options": {
+      "A": "y2 – xy",
+      "C": "",
+      "D": "tan x – sec y\nx x"
+    }
+  },
+  {
+    "id": "ex_2025_5",
+    "year": 2025,
+    "question_number": 5,
+    "question": "If f(x) = | x |+ | x - 1 |, then which of the following is correct? (A) f(x) is both continuous and differentiable, at x = 0 and x = 1. (B) f(x) is differentiable but not continuous, at x = 0 and x = 1. (C) f(x) is continuous but not differentiable, at x = 0 and x = 1. (D) f(x) is neither continuous nor differentiable, at x = 0 and x = 1.",
+    "answer": "See solution.",
+    "section": "A",
+    "marks": 1,
+    "chapter": "Continuity and Differentiability",
+    "type": "MCQ"
+  },
+  {
+    "id": "ex_2025_6",
+    "year": 2025,
+    "question_number": 6,
+    "question": "If A is a square matrix of order 2 such that det",
+    "answer": "See solution.",
+    "section": "A",
+    "marks": 1,
+    "chapter": "Matrices",
+    "type": "MCQ",
+    "options": {
+      "A": "16",
+      "B": "64",
+      "C": "256",
+      "D": "512"
+    }
+  },
+  {
+    "id": "ex_2025_7",
+    "year": 2025,
+    "question_number": 7,
+    "question": "If E and F are two independent events such that P(E) 2 3 = , P(F) = , then P ( E / F ) is equal to: 3 7 1 1",
+    "answer": "See solution.",
+    "section": "A",
+    "marks": 1,
+    "chapter": "Probability",
+    "type": "MCQ",
+    "options": {
+      "A": "",
+      "B": "6\n2\n2 7",
+      "C": "",
+      "D": "9\n3"
+    }
+  },
+  {
+    "id": "ex_2025_14",
+    "year": 2025,
+    "question_number": 14,
+    "question": "The corner points of the feasible region in graphical representation of a L.P.P. are (2, 72), (15, 20) and (40, 15). If Z = 18x + 9y be the objective function, then (A) Z is maximum at (2, 72), minimum at (15, 20) (B) Z is maximum at (15, 20) minimum at (40, 15) (C) Z is maximum at (40, 15), minimum at (15, 20) (D) Z is maximum at (40, 15), minimum at (2, 72)",
+    "answer": "See solution.",
+    "section": "A",
+    "marks": 1,
+    "chapter": "Linear Programming",
+    "type": "MCQ"
+  },
+  {
+    "id": "ex_2025_15",
+    "year": 2025,
+    "question_number": 15,
+    "question": "If A and B are invertible matrices, then which of the following is not correct?",
+    "answer": "See solution.",
+    "section": "A",
+    "marks": 1,
+    "chapter": "Matrices",
+    "type": "MCQ",
+    "options": {
+      "C": "adj",
+      "A": "= | A | A–1",
+      "D": "| A |–1 = | A–1 |"
+    }
+  },
+  {
+    "id": "ex_2025_16",
+    "year": 2025,
+    "question_number": 16,
+    "question": "If the feasible region of a linear programming problem with objective function Z = ax + by, is bounded, then which of the following is correct?",
+    "answer": "See solution.",
+    "section": "A",
+    "marks": 1,
+    "chapter": "Linear Programming",
+    "type": "MCQ",
+    "options": {
+      "A": "It will only have a maximum value.",
+      "B": "It will only have a minimum value.",
+      "C": "It will have both maximum and minimum\nvalues.",
+      "D": "It will have neither maximum nor minimum value.\nBank Chapterwise & Topicwise, MATHEMATICS, Class-12"
+    }
+  },
+  {
+    "id": "ex_2025_17",
+    "year": 2025,
+    "question_number": 17,
+    "question": "The area of the shaded region bounded by the y² curves = x, x = 4 and the x-axis is given by 4 2 ∫ ∫ 2",
+    "answer": "See solution.",
+    "section": "A",
+    "marks": 1,
+    "chapter": "Application of Integrals",
+    "type": "MCQ",
+    "options": {
+      "A": "x dx",
+      "B": "y dy\n0 0\n4\n4",
+      "C": "2 ∫ x dx",
+      "D": "∫ x dx\n0 0"
+    }
+  },
+  {
+    "id": "ex_2025_24",
+    "year": 2025,
+    "question_number": 24,
+    "question": "Find the intervals in which function f ( x ) = 5 x 2 − 3 x 2 is (i) increasing (ii) decreasing.",
+    "answer": "See solution.",
+    "section": "B",
+    "marks": 2,
+    "chapter": "Application of Derivatives",
+    "type": "VSA"
+  },
+  {
+    "id": "ex_2025_26",
+    "year": 2025,
+    "question_number": 26,
+    "question": "The side of an equilateral triangle is increasing at the rate of 3 cm/s. At what rate its area increasing when the side of the triangle is 15 cm?",
+    "answer": "See solution.",
+    "section": "C",
+    "marks": 3,
+    "chapter": "Application of Derivatives",
+    "type": "SA"
+  },
+  {
+    "id": "ex_2025_27",
+    "year": 2025,
+    "question_number": 27,
+    "question": "Solve the following linear programming problem graphically : Maximise Z = x + 2y Subject to the constraints : x - y ≥ 0 x - 2y ≥ -2 x ≥ 0, y ≥ 0 x + sin x",
+    "answer": "See solution.",
+    "section": "C",
+    "marks": 3,
+    "chapter": "Linear Programming",
+    "type": "SA"
+  },
+  {
+    "id": "ex_2025_30",
+    "year": 2025,
+    "question_number": 30,
+    "question": "(a) The probability distribution for the number of students being absent in a class on a Saturday is as follows: X 0 2 4 5 P(X) p 2p 3p p where X is the number of students absent. (i) Calculate p. 1 (ii) Calculate the mean of the number of absent students on Saturday. 2 OR (b) For the vacancy advertised in the newspaper, 3000 candidates submitted their applications. From the data it was revealed that two third of the total applicants were females and other 5 were males. The selection for the job was done through a written test. The performance of the applicants indicates that the probability of a male getting a distinction in written test is 0.4 and that a female getting a distinction is 0.35. Find the probability that the candidate . chosen at random will have a distinction in the written test.",
+    "answer": "See solution.",
+    "section": "C",
+    "marks": 3,
+    "chapter": "Matrices",
+    "type": "MCQ"
+  },
+  {
+    "id": "ex_2025_31",
+    "year": 2025,
+    "question_number": 31,
+    "question": "Sketch the graph of y = |x + 3| and find the area of the region enclosed by the curve, x-axis, between x = -6 and x = 0, using integration. SECTION D This section comprises of 4 Long Answers (LA) type questions of 5 mark each. 4 × 5 = 20 1 − x 2 + 1 − y 2 = a ( x − y ),",
+    "answer": "See solution.",
+    "section": "C",
+    "marks": 3,
+    "chapter": "Application of Integrals",
+    "type": "SA"
+  },
+  {
+    "id": "ex_2025_33",
+    "year": 2025,
+    "question_number": 33,
+    "question": "Find the absolute maximum and absolute minimum of function f(x) = 2x³ - 15x² + 36x + 1 on [1, 5].",
+    "answer": "See solution.",
+    "section": "D",
+    "marks": 5,
+    "chapter": "Application of Derivatives",
+    "type": "LA"
+  },
+  {
+    "id": "ex_2025_34",
+    "year": 2025,
+    "question_number": 34,
+    "question": "(a) Find the image A’ of the point A(1, 6, 3) in the − − x y 1 z 2 line = = . Also, find the equation of 1 2 3 the line joining A and A’. OR x + 5 y + 3 z − 6 (b) Find a point P on the line = = 1 4 − 9 such that its distance from point Q(2, 4, -1) is 7 units. Also, find the equation of line joining P and Q. xviii 35. A school wants to allocate students into three clubs: Sports, Music and Drama, under following conditions: • The number of students in Sports club should be equal to the sum of the number of students in Music and Drama club. • The number of students in Music club should be 20 more than half the number of students in Sports club. • The total number of students to be allocated in all three clubs are 180. Find the number of students allocated to different clubs, using matrix method. SECTION E This section comprises of 3 case study based questions of 4 marks each. 3 × 4 =12",
+    "answer": "See solution.",
+    "section": "D",
+    "marks": 5,
+    "chapter": "Matrices",
+    "type": "MCQ"
+  },
+  {
+    "id": "ex_2025_36",
+    "year": 2025,
+    "question_number": 36,
+    "question": "A technical company is designing a rectangular",
+    "answer": "ar panel installation on a roof using 300 metres of\nboundary material. The design includes a partition\nrunning parallel to one of the sides dividing the area\n(roof) into two sections.\nLet the length of the side perpendicular to the\npartition be x metres and with parallel to the\npartition be y metres.\nBased on this information, answer the following\nquestions:\n(i) Write the equation for the total boundary\nmaterial used in the boundary and parallel to\nthe partition in terms of x and y. 1\n(ii) Write the area of the solar panel as a function\nof x. 1\n(iii) (a)  Find the critical points of the area function.\nUse second derivative test to determine\ncritical points at the maximum area. Also,\nfind the maximum area. 2\nOR\n(iii) (b) Using first derivative test, calculate the\nmaximum area the company can enclose\nwith the 300 metres of boundary material,\nconsidering the parallel partition. 2\nNote: Except these, all other questions have been given in\nSECTION A",
+    "section": "E",
+    "marks": 4,
+    "chapter": "Application of Derivatives",
+    "type": "Case Study"
+  },
+  {
+    "id": "ex_2025_2",
+    "year": 2025,
+    "question_number": 2,
+    "question": "If ˆ ˆ ˆ ˆ ˆ ˆ are two α= i − 4 j + 9 k and β = 2 i − 8 j + λ k mutually parallel vectors, then λ is equal to:",
+    "answer": "See solution.",
+    "section": "A",
+    "marks": 1,
+    "chapter": "Vector Algebra",
+    "type": "MCQ",
+    "options": {
+      "A": "–18",
+      "B": "18\n−34 34",
+      "C": "",
+      "D": "9 9\nBank Chapterwise & Topicwise, MATHEMATICS, Class-12"
+    }
+  },
+  {
+    "id": "ex_2025_37",
+    "year": 2025,
+    "question_number": 37,
+    "question": "A class-room teacher is keen to assess the learning of her students the concept of “relations” taught to them. She writes the following five relations each defined on the set A = {1, 2, 3} : R1 = {(2, 3), (3, 2)} R² = {(1, 2), (1, 3), (3, 2)} R³ = {(1, 2), (2, 1), (1, 1)} R⁴ = {(1, 1), (1, 2), (3, 3), (2, 2)} R5 = {(1, 1), (1, 2), (3, 3), (2, 2), (2, 1), (2, 3), (3, 2)} The students are asked to answer the following questions about the above relations : (i) Identify the relation which is reflexive, transitive but not symmetric. (ii) Identify the relation which is reflexive and symmetric but not transitive, (iii)",
+    "answer": "See solution.",
+    "section": "E",
+    "marks": 4,
+    "chapter": "Relations and Functions",
+    "type": "MCQ",
+    "options": {
+      "A": "Identify the relations which are symmetric\nbut neither reflexive nor transitive.\nOR",
+      "B": "What pairs should be added to the relation\nR2 to make it an equivalence relation?"
+    }
+  },
+  {
+    "id": "ex_2025_38",
+    "year": 2025,
+    "question_number": 38,
+    "question": "A bank offers loan to its customers on different types of interest namely, fixed rate, floating rate and variable rate. From the past data with the bank, it is known that a customer avails loan on fixed rate, floating rate or variable rate with probabilities 10%, 20% and 70% respectively. A customer after availing loan can pay the loan or default on loan repayment. The bank data suggests that the probability that a person defaults on loan after availing it at fixed rate, floating rate and variable rate is 5%, 3% and 1% respectively. Based on the above information, answer the following : (i) What is the probability that a customer after availing the loan will default on the loan repayment? 2 (ii) A customer after availing the loan, defaults on loan repayment. What is the probability that he availed the loan at a variable rate of interest? 2 1 2 sin x",
+    "answer": "See solution.",
+    "section": "E",
+    "marks": 4,
+    "chapter": "Matrices",
+    "type": "Case Study"
+  },
+  {
+    "id": "ex_2025_9",
+    "year": 2025,
+    "question_number": 9,
+    "question": "Let A be a matrix of order m × n and B is a matrix such that ATB and BAT are defined. Then, the order of B is: × ×",
+    "answer": "See solution.",
+    "section": "A",
+    "marks": 1,
+    "chapter": "Matrices",
+    "type": "MCQ",
+    "options": {
+      "A": "m m",
+      "B": "n n",
+      "C": "m × n",
+      "D": "n × m"
+    }
+  },
+  {
+    "id": "ex_2025_12",
+    "year": 2025,
+    "question_number": 12,
+    "question": "The integrating factor of the differential equation 1 y dy y is dx x x e",
+    "answer": "See solution.",
+    "section": "A",
+    "marks": 1,
+    "chapter": "Differential Equations",
+    "type": "MCQ",
+    "options": {
+      "A": "xex",
+      "B": "x\n1\nx",
+      "C": "",
+      "D": "xex\nex"
+    }
+  },
+  {
+    "id": "ex_2025_13",
+    "year": 2025,
+    "question_number": 13,
+    "question": "Let A = [aij] be a square matrix of order 3 such that a = ˆ j − 2 ˆ i . Then which of the following is true? ij",
+    "answer": "See solution.",
+    "section": "A",
+    "marks": 1,
+    "chapter": "Matrices",
+    "type": "MCQ",
+    "options": {
+      "A": "a12 > 0",
+      "B": "all aij < 0",
+      "C": "a13 + a31 = –6",
+      "D": "a23 > a32\nSECTION B\nx2"
+    }
+  },
+  {
+    "id": "ex_2025_22",
+    "year": 2025,
+    "question_number": 22,
+    "question": "Find the values of ‘a’ for which f(x) = - 2ax + b is an increasing function for x > 0. 3 sin⁻¹ sin",
+    "answer": "See solution.",
+    "section": "B",
+    "marks": 2,
+    "chapter": "Relations and Functions",
+    "type": "VSA"
+  },
+  {
+    "id": "ex_2025_28",
+    "year": 2025,
+    "question_number": 28,
+    "question": "The area of an expanding rectangle is increasing at the 2 rate of 48 cm /s. The length of the rectangle is always square of its breadth. At what rate the length of rectangle increasing at an instant, when breadth = 4.5 cm? cos 2 x",
+    "answer": "See solution.",
+    "section": "C",
+    "marks": 3,
+    "chapter": "Application of Derivatives",
+    "type": "SA"
+  },
+  {
+    "id": "ex_2025_8",
+    "year": 2025,
+    "question_number": 8,
+    "question": "Which of the following can be both a symmetric and skew-symmetric matrix?",
+    "answer": "See solution.",
+    "section": "A",
+    "marks": 1,
+    "chapter": "Matrices",
+    "type": "MCQ",
+    "options": {
+      "A": "Unit Matrix",
+      "B": "Diagonal Matrix",
+      "C": "Null Matrix",
+      "D": "Row Matrix\nˆ ˆ ˆ"
+    }
+  },
+  {
+    "id": "ex_2025_10",
+    "year": 2025,
+    "question_number": 10,
+    "question": "Four friends Abhay, Bina, Chhaya and Devesh were asked to simplify 4 AB +3(AB + BA) - 4 BA, where A and B are both matrices of order 2 × 2. It is known that A ≠ B ≠ I and A-1 ≠ B. Their answers are given as: Abhay : 6 AB Bina : 7 AB - BA Chhaya : 8 AB Devesh : 7 BA - AB Who answered it correctly?",
+    "answer": "See solution.",
+    "section": "A",
+    "marks": 1,
+    "chapter": "Matrices",
+    "type": "MCQ",
+    "options": {
+      "A": "Abhay",
+      "B": "Bina",
+      "C": "Chhaya",
+      "D": "Devesh"
+    }
+  },
+  {
+    "id": "ex_2025_19",
+    "year": 2025,
+    "question_number": 19,
+    "question": "Assertion (A) : A = diag [3 5 2] is a scalar matrix of order 3 × 3. Reason (R) : If a diagonal matrix has all non-zero elements equal, it is known as a scalar matrix.",
+    "answer": "See solution.",
+    "section": "A",
+    "marks": 1,
+    "chapter": "Matrices",
+    "type": "MCQ"
+  },
+  {
+    "id": "ex_2025_32",
+    "year": 2025,
+    "question_number": 32,
+    "question": "Using integration, find the area of the region Bank Chapterwise & Topicwise, MATHEMATICS, Class-12 bounded by the line y = 5x + 2, the x - axis and the ordinates x = -2 and x = 2. x 2 + x + 1 ∫",
+    "answer": "See solution.",
+    "section": "D",
+    "marks": 5,
+    "chapter": "Application of Integrals",
+    "type": "LA"
+  },
+  {
+    "id": "ex_2025_11",
+    "year": 2025,
+    "question_number": 11,
+    "question": "The probability distribution of a random variable X is given by: X -4 -3 -2 -1 0 P(X) 0.1 0.2 0.3 0.2 0.2 Bank Chapterwise & Topicwise, MATHEMATICS, Class-12 graph. Write all the constraints for the given linear programing problem.",
+    "answer": "See solution.",
+    "section": "A",
+    "marks": 1,
+    "chapter": "Matrices",
+    "type": "MCQ"
+  },
+  {
+    "id": "ex_2025_1",
+    "year": 2025,
+    "question_number": 1,
+    "question": "Option (D) is correct. Explanation: é - 1 0 0 ù ê ú ê ú Given, A = 0 1 0 ê ú ê ú 0 0 1 ë û A matrix is invertible if its determinant is non-zero. The determinant of A is: det ( A ) = ( - 1 ) ´ ( 1 ´ 1 ) = - 1 ¹ 0 Since det(A) ≠ 0, the matrix is invertible. For a diagonal matrix of the form: é a 0 0 ù ê ú A = ê 0 b 0 ú ê ú ê ú 0 0 c ë û The inverse is given by: é 1 ù ê 0 0 ú ê a ú ê ú ê 1 ú A - 1 = ê 0 0 ú ê b ú ê ú ê 1 ú 0 0 ê ú ê ë c ú û For the given matrix: é - 1 0 0 ù ê ú ê ú A = 0 1 0 ê ú ê ú 0 0 1 ë û é ù 1 ê 0 0 ú ê - 1 ú ê ú ê 1 ú A- 1 = ê 0 0 ú ê 1 ú ê ú ê 1 ú 0 0 ê ú ê ë 1 ú û é - 1 0 0 ù ê ú A- 1 ê ú = 0 1 0 ê ú ê ú 0 0 1 ë û",
+    "answer": "See solution.",
+    "section": "A",
+    "marks": 1,
+    "chapter": "Determinants",
+    "type": "MCQ"
+  },
+  {
+    "id": "ex_2025_18",
+    "year": 2025,
+    "question_number": 18,
+    "question": "Option (C) is correct. 0 Explanation: The figure is the graph of cos x. Option C represents the graph of cos-1x.",
+    "answer": "See solution.",
+    "section": "A",
+    "marks": 1,
+    "chapter": "Inverse Trigonometric Functions",
+    "type": "MCQ"
+  },
+  {
+    "id": "ex_2025_20",
+    "year": 2025,
+    "question_number": 20,
+    "question": "Option (D) is correct. Explanation: To check the continuity of the function f(x) at x = 5, we need to verify: ( ) ( ) ( ) lim f x = lim f x = f 5 x ® 5 - x ® 5 + Left-Hand Limit (LHL) For x ≤ 5, the function is given by: f(x) = 3x − 8 Taking the left-hand limit: lim f ( x ) = 3 ( 5 ) - 8 = 15 - 8 = 7 x ® 5 - Right-Hand Limit (RHL) For x > 5, the function is given by: f(x) = 2k Taking the right-hand limit: lim f ( x ) = 2 k x ® 5 + Function 's value at x = 5 f(5) = 3(5) − 8 = 7 For f(x) to be continuous at x = 5: lim f ( x ) = lim f ( x ) = f ( 5 ) x ® 5 - x ® 5 + 7 = 2k = 7 7 k = 2 Thus, the given assertion (A) is false but Reason (R) is true by the definition of continuity. SECTION B",
+    "answer": "See solution.",
+    "section": "A",
+    "marks": 1,
+    "chapter": "Continuity and Differentiability",
+    "type": "MCQ"
+  },
+  {
+    "id": "ex_2025_21",
+    "year": 2025,
+    "question_number": 21,
+    "question": "(a) Let y = 2 cos2x Taking the natural logarithm on both sides: lny = cos2x ln² Differentiating with respect to cos2x: 1 dy = ln² ( ) y d cos 2 x Multiplying both sides by y: dy = y ln² ( ) d cos 2 x Substitute y = 2 cos2x dy cos 2 x = 2 ln² ( 2 ) d cos x Thus, d )( ) 2 cos 2 x = 2 cos 2 x ln² ( d cos 2 x OR (b) Rewriting the given equation as: x² + y² = tan(a²) Differentiate both sides w.r.t. x Using implicit differentiation: d ( ) d ( ( ) ) x 2 + y 2 = tan a 2 dx dx dy 2 x + 2 y = 0 dx dy 2 y = - 2 x dx dy x = - dx y",
+    "answer": "See solution.",
+    "section": "B",
+    "marks": 2,
+    "chapter": "Continuity and Differentiability",
+    "type": "MCQ"
+  },
+  {
+    "id": "ex_2025_25",
+    "year": 2025,
+    "question_number": 25,
+    "question": "(a) Given, x = e x/y x Then, log x = y ⟹ y log x = x On differentiating both sides, we get y dy log x 1 ⟹ x dx dy y ⟹ logx 1 dx x dy x y ⟹ dx x log x OR 2 x 3 3 x 2 (b) Given f(x) = x 1 2 x 0 Since, polynomial functions are continuous and differentiable at everywhere . So, f(x) is differentiable on x ∈ [-3, -2] and x ∈ (-2, 0] We will check the differentiability at x= -2 f x f ( 2 ) lim (LHD at x = -2) = x 2 x 2 2 x 3 1 = lim x 2 x 2 2 x 4 = lim 2 x 2 x 2 x 1 1 x 2 (RHD at x = -2) = lim lim 1 x 2 x 2 x 2 x 2 Since, LHD at x = -2 ≠ RHD at x = -2 So, f(x) is not differentiable at x = -2 SECTION C",
+    "answer": "See solution.",
+    "section": "B",
+    "marks": 2,
+    "chapter": "Continuity and Differentiability",
+    "type": "MCQ"
+  },
+  {
+    "id": "ex_2025_29",
+    "year": 2025,
+    "question_number": 29,
+    "question": "(a) Given, y = log x x 1 y1 = 2 log x x On differentiating both sides, we get 1 1 1 2 y1 = 1 2 x 2 x 3 / 2 x x 2 x 1 1 = 1 x 1 2 x x 1 x 1 = x 1 x x 1 ⟹ xy 1 x 1 On differentiating both sides, we get x 1 1 x 1 1 y1 + xy² = x 1 2 x 1 x 1 ⟹ y1 + xy² = x 1 2 +1)2y² ⟹ x (x + (x + 1)2y1 = 2 Hence, Proved OR Bank Chapterwise & Topicwise, MATHEMATICS, Class-12 (3, (3, 4) 4) C C (4, (4, 4) 4) D (6, (6, 4) 4) (3, (3, 3) 3) B A(3, A(3, 5/2) 5/2) (2, (2, 2) 2) 1 1 2 2 3 3 4 4 5 5 6 6 x x = = 3 3 x 1 y y 1 x 0 (b) Given x 1 y y 1 x ⟹ Squaring on both sides, we get x² y² ⟹ (1 + y) = (1 + x) ⟹ x² x²y y² xy² + = + ⟹ x² y² xy² x²y - = - ⟹ - - (x y)(x + y) = xy(y x) ⟹ (x + y) = -xy ⟹ (1 + x)y = -x x y 1 x Differentiating on both sides w.r.t. x,we get d d 1 x x x 1 x dy dx dx dx 1 x 2 1 x x 1 =- 2 2 1 x 1 x dy 1 dx 2 1 x Hence, Proved",
+    "answer": "See solution.",
+    "section": "C",
+    "marks": 3,
+    "chapter": "Continuity and Differentiability",
+    "type": "MCQ"
+  },
+  {
+    "id": "ex_2025_35",
+    "year": 2025,
+    "question_number": 35,
+    "question": "(a) Given, A = 7 1 3 B = 1 2 2 5 3 1 2 1 3 4 4 4 1 1 1 Then, AB = 7 1 3 1 2 2 5 3 1 2 1 3 4 4 8 4 8 4 4 8 12 = 7 1 6 7 2 3 7 2 9 5 3 2 5 6 1 5 6 3 8 0 0 = 0 8 0 0 0 8 1 0 0 AB = 8 0 1 0 = 8I 0 0 1 Given equation is x - y +z = 4 x - 2y - 2z =9 2x + y + 3z = 1 1 1 1 x 4 Here, B = 1 2 2 , X = y , C = 9 2 1 3 z 1 ∴ BX = C X = B-1C 1 X = AC(from (i)) 8 4 4 4 4 1 = 7 1 3 9 8 5 3 1 1 16 36 4 1 = 28 9 3 8 20 27 1 24 3 1 = 16 2 8 8 1 ∴ x = 3, y = -2, and z = -1 OR 1 2 0 (b) Given, A = 2 1 2 0 1 1 A = 1(-1 -2 ) -2 (-2 - 0 ) + 0 = 1(-3) -2(-2) = -3 +4 = 1 ≠ 0 So, A-1 will exist adj A A-1= Now, A Let aij be the co-factors of the elements aij in A = [aij] then, C11 = (-1)1+1 (-1 -2) = -3 C12 = (-1)1+2 (-2 -0) = 2 C13 = (-1)1+3 (2 -0) = 2 C21 = (-1)2+1 (2 -0) = -2 C22 = (-1)2+2 (1 -0) = 1 C23 = (-1)2+3 (-1 -0) = 1 C31 = (-1)3+1 (-4 -0) = -4 C32 = (-1)3+2 (-2 -0) = 2 C33 = (-1)3+3 (-1 +4) = 3 3 2 2 T ∴ adj. A = 2 1 1 4 2 3 9 3 2 4 = 2 1 2 2 1 3 3 2 4 adjA A 1 2 1 2 A 2 1 3 Given, equations are : x - 2y = 10 2x - y - z = 8 -2y + z = 7 This is of form CX = D 1 2 0 x 10 Then, C = 2 1 1 , X = y , D = 8 0 2 1 z 7 Here, C = AT Now, CX = D C-1CX = C-1D X = C-1D X = [AT]-1D = [A-1]TD x 3 2 2 10 ⟹ y 2 1 1 8 z 4 2 3 7 30 16 14 = 20 8 7 40 16 21 0 = 5 3 Hence, x = 0, y = -5 and z = -3 SECTION E",
+    "answer": "See solution.",
+    "section": "D",
+    "marks": 5,
+    "chapter": "Determinants",
+    "type": "MCQ"
   }
 ]
