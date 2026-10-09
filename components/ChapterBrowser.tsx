@@ -7,11 +7,11 @@ import { RotateCcw, Search } from "lucide-react";
 import { useIdSet } from "@/lib/store";
 import { RevealGroup } from "./motion/Reveal";
 
-type Item = { id: string; year: number; marks: number; type: string; order: string; text: string };
+type Item = { id: string; year: number; marks: number; type: string; order: string; text: string; topic: string };
 type Sort = "new" | "old" | "marks";
-type Filters = { q: string; marks: number | 0; type: string; year: number | 0; sort: Sort; hideDone: boolean };
+type Filters = { q: string; marks: number | 0; type: string; year: number | 0; topic: string; sort: Sort; hideDone: boolean };
 
-const DEFAULT: Filters = { q: "", marks: 0, type: "", year: 0, sort: "new", hideDone: false };
+const DEFAULT: Filters = { q: "", marks: 0, type: "", year: 0, topic: "", sort: "new", hideDone: false };
 const TYPES = [
   { v: "", l: "All types" },
   { v: "mcq", l: "MCQ" },
@@ -27,11 +27,12 @@ function fromUrl(): Partial<Filters> {
   if (p.get("marks")) out.marks = Number(p.get("marks"));
   if (p.get("type")) out.type = p.get("type")!;
   if (p.get("year")) out.year = Number(p.get("year"));
+  if (p.get("topic")) out.topic = p.get("topic")!;
   if (p.get("sort")) out.sort = p.get("sort") as Sort;
   return out;
 }
 
-export function ChapterBrowser({ items, years, children }: { items: Item[]; years: number[]; children: ReactNode }) {
+export function ChapterBrowser({ items, years, topics, children }: { items: Item[]; years: number[]; topics: { name: string; count: number }[]; children: ReactNode }) {
   const kids = Children.toArray(children);
   const [f, setF] = useState<Filters>(DEFAULT);
   const done = useIdSet("done");
@@ -52,6 +53,7 @@ export function ChapterBrowser({ items, years, children }: { items: Item[]; year
     if (f.marks) p.set("marks", String(f.marks));
     if (f.type) p.set("type", f.type);
     if (f.year) p.set("year", String(f.year));
+    if (f.topic) p.set("topic", f.topic);
     if (f.sort !== "new") p.set("sort", f.sort);
     const qs = p.toString();
     window.history.replaceState(null, "", qs ? `?${qs}${window.location.hash}` : window.location.pathname + window.location.hash);
@@ -65,7 +67,7 @@ export function ChapterBrowser({ items, years, children }: { items: Item[]; year
     const terms = f.q.toLowerCase().split(/\s+/).filter(Boolean);
     const idx = items
       .map((it, i) => ({ it, i }))
-      .filter(({ it }) => (!f.marks || it.marks === f.marks) && (!f.type || it.type === f.type) && (!f.year || it.year === f.year))
+      .filter(({ it }) => (!f.marks || it.marks === f.marks) && (!f.type || it.type === f.type) && (!f.year || it.year === f.year) && (!f.topic || it.topic === f.topic))
       .filter(({ it }) => !f.hideDone || !done.set.has(it.id))
       .filter(({ it }) => terms.every((t) => it.text.includes(t) || String(it.year) === t));
     if (f.sort === "old") idx.sort((a, b) => a.it.year - b.it.year || a.it.order.localeCompare(b.it.order));
@@ -113,6 +115,23 @@ export function ChapterBrowser({ items, years, children }: { items: Item[]; year
                 ))}
               </select>
             </label>
+            {topics.length > 1 && (
+              <label className="hidden shrink-0 md:block">
+                <span className="sr-only">Topic</span>
+                <select
+                  value={f.topic}
+                  onChange={(e) => set({ topic: e.target.value })}
+                  className="h-11 max-w-56 cursor-pointer rounded-xl border border-line bg-surface px-3 text-[0.95rem] text-ink focus:border-[var(--hue)] focus:outline-none"
+                >
+                  <option value="">All topics</option>
+                  {topics.map((t) => (
+                    <option key={t.name} value={t.name}>
+                      {t.name} ({t.count})
+                    </option>
+                  ))}
+                </select>
+              </label>
+            )}
             <label className="hidden shrink-0 sm:block">
               <span className="sr-only">Sort</span>
               <select
@@ -126,6 +145,23 @@ export function ChapterBrowser({ items, years, children }: { items: Item[]; year
               </select>
             </label>
           </div>
+          {topics.length > 1 && (
+            <label className="md:hidden">
+              <span className="sr-only">Topic</span>
+              <select
+                value={f.topic}
+                onChange={(e) => set({ topic: e.target.value })}
+                className="h-11 w-full cursor-pointer rounded-xl border border-line bg-surface px-3 text-[0.95rem] text-ink focus:border-[var(--hue)] focus:outline-none"
+              >
+                <option value="">All topics</option>
+                {topics.map((t) => (
+                  <option key={t.name} value={t.name}>
+                    {t.name} ({t.count})
+                  </option>
+                ))}
+              </select>
+            </label>
+          )}
           <div className="-mx-1 flex items-center gap-2 overflow-x-auto px-1 pb-0.5 [scrollbar-width:none]">
             <div role="group" aria-label="Marks" className="flex shrink-0 gap-2">
               <button type="button" className={chip(!f.marks)} aria-pressed={!f.marks} onClick={() => set({ marks: 0 })}>

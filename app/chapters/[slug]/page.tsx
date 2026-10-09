@@ -6,6 +6,7 @@ import { ChapterBrowser } from "@/components/ChapterBrowser";
 import { QuestionCard } from "@/components/QuestionCard";
 import { CHAPTERS, chapterBySlug, unitOf } from "@/lib/chapters";
 import { chapterStats, questionsIn } from "@/lib/bank";
+import { TOPICS } from "@/lib/topics";
 
 export function generateStaticParams() {
   return CHAPTERS.map((c) => ({ slug: c.slug }));
@@ -40,7 +41,17 @@ export default async function ChapterPage(props: PageProps<"/chapters/[slug]">) 
     type: q.type,
     order: `${q.paper}-${String(q.qno).padStart(2, "0")}${q.part}`,
     text: plain(`${q.topic} ${q.question} ${q.options?.map((o) => o.t).join(" ") ?? ""} ${q.code}`),
+    topic: q.topic,
   }));
+  const counts = new Map<string, number>();
+  for (const q of qs) if (q.topic) counts.set(q.topic, (counts.get(q.topic) ?? 0) + 1);
+  const canon = TOPICS[ch.key];
+  const topics = [...counts.entries()]
+    .sort((a, b) => {
+      const ia = canon.indexOf(a[0]), ib = canon.indexOf(b[0]);
+      return (ia < 0 ? 99 : ia) - (ib < 0 ? 99 : ib) || b[1] - a[1];
+    })
+    .map(([name, count]) => ({ name, count }));
 
   return (
     <div className={`hue-${unit.hue}`}>
@@ -85,7 +96,7 @@ export default async function ChapterPage(props: PageProps<"/chapters/[slug]">) 
         {qs.length === 0 ? (
           <p className="py-16 text-center text-muted">Questions for this chapter are being added.</p>
         ) : (
-          <ChapterBrowser items={items} years={s.years}>
+          <ChapterBrowser items={items} years={s.years} topics={topics}>
             {qs.map((q) => (
               <QuestionCard key={q.id} q={q} />
             ))}

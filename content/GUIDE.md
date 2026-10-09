@@ -28,6 +28,9 @@ record it as `=== N x <reason>` (or `=== Na x <reason>`) — never silently drop
 A question is classified into the chapter whose concept it actually tests (e.g. "solve the system
 using $A^{-1}$" → `det`; area under a curve → `aoi`; max/min word problem → `aod`).
 
+Every question carries an `@topic` line whose value is **exactly one** of the canonical sub-topics for
+its chapter listed in `lib/topics.ts` (the chapter pages filter by these). Pick the closest one.
+
 ## 2. Transcription fidelity
 
 * Transcribe from the **page image**, never from the PDF text layer (it drops symbols).
