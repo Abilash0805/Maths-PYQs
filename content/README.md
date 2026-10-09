@@ -34,7 +34,7 @@ Block header: `=== <number>[a|b] | <chapter> | <marks> | <type>`
 Optional directive lines right after the header:
 
 * `@topic <text>` – sub-topic label
-* `@fig <file>` – figure shown with the question (stored in `public/figures/`)
+* `@fig <file>` – figure shown with the question (stored in `public/figures/`). It is placed at a line `[[fig]]` in the question body if there is one, otherwise after the opening passage of a case study, otherwise after the statement.
 
 Body syntax (question and solution): `$inline$`, `$$display$$`, `**bold**`,
 pipe tables, `![caption](file.png)` figures and fenced `plot` blocks (JSON spec,

@@ -35,7 +35,7 @@ export function makeFn(expr: string, v = "x"): (n: number) => number {
 }
 
 function niceStep(span: number) {
-  const raw = span / 8;
+  const raw = span / 10;
   const p = Math.pow(10, Math.floor(Math.log10(raw)));
   for (const m of [1, 2, 5, 10]) if (raw <= m * p) return m * p;
   return 10 * p;

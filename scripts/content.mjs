@@ -2,21 +2,8 @@
 import fs from "node:fs";
 import path from "node:path";
 
-export const CHAPTERS = [
-  { key: "rf", slug: "relations-and-functions", name: "Relations and Functions", unit: "Relations and Functions", no: 1 },
-  { key: "itf", slug: "inverse-trigonometric-functions", name: "Inverse Trigonometric Functions", unit: "Relations and Functions", no: 2 },
-  { key: "mat", slug: "matrices", name: "Matrices", unit: "Algebra", no: 3 },
-  { key: "det", slug: "determinants", name: "Determinants", unit: "Algebra", no: 4 },
-  { key: "cd", slug: "continuity-and-differentiability", name: "Continuity and Differentiability", unit: "Calculus", no: 5 },
-  { key: "aod", slug: "application-of-derivatives", name: "Application of Derivatives", unit: "Calculus", no: 6 },
-  { key: "int", slug: "integrals", name: "Integrals", unit: "Calculus", no: 7 },
-  { key: "aoi", slug: "application-of-integrals", name: "Application of Integrals", unit: "Calculus", no: 8 },
-  { key: "de", slug: "differential-equations", name: "Differential Equations", unit: "Calculus", no: 9 },
-  { key: "vec", slug: "vector-algebra", name: "Vector Algebra", unit: "Vectors and 3-D Geometry", no: 10 },
-  { key: "3d", slug: "three-dimensional-geometry", name: "Three Dimensional Geometry", unit: "Vectors and 3-D Geometry", no: 11 },
-  { key: "lpp", slug: "linear-programming", name: "Linear Programming", unit: "Linear Programming", no: 12 },
-  { key: "prob", slug: "probability", name: "Probability", unit: "Probability", no: 13 },
-];
+import { CHAPTERS } from "../lib/chapters.ts";
+export { CHAPTERS };
 const CH_KEYS = new Set(CHAPTERS.map((c) => c.key));
 const TYPES = new Set(["mcq", "ar", "sub", "case"]);
 

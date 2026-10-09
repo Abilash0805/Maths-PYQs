@@ -1,26 +1,178 @@
 @import "tailwindcss";
+@import "katex/dist/katex.min.css";
 
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* ---------- design tokens ---------- */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --bg: #f6f7f4;
+  --bg-grid: rgb(15 118 110 / 0.055);
+  --surface: #ffffff;
+  --surface-2: #f1f4f1;
+  --ink: #102320;
+  --ink-2: #3f504d;
+  --muted: #5b6b68;
+  --line: #e1e7e3;
+  --line-strong: #c9d3cf;
+  --primary: #0f766e;
+  --primary-ink: #ffffff;
+  --primary-soft: #d5f5ef;
+  --accent: #c2410c;
+  --accent-soft: #ffedd5;
+  --ok: #15803d;
+  --ok-soft: #dcfce7;
+  --ring: #0f766e;
+  --shadow: 0 1px 2px rgb(16 35 32 / 0.06), 0 8px 24px -12px rgb(16 35 32 / 0.18);
+  --violet: #6d28d9; --violet-soft: #ede9fe;
+  --blue: #1d4ed8; --blue-soft: #dbeafe;
+  --teal: #0f766e; --teal-soft: #ccfbf1;
+  --orange: #c2410c; --orange-soft: #ffedd5;
+  --pink: #be185d; --pink-soft: #fce7f3;
+  --amber: #b45309; --amber-soft: #fef3c7;
+  --plot-1: #0f766e; --plot-2: #c2410c; --plot-3: #6d28d9; --plot-4: #1d4ed8;
+  --plot-region: rgb(15 118 110 / 0.16);
+  color-scheme: light;
+}
+.dark {
+  --bg: #0a1312;
+  --bg-grid: rgb(94 234 212 / 0.045);
+  --surface: #101c1a;
+  --surface-2: #142321;
+  --ink: #e5efed;
+  --ink-2: #c3d2cf;
+  --muted: #95aaa6;
+  --line: #1f312e;
+  --line-strong: #2c4440;
+  --primary: #2dd4bf;
+  --primary-ink: #04201d;
+  --primary-soft: #0f3a35;
+  --accent: #fb923c;
+  --accent-soft: #3b2212;
+  --ok: #4ade80;
+  --ok-soft: #12321f;
+  --ring: #5eead4;
+  --shadow: 0 1px 2px rgb(0 0 0 / 0.4), 0 10px 30px -14px rgb(0 0 0 / 0.7);
+  --violet: #c4b5fd; --violet-soft: #2a1f4a;
+  --blue: #93c5fd; --blue-soft: #172a4a;
+  --teal: #5eead4; --teal-soft: #0f3a35;
+  --orange: #fdba74; --orange-soft: #3b2212;
+  --pink: #f9a8d4; --pink-soft: #3d1530;
+  --amber: #fcd34d; --amber-soft: #3a2a0c;
+  --plot-1: #2dd4bf; --plot-2: #fb923c; --plot-3: #c4b5fd; --plot-4: #93c5fd;
+  --plot-region: rgb(45 212 191 / 0.18);
+  color-scheme: dark;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-bg: var(--bg);
+  --color-surface: var(--surface);
+  --color-surface-2: var(--surface-2);
+  --color-ink: var(--ink);
+  --color-ink-2: var(--ink-2);
+  --color-muted: var(--muted);
+  --color-line: var(--line);
+  --color-line-strong: var(--line-strong);
+  --color-primary: var(--primary);
+  --color-primary-ink: var(--primary-ink);
+  --color-primary-soft: var(--primary-soft);
+  --color-accent: var(--accent);
+  --color-accent-soft: var(--accent-soft);
+  --color-ok: var(--ok);
+  --color-ok-soft: var(--ok-soft);
+  --font-sans: var(--font-atkinson), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-crimson), ui-serif, Georgia, serif;
+  --font-mono: var(--font-jbmono), ui-monospace, monospace;
+  --shadow-card: var(--shadow);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* ---------- base ---------- */
+html {
+  -webkit-text-size-adjust: 100%;
 }
-
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-atkinson), ui-sans-serif, system-ui, sans-serif;
+  font-size: 17px;
+  line-height: 1.6;
+  text-rendering: optimizeLegibility;
+}
+::selection {
+  background: var(--primary-soft);
+  color: var(--ink);
+}
+:focus-visible {
+  outline: 2px solid var(--ring);
+  outline-offset: 2px;
+  border-radius: 6px;
+}
+h1, h2, h3 {
+  font-family: var(--font-crimson), ui-serif, Georgia, serif;
+  letter-spacing: -0.01em;
+  text-wrap: balance;
+}
+.grid-paper {
+  background-image:
+    linear-gradient(var(--bg-grid) 1px, transparent 1px),
+    linear-gradient(90deg, var(--bg-grid) 1px, transparent 1px);
+  background-size: 28px 28px;
+}
+html.lenis, html.lenis body { height: auto; }
+.lenis.lenis-smooth { scroll-behavior: auto !important; }
+.lenis.lenis-smooth [data-lenis-prevent] { overscroll-behavior: contain; }
+[id] { scroll-margin-top: 96px; }
+
+/* unit hues */
+.hue-violet { --hue: var(--violet); --hue-soft: var(--violet-soft); }
+.hue-blue { --hue: var(--blue); --hue-soft: var(--blue-soft); }
+.hue-teal { --hue: var(--teal); --hue-soft: var(--teal-soft); }
+.hue-orange { --hue: var(--orange); --hue-soft: var(--orange-soft); }
+.hue-pink { --hue: var(--pink); --hue-soft: var(--pink-soft); }
+.hue-amber { --hue: var(--amber); --hue-soft: var(--amber-soft); }
+
+/* ---------- rendered maths content ---------- */
+.md { color: var(--ink); overflow-wrap: anywhere; }
+.md p { margin: 0.5em 0; }
+.md p:first-child { margin-top: 0; }
+.md p:last-child { margin-bottom: 0; }
+.md strong { font-weight: 700; color: var(--ink); }
+.md ul { margin: 0.5em 0; padding-left: 1.25em; list-style: disc; }
+.md .katex { font-size: 1.07em; }
+.md .math-display { margin: 0.6em 0; overflow-x: auto; overflow-y: hidden; padding: 0.15em 0; }
+.md .math-display .katex-display { margin: 0; }
+.md .katex-display > .katex { text-align: left; padding-left: 0.25em; }
+.md .table-wrap { overflow-x: auto; margin: 0.75em 0; }
+.md table { border-collapse: collapse; min-width: 16rem; font-size: 0.95em; }
+.md th, .md td { border: 1px solid var(--line-strong); padding: 0.35em 0.8em; text-align: center; }
+.md th { background: var(--surface-2); font-weight: 700; }
+.md figure.fig img { border-radius: 10px; background: #fff; }
+.md .plot { margin: 0.9em 0; max-width: 460px; }
+.md .plot svg { width: 100%; height: auto; display: block; background: var(--surface); border: 1px solid var(--line); border-radius: 14px; }
+.pl-grid { stroke: var(--line); stroke-width: 1; fill: none; }
+.pl-axis { stroke: var(--ink-2); stroke-width: 1.4; fill: none; }
+.pl-region { fill: var(--plot-region); stroke: none; }
+.pl-curve { fill: none; stroke-width: 2.2; stroke-linejoin: round; stroke-linecap: round; }
+.pl-dash { stroke-dasharray: 6 5; }
+.pl-s0 { stroke: var(--plot-1); } .pl-s1 { stroke: var(--plot-2); } .pl-s2 { stroke: var(--plot-3); } .pl-s3 { stroke: var(--plot-4); }
+.pl-t0 { fill: var(--plot-1); } .pl-t1 { fill: var(--plot-2); } .pl-t2 { fill: var(--plot-3); } .pl-t3 { fill: var(--plot-4); }
+.pl-point { fill: var(--ink); }
+.pl-tick { fill: var(--muted); font: 12px var(--font-jbmono), monospace; }
+.pl-label { fill: var(--ink); font: 600 13px var(--font-atkinson), sans-serif; paint-order: stroke; stroke: var(--surface); stroke-width: 4px; }
+
+/* option highlight once the solution is revealed */
+[data-open="true"] .opt[data-correct="true"] {
+  border-color: var(--ok);
+  background: var(--ok-soft);
+}
+[data-open="true"] .opt[data-correct="true"] .opt-key {
+  background: var(--ok);
+  color: var(--surface);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }
