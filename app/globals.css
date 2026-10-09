@@ -176,3 +176,9 @@ html.lenis, html.lenis body { height: auto; }
     scroll-behavior: auto !important;
   }
 }
+
+/* long chapter pages: let the browser skip layout/paint of off-screen question cards */
+.qcard {
+  content-visibility: auto;
+  contain-intrinsic-size: auto 420px;
+}

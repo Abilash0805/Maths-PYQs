@@ -75,7 +75,7 @@ export function QuestionBody({ q }: { q: Question }) {
 export function QuestionCard({ q, showChapter = false, linkTitle = true }: { q: Question; showChapter?: boolean; linkTitle?: boolean }) {
   const repeats = q.sources.slice(1);
   return (
-    <article id={q.id} data-reveal className="rounded-2xl border border-line bg-surface p-4 shadow-card sm:p-6">
+    <article id={q.id} data-reveal className="qcard rounded-2xl border border-line bg-surface p-4 shadow-card sm:p-6">
       <CardShell id={q.id} solution={q.solution} answerKey={q.key} permalink={linkTitle ? `/q/${q.id}` : null}>
         <QuestionMeta q={q} showChapter={showChapter} />
         {q.topic && <p className="mt-1.5 text-sm text-muted">{q.topic}</p>}

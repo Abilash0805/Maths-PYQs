@@ -9,7 +9,8 @@ import { useRenderedMd } from "./useRenderedMd";
 
 /** Compact, client-rendered question preview used by search and saved lists. */
 export function MiniQuestion({ e, action }: { e: Entry; action?: ReactNode }) {
-  const html = useRenderedMd(e.q.replace(/\n\[\[fig\]\]\n/, "\n"));
+  const src = e.q.replace(/\n\[\[fig\]\]\n/, "\n") + (e.o ? "\n\n" + e.o.map((t, i) => `**(${"ABCD"[i]})** ${t}`).join("\n") : "");
+  const html = useRenderedMd(src);
   const ch = chapterByKey(e.ch);
   return (
     <article className={`hue-${unitOf(ch).hue} rounded-2xl border border-line bg-surface p-4 shadow-card sm:p-5`}>
