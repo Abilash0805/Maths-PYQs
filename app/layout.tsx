@@ -1,71 +1,49 @@
-import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import type { Metadata, Viewport } from "next";
+import { Atkinson_Hyperlegible, Crimson_Pro, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
-import { Providers } from "./providers";
-import { Sidebar } from "@/components/Sidebar";
-import { MobileHeader } from "@/components/MobileHeader";
-import { getChapterStats } from "@/lib/data";
+import { SiteHeader } from "@/components/SiteHeader";
+import { SiteFooter } from "@/components/SiteFooter";
+import { SmoothScroll } from "@/components/SmoothScroll";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
+export const ensureStatic = "navigation";
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+const body = Atkinson_Hyperlegible({ subsets: ["latin"], weight: ["400", "700"], variable: "--font-atkinson", display: "swap" });
+const display = Crimson_Pro({ subsets: ["latin"], weight: ["500", "600", "700"], variable: "--font-crimson", display: "swap" });
+const mono = JetBrains_Mono({ subsets: ["latin"], weight: ["400", "500"], variable: "--font-jbmono", display: "swap" });
 
 export const metadata: Metadata = {
-  title: "CBSE Class 12 Maths PYQ | Previous Year Questions",
+  metadataBase: new URL(process.env.VERCEL_PROJECT_PRODUCTION_URL ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}` : "http://localhost:3000"),
+  title: { default: "Class 12 Maths PYQs · CBSE 2015–2026 with solutions", template: "%s · Class 12 Maths PYQs" },
   description:
-    "Practice CBSE Class 12 Mathematics Previous Year Questions chapter-wise with detailed solutions. 2015–2025 papers.",
-  openGraph: {
-    title: "CBSE Class 12 Maths PYQ",
-    description: "Chapter-wise Previous Year Questions with solutions. 2015–2025.",
-    images: [{ url: "/logo.svg", width: 540, height: 540 }],
-  },
+    "Every CBSE Class XII Mathematics board question from 2015 to 2026, sorted chapter-wise, filtered to the 2026-27 syllabus, with step-by-step exam-ready solutions.",
 };
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
-  const stats = getChapterStats();
+export const viewport: Viewport = {
+  themeColor: [
+    { media: "(prefers-color-scheme: light)", color: "#f6f7f4" },
+    { media: "(prefers-color-scheme: dark)", color: "#0a1312" },
+  ],
+};
 
+// Applies the saved/OS theme before first paint to avoid a flash.
+const themeScript = `(function(){try{var t=localStorage.getItem('theme');var d=t?t==='dark':matchMedia('(prefers-color-scheme: dark)').matches;if(d)document.documentElement.classList.add('dark')}catch(e){}})()`;
+
+export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
-    <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-        <Providers>
-          <div className="flex h-screen bg-slate-50 overflow-hidden">
-            {/* Desktop Sidebar */}
-            <div className="hidden lg:flex">
-              <Sidebar stats={stats} />
-            </div>
-
-            {/* Main content */}
-            <div className="flex-1 flex flex-col min-w-0 overflow-hidden">
-              {/* Desktop top bar */}
-              <header className="hidden lg:flex items-center justify-between px-6 py-3 border-b border-slate-200 bg-white/80 backdrop-blur sticky top-0 z-30">
-                <div className="text-sm text-slate-500">
-                  CBSE Class 12 Mathematics — Previous Year Questions
-                </div>
-                <span className="text-xs font-medium text-white bg-blue-600 rounded-full px-3 py-1">
-                  Built by Abilash
-                </span>
-              </header>
-
-              {/* Mobile header */}
-              <MobileHeader stats={stats} />
-
-              {/* Page content */}
-              <main className="flex-1 overflow-y-auto">
-                {children}
-              </main>
-            </div>
-          </div>
-        </Providers>
+    <html lang="en" suppressHydrationWarning className={`${body.variable} ${display.variable} ${mono.variable}`}>
+      <head>
+        <script dangerouslySetInnerHTML={{ __html: themeScript }} />
+      </head>
+      <body className="min-h-dvh flex flex-col antialiased">
+        <a href="#main" className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[60] focus:rounded-lg focus:bg-surface focus:px-4 focus:py-2 focus:shadow-card">
+          Skip to content
+        </a>
+        <SmoothScroll />
+        <SiteHeader />
+        <main id="main" className="flex-1">
+          {children}
+        </main>
+        <SiteFooter />
       </body>
     </html>
   );

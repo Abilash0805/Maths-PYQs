@@ -1,195 +1,99 @@
-"use client";
+import Link from "next/link";
+import { Md } from "./Md";
+import { CardShell } from "./CardShell";
+import type { Question } from "@/lib/bank";
+import { chapterByKey, TYPE_LABEL, unitOf } from "@/lib/chapters";
 
-import React, { useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
-import { Bookmark, BookmarkCheck, CheckCircle2, Circle, ChevronDown, ChevronUp, Star } from "lucide-react";
-import { Button } from "@/components/ui/button";
-import { Badge } from "@/components/ui/badge";
-import { cn, cleanMathText } from "@/lib/utils";
-import { PYQItem, CHAPTER_COLORS } from "@/lib/types";
+const marksLabel = (m: number) => `${m} mark${m === 1 ? "" : "s"}`;
 
-interface QuestionCardProps {
-  question: PYQItem;
-  isBookmarked: boolean;
-  isSolved: boolean;
-  onBookmark: (id: string) => void;
-  onSolve: (id: string) => void;
-  showChapter?: boolean;
-}
-
-const sectionLabels: Record<string, string> = {
-  A: "MCQ · 1M",
-  B: "VSA · 2M",
-  C: "SA · 3M",
-  D: "LA · 5M",
-  E: "Case Study · 4M",
-};
-
-const marksColor: Record<number, string> = {
-  1: "info",
-  2: "info",
-  3: "warning",
-  4: "purple",
-  5: "destructive",
-};
-
-export function QuestionCard({
-  question,
-  isBookmarked,
-  isSolved,
-  onBookmark,
-  onSolve,
-  showChapter = true,
-}: QuestionCardProps) {
-  const [showAnswer, setShowAnswer] = useState(false);
-  const gradientClass = CHAPTER_COLORS[question.chapter] || "from-blue-500 to-blue-600";
-
+export function QuestionMeta({ q, showChapter }: { q: Question; showChapter?: boolean }) {
+  const ch = chapterByKey(q.ch);
   return (
-    <motion.div
-      layout
-      initial={{ opacity: 0, y: 16 }}
-      animate={{ opacity: 1, y: 0 }}
-      exit={{ opacity: 0, y: -8 }}
-      transition={{ duration: 0.25 }}
-      className={cn(
-        "relative rounded-2xl border bg-white shadow-sm hover:shadow-md transition-shadow overflow-hidden",
-        isSolved && "border-green-300",
-        !isSolved && "border-slate-200"
-      )}
-    >
-      {/* Accent top bar */}
-      <div className={cn("h-1 w-full bg-gradient-to-r", gradientClass)} />
-
-      <div className="p-5">
-        {/* Header row */}
-        <div className="flex flex-wrap items-center gap-2 mb-3">
-          <span className="flex items-center gap-1.5 text-xs font-bold text-slate-500">
-            <span className="text-slate-400">Q{question.question_number}</span>
-          </span>
-
-          <Badge variant="info" className="text-xs">
-            {question.year}
-            {question.term ? ` ${question.term}` : ""}
-          </Badge>
-
-          <Badge variant={(marksColor[question.marks] as any) || "outline"} className="text-xs">
-            {sectionLabels[question.section] || `${question.marks}M`}
-          </Badge>
-
-          {showChapter && (
-            <Badge variant="outline" className="text-xs hidden sm:flex">
-              {question.chapter}
-            </Badge>
-          )}
-
-          {question.is_important && (
-            <Badge variant="warning" className="text-xs gap-1">
-              <Star className="size-3" />
-              Important
-            </Badge>
-          )}
-
-          <div className="ml-auto flex items-center gap-1">
-            <Button
-              variant="ghost"
-              size="icon-sm"
-              onClick={() => onSolve(question.id)}
-              className={cn(
-                "transition-colors",
-                isSolved
-                  ? "text-green-600 hover:text-green-700"
-                  : "text-slate-400 hover:text-green-600"
-              )}
-              title={isSolved ? "Mark as unsolved" : "Mark as solved"}
-            >
-              {isSolved ? <CheckCircle2 className="size-4" /> : <Circle className="size-4" />}
-            </Button>
-            <Button
-              variant="ghost"
-              size="icon-sm"
-              onClick={() => onBookmark(question.id)}
-              className={cn(
-                "transition-colors",
-                isBookmarked
-                  ? "text-amber-500 hover:text-amber-600"
-                  : "text-slate-400 hover:text-amber-500"
-              )}
-              title={isBookmarked ? "Remove bookmark" : "Bookmark"}
-            >
-              {isBookmarked ? <BookmarkCheck className="size-4" /> : <Bookmark className="size-4" />}
-            </Button>
-          </div>
-        </div>
-
-        {/* Question text */}
-        <div className="text-sm text-slate-800 leading-relaxed font-medium mb-3 whitespace-pre-wrap">
-          {cleanMathText(question.question)}
-        </div>
-
-        {/* MCQ options */}
-        {question.options && Object.keys(question.options).length > 0 && (
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 mb-3">
-            {Object.entries(question.options).map(([key, val]) => (
-              <div
-                key={key}
-                className="flex items-start gap-2 text-sm text-slate-700 bg-slate-50 rounded-lg px-3 py-2"
-              >
-                <span className="font-semibold text-primary min-w-[18px]">({key})</span>
-                <span className="whitespace-pre-wrap">{cleanMathText(val)}</span>
-              </div>
-            ))}
-          </div>
-        )}
-
-        {/* Show/Hide Answer Button */}
-        <Button
-          onClick={() => setShowAnswer(!showAnswer)}
-          variant={showAnswer ? "secondary" : "default"}
-          size="sm"
-          className="gap-1.5"
+    <div className="flex flex-wrap items-center gap-x-2 gap-y-1.5 text-sm">
+      <span className="font-mono text-[0.8rem] tracking-tight text-ink-2">
+        {q.year} · {q.code} · Q{q.qno}
+        {q.part && <span className="text-muted">{q.part === "a" ? " (a)" : " (b)"}</span>}
+      </span>
+      <span className="rounded-full bg-accent-soft px-2.5 py-0.5 text-[0.8rem] font-bold text-accent">{marksLabel(q.marks)}</span>
+      <span className="rounded-full border border-line px-2.5 py-0.5 text-[0.8rem] text-ink-2">{TYPE_LABEL[q.type]}</span>
+      {showChapter && (
+        <Link
+          href={`/chapters/${ch.slug}`}
+          className={`hue-${unitOf(ch).hue} rounded-full bg-[var(--hue-soft)] px-2.5 py-0.5 text-[0.8rem] font-bold text-[var(--hue)] hover:underline`}
         >
-          {showAnswer ? (
-            <>
-              <ChevronUp className="size-4" />
-              Hide Answer
-            </>
-          ) : (
-            <>
-              <ChevronDown className="size-4" />
-              Show Answer
-            </>
-          )}
-        </Button>
-      </div>
-
-      {/* Answer section */}
-      <AnimatePresence>
-        {showAnswer && (
-          <motion.div
-            initial={{ height: 0, opacity: 0 }}
-            animate={{ height: "auto", opacity: 1 }}
-            exit={{ height: 0, opacity: 0 }}
-            transition={{ duration: 0.3, ease: "easeInOut" }}
-            className="overflow-hidden"
-          >
-            <div className="px-5 pb-5">
-              <div className="rounded-xl border border-green-200 bg-green-50 p-4">
-                <div className="flex items-center gap-2 mb-2">
-                  <CheckCircle2 className="size-4 text-green-600 shrink-0" />
-                  <span className="text-xs font-semibold text-green-700 uppercase tracking-wide">
-                    Solution
-                  </span>
-                </div>
-                <div className="text-sm text-slate-800 leading-relaxed whitespace-pre-wrap">
-                  {cleanMathText(question.answer)}
-                </div>
-              </div>
-            </div>
-          </motion.div>
-        )}
-      </AnimatePresence>
-    </motion.div>
+          {ch.name}
+        </Link>
+      )}
+    </div>
   );
 }
 
-export default QuestionCard;
+function Figures({ q }: { q: Question }) {
+  return q.figs.map((f) => (
+    <figure key={f.src} className="my-4 overflow-hidden rounded-xl border border-line bg-white p-2 sm:p-3">
+      {/* eslint-disable-next-line @next/next/no-img-element -- static figure with known dimensions */}
+      <img src={f.src} width={f.w} height={f.h} alt={`Figure for ${q.year} ${q.code} question ${q.qno}`} loading="lazy" className="mx-auto h-auto max-h-[19rem] w-auto max-w-full" />
+    </figure>
+  ));
+}
+
+/** Splits the statement so figures sit where the paper puts them: at a `[[fig]]` line, after the
+ * opening passage of a case study, or after the statement otherwise. */
+function splitForFigure(q: Question): [string, string] {
+  const marker = q.question.split(/\n\[\[fig\]\]\n/);
+  if (marker.length === 2) return [marker[0], marker[1]];
+  if (q.figs.length && q.type === "case") {
+    const i = q.question.indexOf("\n\n");
+    if (i > 0) return [q.question.slice(0, i), q.question.slice(i + 2)];
+  }
+  return [q.question, ""];
+}
+
+export function QuestionBody({ q }: { q: Question }) {
+  const [before, after] = splitForFigure(q);
+  return (
+    <>
+      <Md src={before} className="text-[1.03rem] leading-relaxed" />
+      <Figures q={q} />
+      {after && <Md src={after} className="text-[1.03rem] leading-relaxed" />}
+      {q.options && (
+        <ol className={`mt-4 grid gap-2 ${q.type === "ar" ? "" : "sm:grid-cols-2"}`} aria-label="Options">
+          {q.options.map((o) => (
+            <li key={o.k} className="opt flex items-start gap-3 rounded-xl border border-line bg-surface px-3 py-2.5 transition-colors" data-correct={o.k === q.key}>
+              <span className="opt-key mt-0.5 grid size-7 shrink-0 place-items-center rounded-lg bg-surface-2 font-mono text-sm font-medium text-ink-2 transition-colors">
+                {o.k}
+              </span>
+              <Md src={o.t} className="min-w-0 pt-0.5" />
+            </li>
+          ))}
+        </ol>
+      )}
+    </>
+  );
+}
+
+export function QuestionCard({ q, showChapter = false, linkTitle = true }: { q: Question; showChapter?: boolean; linkTitle?: boolean }) {
+  const repeats = q.sources.slice(1);
+  return (
+    <article id={q.id} data-reveal className="qcard rounded-2xl border border-line bg-surface p-4 shadow-card sm:p-6">
+      <CardShell id={q.id} solution={q.solution} answerKey={q.key} permalink={linkTitle ? `/q/${q.id}` : null}>
+        <QuestionMeta q={q} showChapter={showChapter} />
+        {q.topic && <p className="mt-1.5 text-sm text-muted">{q.topic}</p>}
+        <div className="mt-4">
+          <QuestionBody q={q} />
+        </div>
+        {repeats.length > 0 && (
+          <p className="mt-4 text-sm text-muted">
+            <span className="font-bold text-ink-2">Also asked in:</span>{" "}
+            {repeats.map((s, i) => (
+              <span key={`${s.year}${s.code}${s.q}`} className="font-mono text-[0.8rem]">
+                {i > 0 && ", "}
+                {s.year} {s.code} Q{s.q}
+              </span>
+            ))}
+          </p>
+        )}
+      </CardShell>
+    </article>
+  );
+}
