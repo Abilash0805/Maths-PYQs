@@ -3,6 +3,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import { parsePaper, listPaperFiles, paperId, CHAPTERS } from "./content.mjs";
+import { canonicalTopic } from "../lib/topics.ts";
 
 const ROOT = path.resolve(import.meta.dirname, "..");
 const files = listPaperFiles(path.join(ROOT, "content"));
@@ -64,7 +65,7 @@ for (const file of files) {
         ch: b.ch,
         marks: b.marks,
         type: b.type,
-        topic: b.topic,
+        topic: canonicalTopic(b.ch, b.topic),
         year: paper.year,
         code: paper.code,
         paper: pid,
