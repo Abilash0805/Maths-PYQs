@@ -82,3 +82,9 @@ points:
 Inside one year, a question that is identical (same wording **and** same numbers) to one already
 written in an earlier set is recorded as `=== N = 65/1/1#12` (or `#25a` for an OR-part). If anything at
 all differs (numbers, function, options), it is a new question and is written out in full.
+
+Across years, a question asked again with the same mathematics (same expression, numbers, conditions
+and options; only trivial wording such as "the", "then", "Δ"/"triangle" may differ) is clubbed: the most
+recent occurrence keeps the full block and every earlier occurrence becomes `=== N = YEAR:code#q`
+pointing at it. Duplicate lines always point at a full question block, never at another duplicate line.
+`scripts/find-dupes.mjs` lists candidate pairs.
